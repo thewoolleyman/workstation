@@ -1,0 +1,329 @@
+#!/usr/bin/env bash
+
+# NOTE: Set 'BASH_XTRACE=true' to get bash "stacktraces" and see where this script failed
+source "$(dirname "${BASH_SOURCE}")/bash-boilerplate.sh"
+
+###############################################################################
+# WORKSTATION / LAPTOP SETUP
+#
+# * Portions of script inspired by https://github.com/thoughtbot/laptop
+# * Bash best practices based on https://github.com/progrium/bashstyle
+#   and https://github.com/thewoolleyman/bashstyle_examples
+#
+###############################################################################
+
+pp() {
+  printf "\n%s\n" "${*}"
+}
+
+set_shell_to_bash() {
+ if [[ "${SHELL}" != */bash ]]; then
+   pp 'Changing your shell to bash...'
+   chsh -s "$(which bash)"
+ fi
+}
+
+grant_nopasswd_sudo_access() {
+  pp 'Checking no-password sudo access for "admin" group and adding if necessary.' \
+    'If prompted, please type your password, or ctrl-c to abort...'
+
+  if [[ ! $(sudo grep -e "%admin.*ALL.*=.*NOPASSWD.*:.*ALL" /etc/sudoers) ]]; then
+    pp 'no-password sudo access for "admin" group does not exist, adding...'
+    sudo cp /etc/sudoers /etc/sudoers.bak
+    sudo cp /etc/sudoers /tmp/sudoers.new
+    sudo chmod 0440 /tmp/sudoers.new
+    local new_sudoers_line="%admin ALL=NOPASSWD: ALL"
+    sudo sh -c "echo \"${new_sudoers_line}\" >> /tmp/sudoers.new"
+    sudo cp /tmp/sudoers.new /etc/sudoers
+  fi
+}
+
+make_directories() {
+  mkdir -p "${HOME}/workspace"
+}
+
+set_osx_defaults() {
+  pp 'Setting OSX defaults...'
+
+  # Trackpad: Tap to click
+  defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+
+  # Trackpad: map bottom right corner to right-click
+  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+  defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick -int 2
+
+  # ctrl-scroll to zoom
+  defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+
+  # Enable full keyboard access for all controls
+  defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+  # Expand save panel by default
+  defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+  defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+  # Expand print panel by default
+  defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+  defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+  # Save to disk (not to iCloud) by default
+  defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+  # Automatically quit printer app once the print jobs complete
+  defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+  # Disable smart quotes as they’re annoying when typing code
+  defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+  # Disable smart dashes as they’re annoying when typing code
+  defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+  # Reveal IP address, hostname, OS version, etc. when clicking the clock
+  # in the login window
+  sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+  # Disable the “Are you sure you want to open this application?” dialog
+  defaults write com.apple.LaunchServices LSQuarantine -bool false
+}
+
+add_shell_hooks() {
+  local shell_script="${HOME}/.bashrc"
+  # shellcheck disable=SC2016
+  local hook='source "${HOME}/.workstation"'
+  if ! grep -Fqs "${hook}" "${shell_script}"; then
+    pp "Adding hook to ${shell_script}"
+    printf "\n%s\n" "$hook" >> "${shell_script}"
+  fi
+}
+
+#install_homebrew() {
+#  if [[ ! $(command -v brew > /dev/null); then
+#    pp "Installing Homebrew ..."
+#      ruby <(curl -fsS https://raw.githubusercontent.com/Homebrew/install/master/install)
+#
+#      append_to_zshrc '# recommended by brew doctor'
+#      append_to_zshrc 'export PATH="/usr/local/bin:$PATH"' 1
+#      export PATH="/usr/local/bin:$PATH"
+#  else
+#    pp "Homebrew already installed..."
+#  fi
+#}
+
+completed() {
+  pp 'Workstation setup complete!'
+}
+
+main() {
+  set_shell_to_bash
+  grant_nopasswd_sudo_access
+  make_directories
+  set_osx_defaults
+  add_shell_hooks
+  completed
+}
+
+main
+
+exit 0
+
+# TODO: Everything below this needs to be converted to a function and called from main
+
+
+
+
+###############################################################################
+# Finder                                                                      #
+###############################################################################
+# Set Downloads as the default location for new Finder windows
+defaults write com.apple.finder NewWindowTarget -string "PfDe"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+
+# Use list view in all Finder windows by default
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+# Show icons for hard drives, servers, and removable media on the desktop
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
+# Don’t show recent tags in sidebar
+defaults write com.apple.finder ShowRecentTags -bool false
+
+
+###############################################################################
+# Dock                                                                        #
+###############################################################################
+
+# Auto-hide Dock
+defaults write com.apple.dock autohide -bool true
+
+# Wipe all (default) app icons from the Dock
+# This is only really useful when setting up a new Mac, or if you don’t use
+# the Dock to launch apps.
+defaults write com.apple.dock persistent-apps -array ""
+
+
+###############################################################################
+# Safari                                                                      #
+###############################################################################
+
+# Set Safari’s home page to `about:blank` for faster loading
+defaults write com.apple.Safari HomePage -string "about:blank"
+
+# Enable Safari’s debug menu
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+# Enable Safari’s Develop menu
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+
+# Show full website address
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -boolean true
+
+# Show status bar
+defaults write com.apple.Safari ShowStatusBar -boolean true
+
+
+###############################################################################
+# Terminal                                                                    #
+###############################################################################
+
+# Tabs open in default working directory (vs current directory)
+defaults write com.apple.terminal NewTabWorkingDirectoryBehavior -integer 1
+
+# When shell exits close window if the exit was clean
+defaults write com.apple.terminal TerminalshellExitAction -integer 2
+
+
+###############################################################################
+# TextEdit                                                                    #
+###############################################################################
+
+# Use plain-text for new TextEdit documents
+defaults write com.apple.TextEdit RichText -int 0
+# Menu bar: hide the Time Machine, Volume, User icons
+for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+ defaults write "${domain}" dontAutoLoad -array \
+ "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+ "/System/Library/CoreServices/Menu Extras/Volume.menu" \
+ "/System/Library/CoreServices/Menu Extras/User.menu"
+done
+
+
+###############################################################################
+# Homebrew                                                                    #
+###############################################################################
+## Install Command Line Developer Tools
+xcode_version=$(/usr/bin/sudo /usr/bin/xcode-select -v)
+printf "xcode version: %s\n" "${xcode_version}"
+# TODO: comment if xcode is already updated, should only attempt to install if
+#       not installed or out of date
+#/usr/bin/sudo /usr/bin/xcode-select --install
+
+# TODO: Check using bash conditionals and eliminate need for "|| true"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew doctor
+
+brew install ansible
+brew install ack
+brew install go --cross-compile-common
+brew install imagemagick
+brew install pkill
+brew install wget —with-iri
+
+
+###############################################################################
+# MySQL 5.5                                                                   #
+###############################################################################
+brew tap homebrew/versions
+brew install mysql55
+brew link mysql55 --force
+
+/usr/local/opt/mysql55/bin/mysql.server start --skip-grant-tables
+/usr/local/opt/mysql55/bin/mysql -uroot -e "UPDATE mysql.user SET Password=PASSWORD('password') WHERE User='root'; FLUSH PRIVILEGES;"
+/usr/local/opt/mysql55/bin/mysql.server stop
+ln -sfv /usr/local/opt/mysql55/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql55.plist
+
+
+###############################################################################
+# Homebrew Cask                                                               #
+###############################################################################
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+brew cask install tunnelblick
+brew cask install --appdir=/Applications firefox
+brew cask install --appdir=/Applications flowdock
+brew cask install --appdir=/Applications google-chrome
+brew cask install --appdir=/Applications java
+brew cask install --appdir=/Applications xquartz
+brew cask install --appdir=/Applications rubymine
+brew cask install --appdir=/Applications grandperspective
+brew cask install --appdir=/Applications iterm2
+brew cask install --appdir=/Applications sourcetree
+brew cask install --appdir=/Applications sublime-text3
+brew cask install --appdir=/Applications textmate
+brew cask install --appdir=/Applications virtualbox
+brew cask install --appdir=/Applications vmware-fusion-6
+
+
+###############################################################################
+# ShiftIt                                                                     #
+###############################################################################
+brew cask install --appdir=/Applications shiftit
+# Start ShiftIt at login
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/ShiftIt.app", hidden:false}'
+
+
+###############################################################################
+# Vagrant                                                                     #
+###############################################################################
+brew cask install --appdir=/Applications vagrant
+vagrant plugin install vagrant-vmware-fusion
+# Need to license to fusion plugin if you want to make it the default, below
+# echo "export VAGRANT_DEFAULT_PROVIDER=vmware_fusion" >> $HOME/.bash_profile
+
+
+###############################################################################
+# Tracker Git Repos                                                           #
+###############################################################################
+
+(
+ cd "${HOME}"
+ mkdir -p workspace
+)
+
+#(
+# cd "${HOME}/workspace"
+# git clone git@github.com:myorg/myrepo.git
+#)
+
+(
+ cd "${HOME}/workspace"
+ git clone git@github.com:pivotal/pivotal_ide_prefs.git
+ cd pivotal_ide_prefs/cli
+ ./bin/ide_prefs --ide=rubymine install
+)
+
+###############################################################################
+# Checkman                                                                    #
+###############################################################################
+(
+  \curl https://raw.githubusercontent.com/cppforlife/checkman/master/bin/install | bash -s
+  $HOME/workspace/myrepo/script/checkman/checkman_setup.sh
+)
+
+
+###############################################################################
+# RVM                                                                         #
+###############################################################################
+\curl -sSL https://get.rvm.io | bash -s stable
+rvm install $(cat ~/workspace/tracker/.ruby-version)
+
+
+###############################################################################
+# Cleanup                                                                     #
+###############################################################################
+brew cleanup
