@@ -13,3 +13,4 @@ UPDATED MANUAL NOTES FOR 2017 / Sierra
 * Install Dropbox and optionally remove large folders from selective sync
 * Install Slack
 * Install Zoom
+* Additional browsers as necessary: Canary, Firefox, Opera
