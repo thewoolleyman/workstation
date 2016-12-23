@@ -12,3 +12,4 @@ UPDATED MANUAL NOTES FOR 2017 / Sierra
 * Install Rubymine and Intellij
 * Install Dropbox and optionally remove large folders from selective sync
 * Install Slack
+* Install Zoom
