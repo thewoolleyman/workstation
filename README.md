@@ -8,5 +8,5 @@ UPDATED MANUAL NOTES FOR 2017 / Sierra
 * install spectacle and run on login
 * install iterm
 * install homebrew
-* brew install chruby and ruby-install and put hooks in `/etc/bashrc`
-
+* brew install chruby and ruby-install and put hooks and default ruby in `/etc/bashrc`
+* Install Rubymine and Intellij
