@@ -16,3 +16,4 @@ UPDATED MANUAL NOTES FOR 2017 / Sierra
 * Install Zoom
 * Install Atom
 * Additional browsers as necessary: Canary, Firefox, Opera
+* Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
