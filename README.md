@@ -20,6 +20,11 @@ UPDATED MANUAL NOTES FOR 2017 / Sierra
   * Change shortcut Ctrl+Opt+Cmd+V to not conflict with Jetbrains
 * Additional browsers as necessary: Canary, Firefox, Opera
 * Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
+* Docker
+* Elixir/Phoenix
+  * Erlang/Elixir: `brew install elixir`
+  * Hex package manager: `mix local.hex`
+  * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
 
 ## Jetbrains overridden settings
 * Keybindings
