@@ -1,4 +1,4 @@
-# workstation
+# OSX workstation
 
 UPDATED MANUAL NOTES FOR 2017 / Sierra
 
@@ -27,7 +27,13 @@ UPDATED MANUAL NOTES FOR 2017 / Sierra
   * Hex package manager: `mix local.hex`
   * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
 
-## Jetbrains overridden settings
+# Ubuntu Workstation
+
+MANUAL NOTES FOR Ubuntu 17.04
+
+* 
+
+# Jetbrains overridden settings
 * Keybindings
   * Editor Actions
     * Choose Lookup Item Replace: Add Enter binding (confirm to remove from several other places)
