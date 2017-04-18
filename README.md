@@ -45,12 +45,19 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * Install Chrome
   * Set as default browser
   * Log in to google account in prefs
+    * Advanced Sync: Disable for bookmarks, passwords, open tabs, and credit cards
   * Choose where to save files
   * Always show bookmarks bar
 * Install Dropbox
   * Install according to official instructions
   * Fix bug with toolbar menu not rendering: http://www.webupd8.org/2016/06/fix-dropbox-indicator-icon-and-menu-not.html
   * Bug still not fixed, uninstall `dropbox` via `apt`, then reinstall `nautilus-dropbox` and it works.
+* Symlink in `~/.ssh` from Dropbox
+* Intellij
+  * download, untar, symlink `bin/idea.sh` to `/usr/local/bin`
+* Apt packages:
+  * `sudo apt install git`
+* Crashplan  
 
 # Jetbrains overridden settings
 * Keybindings
