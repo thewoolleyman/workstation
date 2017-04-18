@@ -49,7 +49,8 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * Always show bookmarks bar
 * Install Dropbox
   * Install according to official instructions
-  * Fix bug: http://www.webupd8.org/2016/06/fix-dropbox-indicator-icon-and-menu-not.html
+  * Fix bug with toolbar menu not rendering: http://www.webupd8.org/2016/06/fix-dropbox-indicator-icon-and-menu-not.html
+  * Bug still not fixed, uninstall `dropbox` via `apt`, then reinstall `nautilus-dropbox` and it works.
 
 # Jetbrains overridden settings
 * Keybindings
