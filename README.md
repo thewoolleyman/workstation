@@ -31,8 +31,15 @@ UPDATED MANUAL NOTES FOR 2017 / Sierra
 
 MANUAL NOTES FOR Ubuntu 17.04
 
+Not everything is listed, main things and gotchas mostly
+
 NOTE: Installed packages from command line, manually fixing any dependencies needed.
 
+* System Settings
+  * Mouse and Touchpad
+    * Turn off tap to click
+* Fix keyring issue
+  * https://askubuntu.com/a/735463
 * Files - Preferences
   * Allow Folders to be Expanded
 * Install Chrome
@@ -41,7 +48,8 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * Choose where to save files
   * Always show bookmarks bar
 * Install Dropbox
-* Install Chrome
+  * Install according to official instructions
+  * Fix bug: http://www.webupd8.org/2016/06/fix-dropbox-indicator-icon-and-menu-not.html
 
 # Jetbrains overridden settings
 * Keybindings
