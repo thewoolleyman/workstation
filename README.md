@@ -58,6 +58,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * Symlink in `~/.ssh` from Dropbox
 * Intellij and rubymine
   * download, untar, run `bin/idea.sh` and `bin/mine.sh`
+* Atom
 * Apt packages:
   * `sudo apt install git emacs`
 * Crashplan
