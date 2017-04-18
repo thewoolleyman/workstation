@@ -55,11 +55,16 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * Fix bug with toolbar menu not rendering: http://www.webupd8.org/2016/06/fix-dropbox-indicator-icon-and-menu-not.html
   * Bug still not fixed, uninstall `dropbox` via `apt`, then reinstall `nautilus-dropbox` and it works.
 * Symlink in `~/.ssh` from Dropbox
-* Intellij
-  * download, untar, symlink `bin/idea.sh` to `/usr/local/bin`
+* Intellij and rubymine
+  * download, untar, run `bin/idea.sh` and `bin/mine.sh`
 * Apt packages:
-  * `sudo apt install git`
-* Crashplan  
+  * `sudo apt install git emacs`
+* Crashplan
+* Spacemacs
+  * After install, symlink `~/.spacemacs` from Dropbox.
+* Slack
+* chruby and ruby-install and put hooks and default ruby in `/etc/bashrc`
+  
 
 # Jetbrains overridden settings
 * Keybindings
