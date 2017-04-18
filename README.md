@@ -38,6 +38,8 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * System Settings
   * Mouse and Touchpad
     * Turn off tap to click
+  * Brightness and Lock
+    * Turn off lock
 * Fix keyring issue
   * https://askubuntu.com/a/735463
 * Files - Preferences
