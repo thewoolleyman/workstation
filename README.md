@@ -60,7 +60,8 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * download, untar, run `bin/idea.sh` and `bin/mine.sh`
 * Atom
 * Apt packages:
-  * `sudo apt install git emacs`
+  * `sudo apt install git emacs indicator-multiload`
+  * Configure `indicator-multiload`
 * Crashplan
 * Spacemacs
   * After install, symlink `~/.spacemacs` from Dropbox.
@@ -71,6 +72,12 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * Hex package manager: `mix local.hex`
   * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
   
+# Atom Setup
+## Packages
+* `sync-settings`
+  * Make gist and personal access key specific to ubuntu
+* `language-elixir`
+* `elixir-autocomplete`
 
 # Jetbrains overridden settings
 * Keybindings
@@ -87,7 +94,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
       * Related Data: Add F4 Binding
       * Jump to Navigation Bar: Remove Cmd+Up Arrow
   * Version Control Systems
-    * Show History (for all): Add Ctrl+Option+Cmd+H
+    * Show History (for all): Add Ctrl+Option+Cmd+H (Ctrl-Alt-Shift-H on Linux)
   * Database Tools and SQL
     * Edit: Remove Enter
   * Other
