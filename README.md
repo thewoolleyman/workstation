@@ -40,6 +40,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
     * Turn off tap to click
   * Brightness and Lock
     * Turn off lock
+  * Keyboard -> Shortcuts -> Launchers -> Key to show the HUD: Backspace to disable
 * Fix keyring issue
   * https://askubuntu.com/a/735463
 * Files - Preferences
