@@ -65,6 +65,10 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * After install, symlink `~/.spacemacs` from Dropbox.
 * Slack
 * chruby and ruby-install and put hooks and default ruby in `/etc/bashrc`
+* Elixir/Phoenix
+  * Erlang/Elixir: follow instructions on elixir webpage
+  * Hex package manager: `mix local.hex`
+  * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
   
 
 # Jetbrains overridden settings
