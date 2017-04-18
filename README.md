@@ -31,7 +31,17 @@ UPDATED MANUAL NOTES FOR 2017 / Sierra
 
 MANUAL NOTES FOR Ubuntu 17.04
 
-* 
+NOTE: Installed packages from command line, manually fixing any dependencies needed.
+
+* Files - Preferences
+  * Allow Folders to be Expanded
+* Install Chrome
+  * Set as default browser
+  * Log in to google account in prefs
+  * Choose where to save files
+  * Always show bookmarks bar
+* Install Dropbox
+* Install Chrome
 
 # Jetbrains overridden settings
 * Keybindings
