@@ -62,6 +62,8 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * Apt packages:
   * `sudo apt install git emacs indicator-multiload`
   * Configure `indicator-multiload`
+* Packages via Ubuntu Installer GUI
+  * `okular` reader app - check support for epub before install
 * Crashplan
 * Spacemacs
   * After install, symlink `~/.spacemacs` from Dropbox.
