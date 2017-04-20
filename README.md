@@ -86,7 +86,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * Keybindings
   * Editor Actions
     * Choose Lookup Item Replace: Add Enter binding (confirm to remove from several other places)
-    * Enter: Remove Enter binding (leave unbound)
+    * ~~Enter: Remove Enter binding (leave unbound)~~
     * Move Caret to Text End: Add Cmd+Down Arrow binding
     * Move Caret to Text Start: Add Cmd+Up Arrow binding
     * Next Template Variable or Finish In-Place Refactoring: Remove Enter binding (leave only Tab)
