@@ -82,6 +82,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * `elixir-autocomplete`
 
 # Jetbrains overridden settings
+* Editor -> Code Style -> Other File Types: Set Tab size and indent to 2
 * Keybindings
   * Editor Actions
     * Choose Lookup Item Replace: Add Enter binding (confirm to remove from several other places)
