@@ -85,6 +85,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 
 # Jetbrains overridden settings
 * Editor -> Code Style -> Other File Types: Set Tab size and indent to 2
+* Editor -> General -> Editor Tabs -> Turn off: Show tab tooltips
 * Editor -> General -> Smart Keys -> Turn off: Use "CamelHumps" words
 * Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace
 * Keybindings
