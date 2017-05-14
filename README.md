@@ -91,11 +91,11 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace
 * Keybindings
   * Editor Actions
-    * Choose Lookup Item Replace: Add Enter binding (confirm to remove from several other places)
+    * ~~Choose Lookup Item Replace: Add Enter binding (confirm to remove from several other places)~~
     * ~~Enter: Remove Enter binding (leave unbound)~~
     * Move Caret to Text End: Add Cmd+Down Arrow binding
     * Move Caret to Text Start: Add Cmd+Up Arrow binding
-    * Next Template Variable or Finish In-Place Refactoring: Remove Enter binding (leave only Tab)
+    * ~~Next Template Variable or Finish In-Place Refactoring: Remove Enter binding (leave only Tab)~~
   * Main Menu
     * View
       * Jump To Source: Remove Cmd+Down Arrow binding
@@ -108,6 +108,6 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * Version Control Systems
     * Show History (for all): Add Ctrl+Option+Cmd+H (Ctrl-Alt-Shift-H on Linux)
   * Database Tools and SQL
-    * Edit: Remove Enter
+    * ~~Edit: Remove Enter~~
   * Other
-    * Various removals of Enter
+    * ~~Various removals of Enter~~
