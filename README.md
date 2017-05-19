@@ -111,3 +111,9 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
     * ~~Edit: Remove Enter~~
   * Other
     * ~~Various removals of Enter~~
+  * Idea-only settings for Elixir
+    * Configure *.eex to display as RHTML (syntax is similar enough to get highlighting right)
+      * Install Ruby Plugin
+      * Editor -> File Types -> RHTML: Add "*.eex" as type
+      * Editor -> Inspections -> Ruby -> Unresolved Ruby Reference: Uncheck
+      * Editor -> Inspections -> Ruby -> Double Quoted String: Uncheck
