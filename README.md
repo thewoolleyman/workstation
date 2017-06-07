@@ -9,6 +9,7 @@ UPDATED MANUAL NOTES FOR 2017 / Sierra
 * install spectacle and run on login
 * install iterm
   * Preferences -> Appearance -> Dimming -> Dim background windows
+  * Preferences -> Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `+Esc`
 * install homebrew
 * brew install jq
 * brew install watch
