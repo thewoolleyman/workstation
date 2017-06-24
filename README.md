@@ -25,6 +25,10 @@ NOTES FOR 2017 / Sierra
 * set nopasswd sudoers
 * symlink in home directory configs: .ssh, .gitconfig, .gitignore
 * download chrome and make default
+  * Chrome Extensions
+    * Chrome JSON Formatter extension https://github.com/callumlocke/json-formatter
+    * Lastpass
+    * Xmarks
 * install spectacle and run on login
 * install iterm
   * Preferences -> Appearance -> Dimming -> Dim background windows
@@ -37,6 +41,7 @@ NOTES FOR 2017 / Sierra
 * Install Rubymine and Intellij
 * Install Dropbox and optionally remove large folders from selective sync
 * Install Slack
+* Install Choosy, if using different browsers dedicated for different employers vs. personal use.
 * Install Zoom
 * Install Atom
 * Install Flycut
