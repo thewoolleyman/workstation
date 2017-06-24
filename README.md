@@ -41,7 +41,7 @@ NOTES FOR 2017 / Sierra
 * Install Rubymine and Intellij
 * Install Dropbox and optionally remove large folders from selective sync
 * Install Slack
-* Install Choosy, if using different browsers dedicated for different employers vs. personal use.
+* Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers vs. personal use.
 * Install Zoom
 * Install Atom
 * Install Flycut
