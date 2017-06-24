@@ -1,6 +1,25 @@
+# Overview
+
+These are the steps that I use to set up my development workstations.  I have used
+automated tools and scripts.  I believe those are useful for shared-workstation
+team environments, but for personal workstations they are not worth the maintenance
+overhead, in my experience.
+
+Instead, for my personal workstations, I try to have the philosophy of
+"just learn to use the defaults, unless they are missing or inconvenient".
+I'll also symlink some config files/dirs into Dropbox, but on a selective
+basis. 
+
+So, what follows are some of the things I tend to install and tweak on my personal
+workstations.  I've installed many other things related to the project du jour
+which aren't documented here, but I've tried to remember to keep track of
+most of the various little tweaks which I can never remember later.
+
+This helps me, hopefully it helps you!
+
 # OSX workstation
 
-UPDATED MANUAL NOTES FOR 2017 / Sierra
+NOTES FOR 2017 / Sierra
 
 * Set function keys to work as function keys
 * set nopasswd sudoers
@@ -33,7 +52,7 @@ UPDATED MANUAL NOTES FOR 2017 / Sierra
 
 # Ubuntu Workstation
 
-MANUAL NOTES FOR Ubuntu 17.04
+NOTES FOR Ubuntu 17.04
 
 Not everything is listed, main things and gotchas mostly
 
