@@ -131,6 +131,8 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
       * Editor Tabs
         * Close All: Add Cmd+Option+w binding
   * Version Control Systems
+    * Git
+      * Compare with Branch: Add Ctrl+Option+Cmd+B
     * Show History (for all): Add Ctrl+Option+Cmd+H (Ctrl-Alt-Shift-H on Linux)
   * Database Tools and SQL
     * ~~Edit: Remove Enter~~
