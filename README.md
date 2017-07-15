@@ -101,6 +101,11 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * Erlang/Elixir: follow instructions on elixir webpage
   * Hex package manager: `mix local.hex`
   * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
+* golang
+  * Follow instructions here: https://stackoverflow.com/a/40129734/25192
+  * Install Gogland
+  * Export a copy of "MacOSX 10.5+" Keymap from Idea and import
+    to Gogland (until https://youtrack.jetbrains.com/issue/GO-4139 is fixed)
   
 # Atom Setup
 ## Packages
