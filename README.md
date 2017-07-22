@@ -115,11 +115,11 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * `elixir-autocomplete`
 
 # Jetbrains overridden settings
-* Editor -> Code Style -> Other File Types: Set Tab size and indent to 2
 * Editor -> General -> Editor Tabs -> Turn off: Show tab tooltips
 * Editor -> General -> Smart Keys -> Turn off: Use "CamelHumps" words
 * Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace
-* Keybindings
+* Editor -> Code Style -> Other File Types: Set Tab size and indent to 2
+* Keymap
   * Editor Actions
     * ~~Choose Lookup Item Replace: Add Enter binding (confirm to remove from several other places)~~
     * ~~Enter: Remove Enter binding (leave unbound)~~
