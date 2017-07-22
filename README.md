@@ -120,33 +120,22 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace
 * Editor -> Code Style -> Other File Types: Set Tab size and indent to 2
 * Keymap - Mac OS X 10.5+
-  * Tip: Instead of rebinding Cmd+<up|down> for "home/end" on small/laptop keyboard, just use Fn+Cmd+<right|left>
-  * Editor Actions
-    * ~~Choose Lookup Item Replace: Add Enter binding (confirm to remove from several other places)~~
-    * ~~Enter: Remove Enter binding (leave unbound)~~
-    * ~~Move Caret to Text End: Add Cmd+Down Arrow binding~~
-    * ~~Move Caret to Text Start: Add Cmd+Up Arrow binding~~
-    * ~~Next Template Variable or Finish In-Place Refactoring: Remove Enter binding (leave only Tab)~~
+  * **NOTE: I've decided to learn default keymaps whenever they exist.  I now only add ones that are useful but unmapped.**
+  * **Tip: "Move Caret to Text Start/End" is bound to "home/end" by default.  On a Mac small/laptop keyboard,
+    use is Fn+Cmd+<right|left> for "home/end"**
   * Main Menu
-    * View
-      * ~~Jump To Source: Remove Cmd+Down Arrow binding~~
     * Navigate
-      * Related Data: Add F4 Binding
-      * ~~Jump to Navigation Bar: Remove Cmd+Up Arrow~~
+      * ~~Related Data: Add F4 Binding~~ (TODO: Document which IDE needed this and why, or delete - Idea doesn't need it)
     * Window
       * Editor Tabs
         * Close All: Add Cmd+Option+w binding
   * Version Control Systems
     * Git
       * Compare with Branch: Add Ctrl+Option+Cmd+B
-    * Show History (for all): Add Ctrl+Option+Cmd+H (Ctrl-Alt-Shift-H on Linux)
-  * Database Tools and SQL
-    * ~~Edit: Remove Enter~~
-  * Other
-    * ~~Various removals of Enter~~
-  * Idea-only settings for Elixir
-    * Configure *.eex to display as RHTML (syntax is similar enough to get highlighting right)
-      * Install Ruby Plugin
-      * Editor -> File Types -> RHTML: Add "*.eex" as type
-      * Editor -> Inspections -> Ruby -> Unresolved Ruby Reference: Uncheck
-      * Editor -> Inspections -> Ruby -> Double Quoted String: Uncheck
+    * Show History (for all): Add Ctrl+Option+Cmd+H
+* Idea-only settings for Elixir
+  * Configure *.eex to display as RHTML (syntax is similar enough to get highlighting right)
+    * Install Ruby Plugin
+    * Editor -> File Types -> RHTML: Add "*.eex" as type
+    * Editor -> Inspections -> Ruby -> Unresolved Ruby Reference: Uncheck
+    * Editor -> Inspections -> Ruby -> Double Quoted String: Uncheck
