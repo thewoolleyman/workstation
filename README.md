@@ -119,19 +119,20 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * Editor -> General -> Smart Keys -> Turn off: Use "CamelHumps" words
 * Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace
 * Editor -> Code Style -> Other File Types: Set Tab size and indent to 2
-* Keymap
+* Keymap - Mac OS X 10.5+
+  * Tip: Instead of rebinding Cmd+<up|down> for "home/end" on small/laptop keyboard, just use Fn+Cmd+<right|left>
   * Editor Actions
     * ~~Choose Lookup Item Replace: Add Enter binding (confirm to remove from several other places)~~
     * ~~Enter: Remove Enter binding (leave unbound)~~
-    * Move Caret to Text End: Add Cmd+Down Arrow binding
-    * Move Caret to Text Start: Add Cmd+Up Arrow binding
+    * ~~Move Caret to Text End: Add Cmd+Down Arrow binding~~
+    * ~~Move Caret to Text Start: Add Cmd+Up Arrow binding~~
     * ~~Next Template Variable or Finish In-Place Refactoring: Remove Enter binding (leave only Tab)~~
   * Main Menu
     * View
-      * Jump To Source: Remove Cmd+Down Arrow binding
+      * ~~Jump To Source: Remove Cmd+Down Arrow binding~~
     * Navigate
       * Related Data: Add F4 Binding
-      * Jump to Navigation Bar: Remove Cmd+Up Arrow
+      * ~~Jump to Navigation Bar: Remove Cmd+Up Arrow~~
     * Window
       * Editor Tabs
         * Close All: Add Cmd+Option+w binding
