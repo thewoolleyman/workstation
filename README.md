@@ -118,6 +118,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * Editor -> General -> Editor Tabs -> Turn off: Show tab tooltips
 * Editor -> General -> Smart Keys -> Turn off: Use "CamelHumps" words
 * Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace
+* Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> Code Style ->
   * Java: Set Continuation Indent to 4 (instead of default 8)
   * Other File Types: Set Tab size and indent to 2 (instead of default 4)
