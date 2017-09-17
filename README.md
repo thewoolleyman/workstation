@@ -138,6 +138,9 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
     * Git
       * Compare with Branch: Add Ctrl+Option+Cmd+B
     * Show History (for all): Add Ctrl+Option+Cmd+H
+* Build, Execution, Deployment
+  * Compiler
+    * Build Project Automatically: Turn on
 * Idea-only settings for Elixir
   * Configure *.eex to display as RHTML (syntax is similar enough to get highlighting right)
     * Install Ruby Plugin
