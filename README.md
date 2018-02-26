@@ -33,6 +33,7 @@ NOTES FOR 2017 / Sierra
 * install iterm
   * Preferences -> Appearance -> Dimming -> Dim background windows
   * Preferences -> Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `+Esc`
+  * Preferences -> General -> "Characters considered part of word for selection:" -> Remove "\"
 * install homebrew
 * brew install jq
 * brew install watch
