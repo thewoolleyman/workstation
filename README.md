@@ -19,28 +19,28 @@ This helps me, hopefully it helps you!
 
 # OSX workstation
 
-NOTES FOR 2017 / Sierra
+NOTES FOR 2018 / High Sierra
 
-* Set function keys to work as function keys
-* set nopasswd sudoers
-* symlink in home directory configs: .ssh, .gitconfig, .gitignore
-* download chrome and make default
+* download chrome (and/or Firefox) and make default
   * Chrome Extensions
     * Chrome JSON Formatter extension https://github.com/callumlocke/json-formatter
     * Lastpass
     * Xmarks
-* install spectacle and run on login
+* System Prefs - Keyboard - Use function keys as standard function keys, max key repeat, shorter delay until repeat.
 * install iterm
   * Preferences -> Appearance -> Dimming -> Dim background windows
-  * Preferences -> Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `+Esc`
+  * Preferences -> Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `Esc+`
   * Preferences -> General -> "Characters considered part of word for selection:" -> Remove "\"
+* set nopasswd sudoers - `sudo visudo`, change last line to read: `%admin   ALL=(ALL) NOPASSWD:ALL`
+* Install Dropbox and optionally remove large folders from selective sync
+* symlink in home directory configs from dropbox: .ssh, .gitconfig, .gitignore
+* install spectacle and run on login
 * install homebrew
 * brew install jq
 * brew install watch
 * brew install wget
 * brew install chruby and ruby-install and put hooks and default ruby in `/etc/bashrc`
 * Install Rubymine and Intellij
-* Install Dropbox and optionally remove large folders from selective sync
 * Install Slack
 * Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers vs. personal use.
 * Install Zoom
