@@ -45,9 +45,9 @@ NOTES FOR 2018 / High Sierra
 * brew install watch
 * brew install wget
 * brew install chruby and ruby-install and put hooks and default ruby in `/etc/bashrc`
-* Install Rubymine and Intellij
+* Install Jetbrains Toolbox and desired IDEs, configure using section below
 * Install Slack
-* Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers vs. personal use.
+* Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers or personal use.
 * Install Zoom
 * Install Atom
 * Install Textmate 2
@@ -58,7 +58,6 @@ NOTES FOR 2018 / High Sierra
   * Erlang/Elixir: `brew install elixir`
   * Hex package manager: `mix local.hex`
   * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
-* Install Jetbrains Toolbox and desired IDEs, configure using section below  
 
 # Ubuntu Workstation
 
