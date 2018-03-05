@@ -27,14 +27,19 @@ NOTES FOR 2018 / High Sierra
     * Lastpass
     * Xmarks
 * System Prefs - Keyboard - Use function keys as standard function keys, max key repeat, shorter delay until repeat.
+* Install any system updates
+* Install Xcode
 * install iterm
   * Preferences -> Appearance -> Dimming -> Dim background windows
   * Preferences -> Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `Esc+`
   * Preferences -> General -> "Characters considered part of word for selection:" -> Remove "\"
 * set nopasswd sudoers - `sudo visudo`, change last line to read: `%admin   ALL=(ALL) NOPASSWD:ALL`
 * Install Dropbox and optionally remove large folders from selective sync
-* symlink in home directory configs from dropbox: .ssh, .gitconfig, .gitignore
+* symlink in home directory configs from dropbox: .ssh, .gitconfig, .gitignore_global
 * install spectacle and run on login
+* Install Flycut
+  * Launch on login, remove duplicated, change icon to scissors
+  * Change shortcut Ctrl+Opt+Cmd+V to not conflict with Jetbrains
 * install homebrew
 * brew install jq
 * brew install watch
@@ -45,9 +50,7 @@ NOTES FOR 2018 / High Sierra
 * Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers vs. personal use.
 * Install Zoom
 * Install Atom
-* Install Flycut
-  * Launch on login, remove duplicated, change icon to scissors
-  * Change shortcut Ctrl+Opt+Cmd+V to not conflict with Jetbrains
+* Install Textmate 2
 * Additional browsers as necessary: Canary, Firefox, Opera
 * Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
 * Docker
@@ -55,6 +58,7 @@ NOTES FOR 2018 / High Sierra
   * Erlang/Elixir: `brew install elixir`
   * Hex package manager: `mix local.hex`
   * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
+* Install Jetbrains Toolbox and desired IDEs, configure using section below  
 
 # Ubuntu Workstation
 
