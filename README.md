@@ -1,3 +1,11 @@
+# Table of Contents
+
+* [Overview](#overview)
+* [OSX workstation](#osx-workstation)
+* [Ubuntu Workstation](#ubuntu-workstation)
+* [Atom Setup](#atom-setup)
+* [Jetbrains overridden settings](#jetbrains-overridden-settings)
+
 # Overview
 
 These are the steps that I use to set up my development workstations.  I have used
@@ -54,6 +62,9 @@ NOTES FOR 2018 / High Sierra
 * Additional browsers as necessary: Canary, Firefox, Opera
 * Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
 * Docker
+* Haskell
+  * Follow instructions on [haskell stack page](https://docs.haskellstack.org/en/stable/install_and_upgrade/#macos) (`brew install haskell-stack`)
+  * Review https://lexi-lambda.github.io/blog/2018/02/10/an-opinionated-guide-to-haskell-in-2018/
 * Elixir/Phoenix
   * Erlang/Elixir: `brew install elixir`
   * Hex package manager: `mix local.hex`
@@ -148,6 +159,9 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * Prefs -> Build Execution Deployment -> Build Tools -> Gradle -> Runner -> Delegate IDE build/run actions to gradle
   * Compiler
     * Build Project Automatically: Turn on
+* Haskell plugin
+  * Use [the one named `intellij-haskell`](https://plugins.jetbrains.com/plugin/8258-intellij-haskell), **NOT**
+    the `haskell` one by jetbrains!  Note this **only works in Intellij**, not Rubymine, Webstorm, etc.
 * Idea-only settings for Elixir
   * Configure *.eex to display as RHTML (syntax is similar enough to get highlighting right)
     * Install Ruby Plugin
