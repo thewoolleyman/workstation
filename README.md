@@ -156,7 +156,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
       * Compare with Branch: Add Ctrl+Option+Cmd+B
     * Show History (for all): Add Ctrl+Option+Cmd+H
 * Build, Execution, Deployment
-  * Prefs -> Build Execution Deployment -> Build Tools -> Gradle -> Runner -> Delegate IDE build/run actions to gradle
+  * Build Tools -> Gradle -> Runner -> Delegate IDE build/run actions to gradle
   * Compiler
     * Build Project Automatically: Turn on
 * Haskell plugin
