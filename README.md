@@ -162,6 +162,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * Haskell plugin
   * Use [the one named `intellij-haskell`](https://plugins.jetbrains.com/plugin/8258-intellij-haskell), **NOT**
     the `haskell` one by jetbrains!  Note this **only works in Intellij**, not Rubymine, Webstorm, etc.
+  * Follow [Getting Started instructions in the readme](https://github.com/rikvdkleij/intellij-haskell/blob/master/README.md#getting-started)  
 * Idea-only settings for Elixir
   * Configure *.eex to display as RHTML (syntax is similar enough to get highlighting right)
     * Install Ruby Plugin
