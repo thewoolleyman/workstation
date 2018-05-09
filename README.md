@@ -57,8 +57,11 @@ NOTES FOR 2018 / High Sierra
 * Install Slack
 * Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers or personal use.
 * Install Zoom
-* Install Atom
+* Install Visual Studio Code
+  * Install Intellij Keybindings: https://github.com/kasecato/vscode-intellij-idea-keybindings
+  * Install Purescript IDE: https://github.com/nwolverson/vscode-ide-purescript
 * Install Textmate 2
+  * TODO: how to configure autosave?!?
 * Additional browsers as necessary: Canary, Firefox, Opera
 * Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
 * Docker
