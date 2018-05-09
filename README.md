@@ -3,7 +3,7 @@
 * [Overview](#overview)
 * [OSX workstation](#osx-workstation)
 * [Ubuntu Workstation](#ubuntu-workstation)
-* [Atom Setup](#atom-setup)
+* [Visual Studio Code Setup](#visual-studio-code-setup)
 * [Jetbrains overridden settings](#jetbrains-overridden-settings)
 
 # Overview
@@ -57,9 +57,7 @@ NOTES FOR 2018 / High Sierra
 * Install Slack
 * Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers or personal use.
 * Install Zoom
-* Install Visual Studio Code
-  * Install Intellij Keybindings: https://github.com/kasecato/vscode-intellij-idea-keybindings
-  * Install Purescript IDE: https://github.com/nwolverson/vscode-ide-purescript
+* Install Visual Studio Code and [set it up](#visual-studio-code-setup)
 * Install Textmate 2
   * TODO: how to configure autosave?!?
 * Additional browsers as necessary: Canary, Firefox, Opera
@@ -125,12 +123,10 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * Export a copy of "MacOSX 10.5+" Keymap from Idea and import
     to Gogland (until https://youtrack.jetbrains.com/issue/GO-4139 is fixed)
   
-# Atom Setup
+# Visual Studio Code Setup
 ## Packages
-* `sync-settings`
-  * Make gist and personal access key specific to ubuntu
-* `language-elixir`
-* `elixir-autocomplete`
+* Install Intellij Keybindings: https://github.com/kasecato/vscode-intellij-idea-keybindings
+* Install Purescript IDE: https://github.com/nwolverson/vscode-ide-purescript
 
 # Jetbrains overridden settings
 * Appearance & Behavior -> Appearance -> Override default fonts by (not recommended) -> change to 14
