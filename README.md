@@ -159,6 +159,10 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * Build Tools -> Gradle -> Runner -> Delegate IDE build/run actions to gradle
   * Compiler
     * Build Project Automatically: Turn on
+* Keystroke-Learning Plugins
+  * Force Shortcuts
+  * Key Promoter
+  * Presentation Assistant
 * Haskell plugin
   * Use [the one named `intellij-haskell`](https://plugins.jetbrains.com/plugin/8258-intellij-haskell), **NOT**
     the `haskell` one by jetbrains!  Note this **only works in Intellij**, not Rubymine, Webstorm, etc.
