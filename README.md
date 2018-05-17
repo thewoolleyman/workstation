@@ -59,7 +59,8 @@ NOTES FOR 2018 / High Sierra
 * Install Zoom
 * Install Visual Studio Code and [set it up](#visual-studio-code-setup)
 * Install Textmate 2
-  * TODO: how to configure autosave?!?
+  * Preferences -> Projects -> Include Files Matching: `{*,.*}`
+  * Configure autosave: add `saveOnBlur = true` to top of `~/Library/Application\ Support/TextMate/Global.tmProperties`
 * Additional browsers as necessary: Canary, Firefox, Opera
 * Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
 * Docker
