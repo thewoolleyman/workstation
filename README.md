@@ -157,6 +157,11 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
       * Compare with Branch: Add Ctrl+Option+Cmd+B
     * Show History (for all): Add Ctrl+Option+Cmd+H
 * Build, Execution, Deployment
+  * Build Tools -> Gradle
+    * Use auto-import
+    * Using explicit module groups
+    * Use gradle 'wrapper' task configuration
+    * Everything else unchecked
   * Build Tools -> Gradle -> Runner -> Delegate IDE build/run actions to gradle
   * Compiler
     * Build Project Automatically: Turn on
