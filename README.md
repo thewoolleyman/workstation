@@ -52,6 +52,7 @@ NOTES FOR 2018 / High Sierra
 * brew install jq
 * brew install watch
 * brew install wget
+* brew install coreutils
 * brew install chruby and ruby-install and put hooks and default ruby in `/etc/bashrc`
 * Install Jetbrains Toolbox and desired IDEs, configure using section below
 * Install Slack
