@@ -132,6 +132,8 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 
 # Jetbrains overridden settings
 * Appearance & Behavior -> Appearance -> Override default fonts by (not recommended) -> change to 14
+* Editor -> Color Scheme -> Darcula
+* Editor -> General -> Ruby -> Line Continuation -> Background -> 3B3B3B
 * Editor -> General -> Maximum Number of contents to keep in clipboard -> 100
 * Editor -> General -> Recent files limit -> 100
 * Editor -> General -> Editor Tabs -> Turn off: Show tab tooltips
