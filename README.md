@@ -35,6 +35,7 @@ NOTES FOR 2018 / High Sierra
     * Lastpass
     * Xmarks
 * System Prefs - Keyboard - Use function keys as standard function keys, max key repeat, shorter delay until repeat.
+* System Prefs - show hidden files in finder (TODO: where?)
 * Install any system updates
 * Install Xcode
 * install iterm
