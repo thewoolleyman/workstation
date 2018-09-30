@@ -143,6 +143,10 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> Code Style ->
   * Java: Set Continuation Indent to 4 (instead of default 8)
+  * Ruby: Tabs and Indents: Indent methods after access **ALL** modifiers (**only to match
+    default Rails generator formatting, otherwise prefer not to because it takes more space**)
+  * Ruby: Other: Spaces around curly braces in hashes **AND** blocks (**only to match
+    default Rails generator formatting, otherwise prefer not to because it takes more space**)
   * Other File Types: Set Tab size and indent to 2 (instead of default 4)
 * Editor -> Inspections
   * Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
