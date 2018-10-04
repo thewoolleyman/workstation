@@ -38,10 +38,13 @@ NOTES FOR 2018 / High Sierra
 * System Prefs - show hidden files in finder (TODO: where?)
 * Install any system updates
 * Install Xcode
-* install iterm
-  * Preferences -> Appearance -> Dimming -> Dim background windows
-  * Preferences -> Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `Esc+`
-  * Preferences -> General -> "Characters considered part of word for selection:" -> Remove "\"
+* install iterm, tweak prefs:
+  * General -> "Characters considered part of word for selection:" -> Remove "\"
+  * Appearance -> Dimming -> Dim background windows
+  * Appearance -> Tabs: Check "Show tab bar even when there is only one tab"
+  * Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `Esc+`
+  * Profiles -> Default -> General -> Working Directory: Select "Reuse previous session's directory"
+  * Profiles -> Default -> Terminal -> Scrollback Buffer -> Scrollback lines: Check "Unlimited Scrollback"   
 * set nopasswd sudoers - `sudo visudo`, change last line to read: `%admin   ALL=(ALL) NOPASSWD:ALL`
 * Install Dropbox and optionally remove large folders from selective sync
 * symlink in home directory configs from dropbox: .ssh, .gitconfig, .gitignore_global
