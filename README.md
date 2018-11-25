@@ -47,7 +47,7 @@ NOTES FOR 2018 / High Sierra
   * Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `Esc+`
   * Profiles -> Default -> General -> Working Directory: Select "Reuse previous session's directory"
   * Profiles -> Default -> Terminal -> Scrollback Buffer -> Scrollback lines: Check "Unlimited Scrollback"   
-* set nopasswd sudoers - `sudo visudo`, change last line to read: `%admin   ALL=(ALL) NOPASSWD:ALL`
+* set nopasswd sudoers - `sudo visudo`, change "`%admin ...`" line to read: `%admin   ALL=(ALL) NOPASSWD:ALL`
 * Install Dropbox and optionally remove large folders from selective sync
 * symlink in home directory configs from dropbox: .ssh, .gitconfig, .gitignore_global
 * install spectacle
