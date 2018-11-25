@@ -41,7 +41,7 @@ NOTES FOR 2018 / High Sierra
 * Install any system updates
 * Install Xcode
 * install iterm, tweak prefs:
-  * General -> "Characters considered part of word for selection:" -> Remove "\"
+  * General -> "Characters considered part of word for selection:" -> Remove "`\`"
   * Appearance -> Dimming -> Dim background windows
   * Appearance -> Tabs: Check "Show tab bar even when there is only one tab"
   * Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `Esc+`
