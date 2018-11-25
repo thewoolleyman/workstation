@@ -33,7 +33,7 @@ NOTES FOR 2018 / High Sierra
   * Chrome Extensions
     * Chrome JSON Formatter extension https://github.com/callumlocke/json-formatter
     * Lastpass
-    * Xmarks
+    * ~~RIP Xmarks~~
 * System Prefs - Keyboard
   * Normal Keyboard: Use function keys as standard function keys; Macbook Touchbar: Keep touchbar/function key defaults
   * Max key repeat, shorter delay until repeat.
