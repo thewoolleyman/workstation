@@ -34,8 +34,10 @@ NOTES FOR 2018 / High Sierra
     * Chrome JSON Formatter extension https://github.com/callumlocke/json-formatter
     * Lastpass
     * Xmarks
-* System Prefs - Keyboard - Use function keys as standard function keys, max key repeat, shorter delay until repeat.
-* System Prefs - show hidden files in finder (TODO: where?)
+* System Prefs - Keyboard
+  * Normal Keyboard: Use function keys as standard function keys; Macbook Touchbar: Keep touchbar/function key defaults
+  * Max key repeat, shorter delay until repeat.
+* Cmd-Shift-. (period) to show hidden files in Finder
 * Install any system updates
 * Install Xcode
 * install iterm, tweak prefs:
