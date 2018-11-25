@@ -50,7 +50,13 @@ NOTES FOR 2018 / High Sierra
 * set nopasswd sudoers - `sudo visudo`, change last line to read: `%admin   ALL=(ALL) NOPASSWD:ALL`
 * Install Dropbox and optionally remove large folders from selective sync
 * symlink in home directory configs from dropbox: .ssh, .gitconfig, .gitignore_global
-* install spectacle and run on login
+* install spectacle
+  * Give accessibility permissions, run on login
+  * Remove all default keybindings, add back only (to prevent conflicts with Jetbrains defaults):
+    * ctrl-option-cmd ("smash") arrows for top/bottom/right/left
+    * smash-m for fullscreen
+    * smash-shift-up for top right
+    * smash-shift-right for bottom-right
 * Install Flycut
   * Launch on login, remove duplicated, change icon to scissors
   * Change shortcut Ctrl+Opt+Cmd+V to not conflict with Jetbrains
