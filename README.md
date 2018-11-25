@@ -55,6 +55,7 @@ NOTES FOR 2018 / High Sierra
   * Remove all default keybindings, add back only (to prevent conflicts with Jetbrains defaults):
     * ctrl-option-cmd ("smash") arrows for top/bottom/right/left
     * smash-m for fullscreen
+    * smash-n for next display
     * smash-shift-up for top right
     * smash-shift-right for bottom-right
 * Install Flycut
