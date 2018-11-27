@@ -144,7 +144,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * Install Purescript IDE: https://github.com/nwolverson/vscode-ide-purescript
 
 # Jetbrains overridden settings
-* Appearance & Behavior -> Appearance -> Override default fonts by (not recommended) -> change to 14
+* Appearance & Behavior -> Appearance -> Use custom font -> change to 14
 * Editor -> Color Scheme -> Darcula
 * Editor -> Color Scheme -> Ruby -> Line Continuation -> Background -> 3B3B3B
 * Editor -> General -> Maximum Number of contents to keep in clipboard -> 100
