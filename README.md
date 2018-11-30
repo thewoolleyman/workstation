@@ -27,7 +27,7 @@ This helps me, hopefully it helps you!
 
 # OSX workstation
 
-NOTES FOR 2018 / High Sierra
+NOTES FOR 2019 / Mojave
 
 * download chrome (and/or Firefox) and make default
   * Chrome Extensions
