@@ -66,7 +66,15 @@ NOTES FOR 2018 / High Sierra
 * brew install watch
 * brew install wget
 * brew install coreutils
-* brew install chruby and ruby-install and put hooks and default ruby in `/etc/bashrc`
+* brew install ruby-install and install latest ruby version:
+  * `ruby-install ruby 2.5.3`
+* brew install ruby-install and set up hooks in `~/.bash_profile`:
+  ```
+  # chruby
+  source /usr/local/opt/chruby/share/chruby/chruby.sh
+  source /usr/local/opt/chruby/share/chruby/auto.sh  
+  ```
+* Set default for chruby: `echo "ruby-2.5" > ~/.ruby-version`
 * Install Jetbrains Toolbox and desired IDEs, configure using section below
 * Install Slack
 * Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers or personal use.
