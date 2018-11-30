@@ -62,13 +62,10 @@ NOTES FOR 2019 / Mojave
   * Launch on login, remove duplicated, change icon to scissors
   * Change shortcut Ctrl+Opt+Cmd+V to not conflict with Jetbrains
 * install homebrew
-* brew install jq
-* brew install watch
-* brew install wget
-* brew install coreutils
+* brew install jq watch wget coreutils yarn
 * brew install ruby-install and install latest ruby version:
   * `ruby-install ruby 2.5.3`
-* brew install ruby-install and set up hooks in `~/.bash_profile`:
+* brew install ruby-install and set up hooks in `~/.bash_profile` as shown by `brew info chruby`:
   ```
   # chruby
   source /usr/local/opt/chruby/share/chruby/chruby.sh
