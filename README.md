@@ -58,9 +58,10 @@ NOTES FOR 2019 / Mojave
     * smash-n for next display
     * smash-shift-up for top right
     * smash-shift-right for bottom-right
-* Install Flycut
-  * Launch on login, remove duplicated, change icon to scissors
-  * Change shortcut Ctrl+Opt+Cmd+V to not conflict with Jetbrains
+* Install [Clipy](https://clipy-app.com/), launch on system startup. Change Prefs:
+  * General -> max clipboard history size 2000
+  * Menu -> inline: 30, inside folder: 30, characters in menu: 200
+  * Change main shortcut Ctrl+Opt+Cmd+V, disable other shortcuts (to not conflict with Jetbrains)
 * install homebrew
 * brew install jq watch wget coreutils yarn
 * brew install ruby-install and install latest ruby version:
@@ -83,6 +84,12 @@ NOTES FOR 2019 / Mojave
 * Additional browsers as necessary: Canary, Firefox, Opera
 * Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
 * Docker
+* Other apps
+  * Kindle app (via App Store)
+  * Acrobat Reader
+
+# OSX Workstation Optional
+
 * Haskell
   * Follow instructions on [haskell stack page](https://docs.haskellstack.org/en/stable/install_and_upgrade/#macos) (`brew install haskell-stack`)
   * Review https://lexi-lambda.github.io/blog/2018/02/10/an-opinionated-guide-to-haskell-in-2018/
