@@ -35,8 +35,9 @@ NOTES FOR 2019 / Mojave
     * Lastpass
     * ~~RIP Xmarks~~
 * System Prefs - Keyboard
-  * Normal Keyboard: Use function keys as standard function keys; Macbook Touchbar: Keep touchbar/function key defaults
   * Max key repeat, shorter delay until repeat.
+  * Normal Keyboard: Use function keys as standard function keys
+  * Macbook Touchbar: Touch Bar shows: F1, F2 keys; Press Fn key to: Show Control Strip
 * Cmd-Shift-. (period) to show hidden files in Finder
 * Install any system updates
 * Install Xcode
