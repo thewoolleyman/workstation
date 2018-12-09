@@ -2,16 +2,17 @@
 
 * [Overview](#overview)
 * [OSX workstation](#osx-workstation)
-* [Ubuntu Workstation](#ubuntu-workstation)
 * [Visual Studio Code Setup](#visual-studio-code-setup)
 * [Jetbrains overridden settings](#jetbrains-overridden-settings)
+* [Ubuntu Workstation](#ubuntu-workstation)
 
 # Overview
 
 These are the steps that I use to set up my development workstations.  I have used
 automated tools and scripts.  I believe those are useful for shared-workstation
-team environments, but for personal workstations they are not worth the maintenance
-overhead, in my experience.
+team environments, where you have to set up new workstations weekly or montly.
+But for personal workstations, which you set up yearly or more, automation is
+not worth the maintenance overhead, in my experience.
 
 Instead, for my personal workstations, I try to have the philosophy of
 "just learn to use the defaults, unless they are missing or inconvenient".
@@ -101,58 +102,6 @@ NOTES FOR 2019 / Mojave
   * Hex package manager: `mix local.hex`
   * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
 
-# Ubuntu Workstation
-
-NOTES FOR Ubuntu 17.04
-
-Not everything is listed, main things and gotchas mostly
-
-NOTE: Installed packages from command line, manually fixing any dependencies needed.
-
-* System Settings
-  * Mouse and Touchpad
-    * Turn off tap to click
-  * Brightness and Lock
-    * Turn off lock
-  * Keyboard -> Shortcuts -> Launchers -> Key to show the HUD: Backspace to disable
-* Fix keyring issue
-  * https://askubuntu.com/a/735463
-* Files - Preferences
-  * Allow Folders to be Expanded
-* Install Chrome
-  * Set as default browser
-  * Log in to google account in prefs
-    * Advanced Sync: Disable for bookmarks, passwords, open tabs, and credit cards
-  * Choose where to save files
-  * Always show bookmarks bar
-* Install Dropbox
-  * Install according to official instructions
-  * Fix bug with toolbar menu not rendering: http://www.webupd8.org/2016/06/fix-dropbox-indicator-icon-and-menu-not.html
-  * Bug still not fixed, uninstall `dropbox` via `apt`, then reinstall `nautilus-dropbox` and it works.
-* Symlink in `~/.ssh` from Dropbox
-* Intellij and rubymine
-  * download, untar, run `bin/idea.sh` and `bin/mine.sh`
-* Atom
-* Apt packages:
-  * `sudo apt install git emacs indicator-multiload`
-  * Configure `indicator-multiload`
-* Packages via Ubuntu Installer GUI
-  * `okular` reader app - check support for epub before install
-* Crashplan
-* Spacemacs
-  * After install, symlink `~/.spacemacs` from Dropbox.
-* Slack
-* chruby and ruby-install and put hooks and default ruby in `/etc/bashrc`
-* Elixir/Phoenix
-  * Erlang/Elixir: follow instructions on elixir webpage
-  * Hex package manager: `mix local.hex`
-  * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
-* golang
-  * Follow instructions here: https://stackoverflow.com/a/40129734/25192
-  * Install Gogland
-  * Export a copy of "MacOSX 10.5+" Keymap from Idea and import
-    to Gogland (until https://youtrack.jetbrains.com/issue/GO-4139 is fixed)
-  
 # Visual Studio Code Setup
 ## Packages
 * Install Intellij Keybindings: https://github.com/kasecato/vscode-intellij-idea-keybindings
@@ -215,3 +164,61 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
     * Editor -> File Types -> RHTML: Add "*.eex" as type
     * Editor -> Inspections -> Ruby -> Unresolved Ruby Reference: Uncheck
     * Editor -> Inspections -> Ruby -> Double Quoted String: Uncheck
+
+# Ubuntu Workstation
+
+**NOTE: This Ubuntu section is way outdated, but I kept it here for reference.
+It dates back to my last attempt at going back to a Linux workstation, which I gave
+up on after a week, because I can't live without the MacOS command key (it's like not
+having a left thumb).**
+
+NOTES FOR Ubuntu 17.04
+
+Not everything is listed, main things and gotchas mostly
+
+NOTE: Installed packages from command line, manually fixing any dependencies needed.
+
+* System Settings
+  * Mouse and Touchpad
+    * Turn off tap to click
+  * Brightness and Lock
+    * Turn off lock
+  * Keyboard -> Shortcuts -> Launchers -> Key to show the HUD: Backspace to disable
+* Fix keyring issue
+  * https://askubuntu.com/a/735463
+* Files - Preferences
+  * Allow Folders to be Expanded
+* Install Chrome
+  * Set as default browser
+  * Log in to google account in prefs
+    * Advanced Sync: Disable for bookmarks, passwords, open tabs, and credit cards
+  * Choose where to save files
+  * Always show bookmarks bar
+* Install Dropbox
+  * Install according to official instructions
+  * Fix bug with toolbar menu not rendering: http://www.webupd8.org/2016/06/fix-dropbox-indicator-icon-and-menu-not.html
+  * Bug still not fixed, uninstall `dropbox` via `apt`, then reinstall `nautilus-dropbox` and it works.
+* Symlink in `~/.ssh` from Dropbox
+* Intellij and rubymine
+  * download, untar, run `bin/idea.sh` and `bin/mine.sh`
+* Atom
+* Apt packages:
+  * `sudo apt install git emacs indicator-multiload`
+  * Configure `indicator-multiload`
+* Packages via Ubuntu Installer GUI
+  * `okular` reader app - check support for epub before install
+* Crashplan
+* Spacemacs
+  * After install, symlink `~/.spacemacs` from Dropbox.
+* Slack
+* chruby and ruby-install and put hooks and default ruby in `/etc/bashrc`
+* Elixir/Phoenix
+  * Erlang/Elixir: follow instructions on elixir webpage
+  * Hex package manager: `mix local.hex`
+  * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
+* golang
+  * Follow instructions here: https://stackoverflow.com/a/40129734/25192
+  * Install Gogland
+  * Export a copy of "MacOSX 10.5+" Keymap from Idea and import
+    to Gogland (until https://youtrack.jetbrains.com/issue/GO-4139 is fixed)
+  
