@@ -74,6 +74,8 @@ NOTES FOR 2019 / Mojave
   source /usr/local/opt/chruby/share/chruby/auto.sh  
   ```
 * Set default for chruby: `echo "ruby-2.5" > ~/.ruby-version`
+* Add bash aliases to `~/.bash_profile`:
+  * Add `alias gst='git status'` - the only alias I use ;)
 * Install Jetbrains Toolbox and desired IDEs, configure using section below
 * Install Slack
 * Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers or personal use.
