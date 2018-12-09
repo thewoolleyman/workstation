@@ -37,7 +37,7 @@ NOTES FOR 2019 / Mojave
 * System Prefs - Keyboard
   * Max key repeat, shorter delay until repeat.
   * Normal Keyboard: Use function keys as standard function keys
-  * Macbook Touchbar: Touch Bar shows: F1, F2 keys; Press Fn key to: Show Control Strip
+  * Macbook Touchbar: Leave to defaults (Touch Bar shows: App Controls with Control Strip; Press Fn key to: F1, F2 keys...;
 * Cmd-Shift-. (period) to show hidden files in Finder
 * Install any system updates
 * Install Xcode
@@ -160,6 +160,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 
 # Jetbrains overridden settings
 * Appearance & Behavior -> Appearance -> Use custom font -> change to 14
+* Keymap -> Show F1, F2, etc. keys on the touch bar (checkbox at bottom).
 * Editor -> Color Scheme -> Darcula
 * Editor -> Color Scheme -> Ruby -> Line Continuation -> Background -> 3B3B3B
 * Editor -> General -> Maximum Number of contents to keep in clipboard -> 100
