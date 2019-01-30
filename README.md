@@ -88,6 +88,7 @@ NOTES FOR 2019 / Mojave
 * Additional browsers as necessary: Canary, Firefox, Opera
 * Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
 * Docker
+* `brew cask install java`
 * Other apps
   * Kindle app (via App Store)
   * Acrobat Reader
