@@ -223,3 +223,8 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * Export a copy of "MacOSX 10.5+" Keymap from Idea and import
     to Gogland (until https://youtrack.jetbrains.com/issue/GO-4139 is fixed)
   
+# Chad's Printer
+
+10.0.100.199
+LPD Line Printer Daemon
+HP Laserjet 4MP
