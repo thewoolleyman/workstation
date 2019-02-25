@@ -225,6 +225,6 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   
 # Chad's Printer
 
-10.0.100.199
-LPD Line Printer Daemon
-HP Laserjet 4MP
+* 10.0.100.199
+* LPD Line Printer Daemon
+* HP Laserjet 4MP
