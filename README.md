@@ -65,10 +65,10 @@ NOTES FOR 2019 / Mojave
   * Menu -> inline: 30, inside folder: 30, characters in menu: 200
   * Change main shortcut Ctrl+Opt+Cmd+V, disable other shortcuts (to not conflict with Jetbrains)
 * install homebrew
-* brew install jq watch wget coreutils yarn
-* brew install ruby-install and install latest ruby version:
+* brew install jq watch wget coreutils yarn pkgconfig libxml2
+* `brew install ruby-install` and install latest ruby version:
   * `ruby-install ruby 2.5.3`
-* brew install ruby-install and set up hooks in `~/.bash_profile` as shown by `brew info chruby`:
+* `brew install chruby` and set up hooks in `~/.bash_profile` as shown by `brew info chruby`:
   ```
   # chruby
   source /usr/local/opt/chruby/share/chruby/chruby.sh
