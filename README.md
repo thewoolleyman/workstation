@@ -66,16 +66,11 @@ NOTES FOR 2019 / Mojave
   * Change main shortcut Ctrl+Opt+Cmd+V, disable other shortcuts (to not conflict with Jetbrains)
 * install homebrew
 * brew install jq watch wget coreutils yarn pkgconfig libxml2
-* `brew install ruby-install` and install latest ruby version:
-  * `ruby-install ruby 2.5.3`
-* `brew install chruby` and set up hooks in `~/.bash_profile` as shown by `brew info chruby`:
-  ```
-  # chruby
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-  source /usr/local/opt/chruby/share/chruby/auto.sh  
-  ```
-* Set default for chruby: `echo "ruby-2.5" > ~/.ruby-version`
+* `brew install rbenv`
+* `rbenv init` and set up hook in `~/.bash_profile` as instructed: `eval "$(rbenv init -)"`
+* `rbenv install -l`, pick the one you want, e.g. `rbenv install 2.5.5`
 * brew install direnv
+* Review following to set appropriate rbenv defaults: https://github.com/rbenv/rbenv#environment-variables
 * Add bash aliases to `~/.bash_profile`:
   * Add `alias gst='git status'` - the only alias I use ;)
 * Install Jetbrains Toolbox and desired IDEs, configure using section below
