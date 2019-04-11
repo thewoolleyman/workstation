@@ -41,7 +41,8 @@ NOTES FOR 2019 / Mojave
   * Macbook Touchbar: Leave to defaults (Touch Bar shows: App Controls with Control Strip; Press Fn key to: F1, F2 keys...;
 * Cmd-Shift-. (period) to show hidden files in Finder
 * Install any system updates
-* Install Xcode
+* Install Xcode from App Store
+* Install Command Line Tools: `xcode-select --install`
 * install iterm, tweak prefs:
   * General -> "Characters considered part of word for selection:" -> Remove "`\`"
   * Appearance -> Dimming -> Dim background windows
