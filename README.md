@@ -120,6 +120,8 @@ NOTES FOR 2019 / Mojave
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> Code Style ->
   * Java: Set Continuation Indent to 4 (instead of default 8)
+  * Javascript -> Punctuation: Don't Use semicolon to terminate statements
+  * Typescript -> Punctuation: Don't Use semicolon to terminate statements
   * Ruby: Tabs and Indents: Indent methods after access **ALL** modifiers (**only to match
     default Rails generator formatting, otherwise prefer not to because it takes more space**)
   * Ruby: Other: Spaces around curly braces in hashes **AND** blocks (**only to match
