@@ -127,7 +127,7 @@ NOTES FOR 2019 / Mojave
     default Rails generator formatting, otherwise prefer not to because it takes more space**)
   * Ruby: Other: Spaces around curly braces in hashes **AND** blocks (**only to match
     default Rails generator formatting, otherwise prefer not to because it takes more space**)
-  * Javascript, Typescript, Other File Types: Set Tab size and indent to 2 and continuous (instead of default 4)
+  * Style Sheets (CSS), Javascript, Typescript, Other File Types: Set Tab size and indent to 2 and continuous (instead of default 4)
 * Editor -> Inspections
   * Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
 * Keymap - Mac OS X 10.5+
