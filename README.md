@@ -129,8 +129,11 @@ NOTES FOR 2019 / Mojave
     default Rails generator formatting, otherwise prefer not to because it takes more space**)
   * HTML, Style Sheets (CSS), Javascript, Typescript, Other File Types: Set Tab size and indent to 2 and continuous (instead of default 4)
 * Editor -> Inspections
-  * HTML -> Deprecated HTML attribute -> Turn off (incorrectly matches React component props)
+  * HTML -> 
+    * Deprecated HTML attribute -> Turn off (incorrectly matches React component props)
+    * Empty Tag -> Turn off (matches root React element)
   * Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
+  * Spelling -> Typo -> Turn off (Don't want to clutter with "Inspect code" warnings; I'm a good speller anyway)
 * Keymap - Mac OS X 10.5+
   * **NOTE: I've decided to learn default keymaps whenever they exist.  I now only add ones that are useful but unmapped.**
   * **Tip: "Move Caret to Text Start/End" is bound to "home/end" by default.  On a Mac small/laptop keyboard,
