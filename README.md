@@ -118,6 +118,7 @@ NOTES FOR 2019 / Mojave
 * Editor -> General -> Smart Keys -> Turn off: Use "CamelHumps" words
 * Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
+* Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
 * Editor -> Code Style ->
   * Java: Set Continuation Indent to 4 (instead of default 8)
   * Javascript, Typescript -> Punctuation: 
