@@ -130,6 +130,7 @@ NOTES FOR 2019 / Mojave
     default Rails generator formatting, otherwise prefer not to because it takes more space**)
   * HTML, Style Sheets (CSS), Javascript, Typescript, Other File Types: Set Tab size and indent to 2 and continuous (instead of default 4)
 * Editor -> Inspections
+  * CSS -> Unused CSS selector -> Turn off (can't tell if a selector with a var is used in a SCSS library file)
   * HTML -> 
     * Deprecated HTML attribute -> Turn off (incorrectly matches React component props)
     * Empty Tag -> Turn off (matches root React element)
