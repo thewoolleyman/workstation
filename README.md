@@ -35,10 +35,11 @@ NOTES FOR 2019 / Mojave
     * Chrome JSON Formatter extension https://github.com/callumlocke/json-formatter
     * Lastpass
     * ~~RIP Xmarks~~
-* System Prefs - Keyboard
+* System Preferences - Keyboard
   * Max key repeat, shorter delay until repeat.
   * Normal Keyboard: Use function keys as standard function keys
   * Macbook Touchbar: Leave to defaults (Touch Bar shows: App Controls with Control Strip; Press Fn key to: F1, F2 keys...;
+  * Shortcuts -> Services -> Text: Uncheck "Search man Page Index in Terminal" (steals binding from Jetbrains).
 * Cmd-Shift-. (period) to show hidden files in Finder
 * Install any system updates
 * Install Xcode from App Store
