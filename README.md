@@ -40,7 +40,9 @@ NOTES FOR 2019 / Mojave
   * Normal Keyboard: Use function keys as standard function keys
   * Macbook Touchbar: Leave to defaults (Touch Bar shows: App Controls with Control Strip; Press Fn key to: F1, F2 keys...;
   * Shortcuts -> Services -> Text: Uncheck "Search man Page Index in Terminal" (steals binding from Jetbrains).
-* Cmd-Shift-. (period) to show hidden files in Finder
+* Make everything show in Finder:
+  * Finder -> home directory -> View -> Show View Options -> Show Library Folder
+  * Cmd-Shift-. (period) to show hidden files in Finder (TODO: How to make this permanent?)
 * Install any system updates
 * Install Xcode from App Store
 * Install Command Line Tools: `xcode-select --install`
