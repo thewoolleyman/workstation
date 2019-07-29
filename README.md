@@ -117,7 +117,7 @@ NOTES FOR 2019 / Mojave
 * Editor -> Color Scheme -> Ruby -> Line Continuation -> Background -> 3B3B3B
 * ~~Editor -> General -> Maximum Number of contents to keep in clipboard -> 100~~ (this doesn't exist anymore?)
 * Editor -> General -> Recent files limit -> 100
-* Editor -> General -> Editor Tabs -> Turn off: Show tab tooltips
+* ~~Editor -> General -> Editor Tabs -> Turn off: Show tab tooltips~~ (this doesn't exist anymore?)
 * Editor -> General -> Smart Keys -> Turn off: Use "CamelHumps" words
 * Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
