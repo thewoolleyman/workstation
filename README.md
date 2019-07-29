@@ -162,6 +162,8 @@ NOTES FOR 2019 / Mojave
   * Build Tools -> Gradle -> Runner -> Delegate IDE build/run actions to gradle
   * Compiler
     * Build Project Automatically: Turn on
+* Misc Plugins
+  * Bash Support
 * Keystroke-Learning Plugins
   * Force Shortcuts
   * Key Promoter
