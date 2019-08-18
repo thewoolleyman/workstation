@@ -137,6 +137,7 @@ NOTES FOR 2019 / Mojave
   * HTML -> 
     * Deprecated HTML attribute -> Turn off (incorrectly matches React component props)
     * Empty Tag -> Turn off (matches root React element)
+    * File reference problems -> Turn off (incorrectly shows errors in React HTML variables)
   * Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
   * Spelling -> Typo -> Turn off (Don't want to clutter with "Inspect code" warnings; I'm a good speller anyway)
 * Keymap - Mac OS X 10.5+
@@ -162,6 +163,8 @@ NOTES FOR 2019 / Mojave
   * Build Tools -> Gradle -> Runner -> Delegate IDE build/run actions to gradle
   * Compiler
     * Build Project Automatically: Turn on
+* Languages & Frameworks
+  * JavaScript -> JavaScript language version: React JSX
 * Misc Plugins
   * ~~Bash Support~~ (replaced with built-in Jetbrains "Shell Script" plugin)
 * Keystroke-Learning Plugins
