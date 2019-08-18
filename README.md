@@ -163,11 +163,13 @@ NOTES FOR 2019 / Mojave
   * Compiler
     * Build Project Automatically: Turn on
 * Misc Plugins
-  * Bash Support
+  * ~~Bash Support~~ (replaced with built-in Jetbrains "Shell Script" plugin)
 * Keystroke-Learning Plugins
   * Force Shortcuts
   * Key Promoter
   * Presentation Assistant
+* Fun Plugins
+  * Nyan Progress Bar
 * Haskell plugin
   * Use [the one named `intellij-haskell`](https://plugins.jetbrains.com/plugin/8258-intellij-haskell), **NOT**
     the `haskell` one by jetbrains!  Note this **only works in Intellij**, not Rubymine, Webstorm, etc.
