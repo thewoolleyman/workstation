@@ -125,7 +125,7 @@ NOTES FOR 2019 / Mojave
 * Editor -> Code Style ->
   * Java: Set Continuation Indent to 4 (instead of default 8)
   * Javascript, Typescript -> Punctuation: 
-    * Don't Use semicolon to terminate statements
+    * Don't Use semicolon to terminate statements always
     * Use single quotes always
   * Ruby: Tabs and Indents: Indent methods after access **ALL** modifiers (**only to match
     default Rails generator formatting, otherwise prefer not to because it takes more space**)
