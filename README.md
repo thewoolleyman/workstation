@@ -165,9 +165,9 @@ NOTES FOR 2019 / Mojave
 * Misc Plugins
   * ~~Bash Support~~ (replaced with built-in Jetbrains "Shell Script" plugin)
 * Keystroke-Learning Plugins
-  * Force Shortcuts
-  * Key Promoter
-  * Presentation Assistant
+  * Force Shortcuts (if you are hardcore and want to be forced to use keyboard)
+  * Key Promoter X (if you want to be always reminded to use keyboard)
+  * Presentation Assistant (if you are pair programming, and want other people to see what keystrokes you are using)
 * Fun Plugins
   * Nyan Progress Bar
 * Haskell plugin
