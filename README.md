@@ -91,6 +91,10 @@ NOTES FOR 2019 / Mojave
 * Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
 * Docker
 * `brew cask install java`
+* [`git-together`](https://github.com/kejadlen/git-together)
+  * `brew install pivotal/tap/git-together`
+  * `echo 'alias git=git-together' >> ~/.bash_profile`
+  * `git config --global git-together.aliases ci`
 * Other apps
   * Kindle app (via App Store)
   * Acrobat Reader
