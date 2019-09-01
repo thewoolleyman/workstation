@@ -122,15 +122,19 @@ NOTES FOR 2019 / Mojave
 * ~~Editor -> General -> Maximum Number of contents to keep in clipboard -> 100~~ (this doesn't exist anymore?)
 * Editor -> General -> Recent files limit -> 100
 * ~~Editor -> General -> Editor Tabs -> Turn off: Show tab tooltips~~ (this doesn't exist anymore?)
+* Editor -> General -> Auto Import -> TypeScript/JavaScript -> Turn on: Unambiguous imports on the fly
 * Editor -> General -> Smart Keys -> Turn off: Use "CamelHumps" words
 * Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
 * Editor -> Code Style ->
   * Java: Set Continuation Indent to 4 (instead of default 8)
-  * Javascript, Typescript -> Punctuation: 
-    * Don't Use semicolon to terminate statements always
-    * Use single quotes always
+  * Javascript, Typescript -> 
+    * Punctuation: 
+      * Don't Use semicolon to terminate statements always
+      * Use single quotes always
+    * Imports:
+      * Sort imports by modules
   * Ruby: Tabs and Indents: Indent methods after access **ALL** modifiers (**only to match
     default Rails generator formatting, otherwise prefer not to because it takes more space**)
   * Ruby: Other: Spaces around curly braces in hashes **AND** blocks (**only to match
