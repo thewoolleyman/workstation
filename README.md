@@ -133,6 +133,7 @@ NOTES FOR 2019 / Mojave
     * Punctuation: 
       * Don't Use semicolon to terminate statements always
       * Use single quotes always
+      * Trailing comma: Add when multiline
     * Imports:
       * Sort imports by modules
   * Ruby: Tabs and Indents: Indent methods after access **ALL** modifiers (**only to match
