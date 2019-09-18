@@ -127,6 +127,7 @@ NOTES FOR 2019 / Mojave
 * Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
+* Editor -> Font -> Size -> change to 14
 * Editor -> Code Style ->
   * Java: Set Continuation Indent to 2 (instead of default 8)
   * Javascript, Typescript -> 
