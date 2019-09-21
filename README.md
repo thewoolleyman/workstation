@@ -129,11 +129,14 @@ NOTES FOR 2019 / Mojave
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
 * Editor -> Font -> Size -> change to 14
 * Editor -> Code Style ->
+  * General: Hard wrap at 100 columns
   * HTML: Other -> Do not indent children of: -> add "script" (for compatibility with default Vue.js formatting)
   * Java: Set Continuation Indent to 2 (instead of default 8)
   * Javascript, Typescript -> 
-    * Wrapping and Braces:
+    * Wrapping and Braces: (needed to make "prettier" defaults happy)
       * Function call arguments:
+        * Chop down if long
+        * New line after '('
         * Place ')' on new line
     * Punctuation: 
       * Don't Use semicolon to terminate statements always
