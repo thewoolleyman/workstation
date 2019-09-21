@@ -132,6 +132,9 @@ NOTES FOR 2019 / Mojave
   * HTML: Other -> Do not indent children of: -> add "script" (for compatibility with default Vue.js formatting)
   * Java: Set Continuation Indent to 2 (instead of default 8)
   * Javascript, Typescript -> 
+    * Wrapping and Braces:
+      * Function call arguments:
+        * Place ')' on new line
     * Punctuation: 
       * Don't Use semicolon to terminate statements always
       * Use single quotes always
