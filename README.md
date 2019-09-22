@@ -190,7 +190,7 @@ NOTES FOR 2019 / Mojave
 * Languages & Frameworks
   * JavaScript
     * JavaScript language version: React JSX
-    * Libraries -> Add -> (NOTE: most of these require that you **close and re-open project** for them to be picked up)
+    * Libraries -> Add -> (NOTE: most of these require that you **close and re-open project** for them to be picked up.  Then will also be added to the `.idea/*.iml` file to be committed)
       * Node.js Core (to make 'process.env' not complain that `process` has no import)
         * Framework Type -> "Node.js core modules"
         * put anything for name, don't add anything else
