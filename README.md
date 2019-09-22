@@ -154,7 +154,10 @@ NOTES FOR 2019 / Mojave
   * HTML -> 
     * Deprecated HTML attribute -> Turn off (incorrectly matches React component props)
     * Empty Tag -> Turn off (matches root React element)
-    * File reference problems -> Turn off (incorrectly shows errors in React HTML variables)
+    * File reference problems -> Turn off (incorrectly shows errors in React HTML variables) (Not in some/latest IDE versions - i.e. latest webstorm?)
+    * Unknown HTML tag -> Options -> Custom HTML Tags:
+      * Add 'nuxt' (for Vue apps)
+      * Add 'rootDir' (for jest config)
   * Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
   * Spelling -> Typo -> Options -> Uncheck "Process code"
 * Keymap - Mac OS X 10.5+
