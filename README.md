@@ -130,7 +130,11 @@ NOTES FOR 2019 / Mojave
 * Editor -> Font -> Size -> change to 14
 * Editor -> Code Style ->
   * General: Hard wrap at 80 columns
-  * HTML: Other -> Do not indent children of: -> add "script" (for compatibility with default Vue.js formatting)
+  * HTML: Other ->
+    * Spaces:
+       * Uncheck "After tag name" (TODO: is this the default?  If so, delete this line...)
+       * Check "In empty tag" (compatibility with default 'prettier' config)
+    * Do not indent children of: -> add "script" (for compatibility with default Vue.js formatting)
   * Java: Set Continuation Indent to 2 (instead of default 8)
   * Javascript, Typescript -> 
     * Wrapping and Braces: (needed to make "prettier" defaults happy)
