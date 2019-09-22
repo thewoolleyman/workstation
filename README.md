@@ -190,11 +190,15 @@ NOTES FOR 2019 / Mojave
 * Languages & Frameworks
   * JavaScript
     * JavaScript language version: React JSX
-    * Libraries -> Add ->
-      * Node.js Core (e.g. to make 'process.env' not complain that is has no import)
+    * Libraries -> Add -> (NOTE: most of these require that you **close and re-open project** for them to be picked up)
+      * Node.js Core (to make 'process.env' not complain that `process` has no import)
         * Framework Type -> "Node.js core modules"
         * put anything for name, don't add anything else
         * **close and re-open project** - this will cause IDE to automatically change it to "Node.js Core" `predefined` type.
+      * jest-jasmine2 (to make jest specs not complain that `describe` has no import)
+        * Framework Type -> Custom
+        * `+` -> Attach Files -> `node_modules/jest-jasmine2/build/Env.js`
+        * Name: `jest-jasmine2`
 * Misc Plugins
   * ~~Bash Support~~ (replaced with built-in Jetbrains "Shell Script" plugin)
 * Keystroke-Learning Plugins
