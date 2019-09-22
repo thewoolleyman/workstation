@@ -116,7 +116,6 @@ NOTES FOR 2019 / Mojave
 
 # Jetbrains overridden settings
 * Appearance & Behavior -> Appearance -> Use custom font -> change to 14
-* Keymap -> Show F1, F2, etc. keys on the touch bar (checkbox at bottom - may not be on all/latest IDEs?).
 * Editor -> Color Scheme -> Darcula
 * Editor -> Color Scheme -> Ruby -> Line Continuation -> Background -> 3B3B3B
 * ~~Editor -> General -> Maximum Number of contents to keep in clipboard -> 100~~ (this doesn't exist anymore?)
@@ -171,7 +170,10 @@ NOTES FOR 2019 / Mojave
   * **NOTE: I've decided to learn default keymaps whenever they exist.  I now only add ones that are useful but unmapped.**
   * **Tip: "Move Caret to Text Start/End" is bound to "home/end" by default.  On a Mac small/laptop keyboard,
     use is Fn+Cmd+<right|left> for "home/end"**
+  * Show F1, F2, etc. keys on the touch bar (checkbox at bottom of Keymap panel - may not be on all/latest IDEs?).
   * Main Menu
+    * Code
+      * Inspect Code...: Add Add Ctrl+Option+Cmd+I
     * Navigate
       * ~~Related Data: Add F4 Binding~~ (TODO: Document which IDE needed this and why, or delete - Idea doesn't need it)
     * Window
