@@ -188,7 +188,13 @@ NOTES FOR 2019 / Mojave
   * Compiler
     * Build Project Automatically: Turn on
 * Languages & Frameworks
-  * JavaScript -> JavaScript language version: React JSX
+  * JavaScript
+    * JavaScript language version: React JSX
+    * Libraries -> Add ->
+      * Node.js Core (e.g. to make 'process.env' not complain that is has no import)
+        * Framework Type -> "Node.js core modules"
+        * put anything for name, don't add anything else
+        * **close and re-open project** - this will cause IDE to automatically change it to "Node.js Core" `predefined` type.
 * Misc Plugins
   * ~~Bash Support~~ (replaced with built-in Jetbrains "Shell Script" plugin)
 * Keystroke-Learning Plugins
