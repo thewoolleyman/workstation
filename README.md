@@ -162,7 +162,9 @@ NOTES FOR 2019 / Mojave
     * Unknown HTML tag -> Options -> Custom HTML Tags:
       * Add 'nuxt' (for Vue apps)
       * Add 'rootDir' (for jest config)
-  * Javascript -> General -> Unresolved Javascript variable: Uncheck (incorrectly flags some things in Vue)
+  * Javascript -> General ->
+    * Unresolved Javascript variable: Uncheck (incorrectly flags some things in Vue)
+    * Unused global symbol (incorrectly flags some things, e.g. Nuxt config)
   * Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
   * Spelling -> Typo -> Options -> Uncheck "Process code"
 * Keymap - Mac OS X 10.5+
