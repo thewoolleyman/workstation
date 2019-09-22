@@ -199,6 +199,10 @@ NOTES FOR 2019 / Mojave
         * Framework Type -> Custom
         * `+` -> Attach Files -> `node_modules/jest-jasmine2/build/Env.js`
         * Name: `jest-jasmine2`
+      * expect (to make jest specs not complain that `expect` has no import)
+        * Framework Type -> Custom
+        * `+` -> Attach Files -> `node_modules/expect/build-es5/index.js`
+        * Name: `expect`
 * Misc Plugins
   * ~~Bash Support~~ (replaced with built-in Jetbrains "Shell Script" plugin)
 * Keystroke-Learning Plugins
