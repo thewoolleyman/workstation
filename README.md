@@ -137,7 +137,7 @@ NOTES FOR 2019 / Mojave
     * Arrangement:
       * Add in position '2': attribute name ':.*' (for default vue/attributes-order linting)
       * Add in position '3': attribute name '@.*' (for default vue/attributes-order linting)
-    * Do not indent children of: -> add "script" (for compatibility with default Vue.js formatting)
+    * Do not indent children of: -> add "script" and "style" (for compatibility with default 'prettier' formatting)
   * Java: Set Continuation Indent to 2 (instead of default 8)
   * Javascript, Typescript -> 
     * Wrapping and Braces: (needed to make "prettier" defaults happy)
