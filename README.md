@@ -205,6 +205,7 @@ NOTES FOR 2019 / Mojave
         * put anything for name, don't add anything else
         * **close and re-open project** - this will cause IDE to automatically change it to "Node.js Core" `predefined` type.  The entry that was added to `.idea/*.iml` will disappear on restart.
 * Misc Plugins
+  * [Lines Sorter](https://plugins.jetbrains.com/plugin/5919-lines-sorter/)
   * ~~Bash Support~~ (replaced with built-in Jetbrains "Shell Script" plugin)
 * Keystroke-Learning Plugins
   * Force Shortcuts (if you are hardcore and want to be forced to use keyboard)
