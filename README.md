@@ -150,7 +150,7 @@ NOTES FOR 2019 / Mojave
       * Use single quotes always
       * Trailing comma: Add when multiline
     * Imports:
-      * Sort imports by modules
+      * Sort imports by modules: Uncheck (conflicts with default Vue 'import/order')
   * Ruby: Tabs and Indents: Indent methods after access **ALL** modifiers (**only to match
     default Rails generator formatting, otherwise prefer not to because it takes more space**)
   * Ruby: Other: Spaces around curly braces in hashes **AND** blocks (**only to match
