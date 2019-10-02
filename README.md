@@ -153,6 +153,8 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).
         * Chop down if long
         * New line after '('
         * Place ')' on new line
+      * ES6 import/export
+        * Do not wrap
     * Punctuation: 
       * Don't Use semicolon to terminate statements always
       * Use single quotes always
