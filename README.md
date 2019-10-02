@@ -115,6 +115,12 @@ NOTES FOR 2019 / Mojave
 * Install Purescript IDE: https://github.com/nwolverson/vscode-ide-purescript
 
 # Jetbrains overridden settings
+
+Notes: Many of these are project-level settings, and can be persisted by selectively committing config
+under `.idea`.  Also, some may vary across different IDEs and projects.  So, these are more guidelines
+and reminders to myself of where the settings live.  See also https://github.com/pivotal-legacy/pivotal_ide_prefs
+for IDE-level settings (i.e., not project-level ones that live under `.idea`).
+
 * Appearance & Behavior -> Appearance -> Use custom font -> change to 14
 * Editor -> Color Scheme -> Darcula
 * Editor -> Color Scheme -> Ruby -> Line Continuation -> Background -> 3B3B3B
@@ -135,9 +141,11 @@ NOTES FOR 2019 / Mojave
         * Uncheck "After tag name" (TODO: is this the default?  If so, delete this line...)
         * Check "In empty tag" (compatibility with default 'prettier' config)
       * Do not indent children of: -> add "script" and "style" (for compatibility with default 'prettier' formatting)
-    * Arrangement:
-      * Add in position '2': attribute name ':.*' (for default vue/attributes-order linting)
-      * Add in position '3': attribute name '@.*' (for default vue/attributes-order linting)
+    * Arrangement
+      * These are particularly tricky to get right. I attempt to get them to match
+        https://vuejs.org/v2/style-guide/#Element-attribute-order-recommended, but the
+        source of truth is just running eslint with `vue/attributes-order`.  See the `.idea`
+        folder checked into one of my recent Vue open source repos for details.
   * Java: Set Continuation Indent to 2 (instead of default 8)
   * Javascript, Typescript -> 
     * Wrapping and Braces: (needed to make "prettier" defaults happy)
