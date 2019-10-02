@@ -10,7 +10,7 @@
 
 These are the steps that I use to set up my development workstations.  I have used
 automated tools and scripts.  I believe those are useful for shared-workstation
-team environments, where you have to set up new workstations weekly or montly.
+team environments, where you have to set up new workstations weekly or monthly.
 But for personal workstations, which you set up yearly or more, automation is
 not worth the maintenance overhead, in my experience.
 
