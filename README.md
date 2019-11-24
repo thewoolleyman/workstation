@@ -34,22 +34,24 @@ NOTES FOR 2019 / Mojave
   * Chrome Extensions
     * Chrome JSON Formatter extension https://github.com/callumlocke/json-formatter
     * Lastpass
-    * ~~RIP Xmarks~~
+    * ~~Xmarks (RIP)~~ [Syncmarx](https://chrome.google.com/webstore/detail/syncmarx/llcdegcpeheociggfokjkkgciplhfdgg)
 * System Preferences - Keyboard
   * Max key repeat, shorter delay until repeat.
   * Normal Keyboard: Use function keys as standard function keys
   * Macbook Touchbar: Leave to defaults (Touch Bar shows: App Controls with Control Strip; Press Fn key to: F1, F2 keys...;
   * Shortcuts -> Services -> Text: Uncheck "Search man Page Index in Terminal" ([steals binding from Jetbrains](https://stackoverflow.com/a/55747595)).
 * Make everything show in Finder:
-  * Finder -> home directory -> View -> Show View Options -> Show Library Folder
+  * Finder -> home directory
+    * Change to List view
+    * In Menu-> View -> Show View Options -> Show Library Folder
   * Cmd-Shift-. (period) to show hidden files in Finder (TODO: How to make this permanent?)
 * Install any system updates
 * Install Xcode from App Store
 * Install Command Line Tools: `xcode-select --install`
 * install iterm, tweak prefs:
-  * General -> "Characters considered part of word for selection:" -> Remove "`\`"
-  * Appearance -> Dimming -> Dim background windows
+  * General -> Selection -> "Characters considered part of word for selection:" -> Remove "`\`"
   * Appearance -> Tabs: Check "Show tab bar even when there is only one tab"
+  * Appearance -> Dimming -> Dim background windows
   * Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `Esc+`
   * Profiles -> Default -> General -> Working Directory: Select "Reuse previous session's directory"
   * Profiles -> Default -> Terminal -> Scrollback Buffer -> Scrollback lines: Check "Unlimited Scrollback"   
