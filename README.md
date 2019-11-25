@@ -123,11 +123,13 @@ under `.idea`.  Also, some may vary across different IDEs and projects.  So, the
 and reminders to myself of where the settings live.  See also https://github.com/pivotal-legacy/pivotal_ide_prefs
 for IDE-level settings (i.e., not project-level ones that live under `.idea`).
 
-* Appearance & Behavior -> Appearance -> Use custom font -> change to 14
+* Appearance & Behavior -> Appearance
+  * Theme: Darcula, check "Use dark window headers"
+  * Use custom font -> change to 14
 * Editor -> Color Scheme -> Darcula
-* Editor -> Color Scheme -> Ruby -> Line Continuation -> Background -> 3B3B3B
+* ~~Editor -> Color Scheme -> Ruby -> Line Continuation -> Background -> 3B3B3B~~ (it's now a more sane 272727)
 * ~~Editor -> General -> Maximum Number of contents to keep in clipboard -> 100~~ (this doesn't exist anymore?)
-* Editor -> General -> Recent files limit -> 100
+* Editor -> General -> Limits section: Recent files limit -> 100
 * ~~Editor -> General -> Editor Tabs -> Turn off: Show tab tooltips~~ (this doesn't exist anymore?)
 * Editor -> General -> Auto Import -> TypeScript/JavaScript -> Turn on: Unambiguous imports on the fly
 * Editor -> General -> Smart Keys -> Turn off: Use "CamelHumps" words
@@ -135,12 +137,12 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
 * Editor -> Font -> Size -> change to 14
+* Editor -> Font -> Line spacing -> change to 0.9 (More density on laptop screens)
 * Editor -> Code Style ->
   * General: Hard wrap at 80 columns
   * HTML: 
     * Other:
       * Spaces:
-        * Uncheck "After tag name" (TODO: is this the default?  If so, delete this line...)
         * Check "In empty tag" (compatibility with default 'prettier' config)
       * Do not indent children of: -> add "script" and "style" (for compatibility with default 'prettier' formatting)
     * Arrangement
@@ -167,7 +169,7 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).
     default Rails generator formatting, otherwise prefer not to because it takes more space**)
   * Ruby: Other: Spaces around curly braces in hashes **AND** blocks (**only to match
     default Rails generator formatting, otherwise prefer not to because it takes more space**)
-  * HTML, Style Sheets (CSS), Javascript, Typescript, Other File Types: Set Tab size and indent to 2 and continuous (instead of default 4)
+  * HTML, Style Sheets (CSS), Javascript, Typescript, Other File Types: Set Tab size, Indent, and Continuation Indent all to 2 (instead of default 4)
 * Editor -> Inspections
   * CSS -> Unused CSS selector -> Turn off (can't tell if a selector with a var is used in a SCSS library file)
   * HTML -> 
@@ -190,8 +192,6 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).
   * Main Menu
     * Code
       * Inspect Code...: Add Add Ctrl+Option+Cmd+I
-    * Navigate
-      * ~~Related Data: Add F4 Binding~~ (TODO: Document which IDE needed this and why, or delete - Idea doesn't need it)
     * Window
       * Editor Tabs
         * Close All: Add Cmd+Option+w binding
