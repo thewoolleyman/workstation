@@ -49,6 +49,7 @@ NOTES FOR 2019 / Mojave
 * Install Xcode from App Store
 * Install Command Line Tools: `xcode-select --install`
 * install iterm, tweak prefs:
+  * (macbooks): In MacOS 'iTerm2' menu under 'Customize Touch Bar', drag off things next to escape key so you don't accidentally hit it.
   * General -> Selection -> "Characters considered part of word for selection:" -> Remove "`\`"
   * Appearance -> Tabs: Check "Show tab bar even when there is only one tab"
   * Appearance -> Dimming -> Dim background windows
