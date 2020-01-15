@@ -101,6 +101,8 @@ NOTES FOR 2019 / Mojave
 * Other apps
   * Kindle app (via App Store)
   * Acrobat Reader
+* For any environment variables which are needed globally from launchd apps (e.g. Jetbrains IDEs), use the approach described here: http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-mac-os-x-launchd-plist/
+  * For example, `BROWSERSLIST_IGNORE_OLD_DATA=true`, to suppress stylelint warnings for outdated `caniuse-lite`, 
 
 # OSX Workstation Optional
 
