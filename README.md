@@ -201,6 +201,8 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).
   * Version Control Systems
     * Git
       * Compare with Branch: Add Ctrl+Option+Cmd+B
+    * Diff & Merge
+      * Compare with Local: Add Ctrl+Option+Cmd+C (I wanted Ctrl+Option+Cmd+L, but it didn't allow it?)
     * Show History (for all): Add Ctrl+Option+Cmd+H
 * Build, Execution, Deployment
   * Build Tools -> Gradle
