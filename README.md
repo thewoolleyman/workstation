@@ -82,6 +82,10 @@ NOTES FOR 2019 / Mojave
 * Review following to set appropriate rbenv defaults: https://github.com/rbenv/rbenv#environment-variables
 * Add bash aliases to `~/.bash_profile`:
   * Add `alias gst='git status'` - the only alias I use ;)
+* For multiple users on the same computer
+  * [link to slack exchange post](https://apple.stackexchange.com/questions/1393/are-my-permissions-for-usr-local-correct/189404#189404)
+  * `sudo chgrp -R admin /usr/local /Library/Caches/Homebrew`
+  * `sudo chmod -R g+w /usr/local /Library/Caches/Homebrew`
 * Install Jetbrains Toolbox and desired IDEs, configure using section below
 * Install Slack
 * Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers or personal use.
@@ -98,13 +102,12 @@ NOTES FOR 2019 / Mojave
   * `brew install pivotal/tap/git-together`
   * `echo 'alias git=git-together' >> ~/.bash_profile`
   * `git config --global git-together.aliases ci`
+* [PyEnv Python installation steps to get the latest tcl/tk version](https://github.com/pyenv/pyenv/issues/1375#issuecomment-524280004)
 * Other apps
   * Kindle app (via App Store)
   * Acrobat Reader
 * For any environment variables which are needed globally from launchd apps (e.g. Jetbrains IDEs), use the approach described here: http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-mac-os-x-launchd-plist/
   * For example, `BROWSERSLIST_IGNORE_OLD_DATA=true`, to suppress stylelint warnings for outdated `caniuse-lite`, 
-* For multiple users on the same computer
-  * https://apple.stackexchange.com/questions/1393/are-my-permissions-for-usr-local-correct/189404#189404
 
 # OSX Workstation Optional
 
