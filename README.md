@@ -28,12 +28,12 @@ This helps me, hopefully it helps you!
 
 # OSX workstation
 
-NOTES FOR 2019 / Mojave
+NOTES FOR 2020 / Catalina
 
 * download chrome (and/or Firefox) and make default
   * Chrome Extensions
     * Chrome JSON Formatter extension https://github.com/callumlocke/json-formatter
-    * Lastpass
+    * ~~Lastpass~~ [1password](https://1password.com/downloads/mac/)
     * ~~Xmarks (RIP)~~ [Syncmarx](https://chrome.google.com/webstore/detail/syncmarx/llcdegcpeheociggfokjkkgciplhfdgg)
 * System Preferences - Keyboard
   * Max key repeat, shorter delay until repeat.
