@@ -72,7 +72,7 @@ NOTES FOR 2020 / Catalina
   * Menu -> inline: 30, inside folder: 30, characters in menu: 200
   * Change main shortcut Ctrl+Opt+Cmd+V, disable other shortcuts (to not conflict with Jetbrains)
 * install homebrew
-* brew install jq watch wget coreutils yarn pkgconfig libxml2
+* `brew install jq watch wget coreutils yarn pkgconfig libxml2`
 * `brew install openssl` then add to ~/.bash_profile: `export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/`
   * Needed for various stuff to compile, e.g. ruby mysql2 gem.
 * `brew install rbenv`
