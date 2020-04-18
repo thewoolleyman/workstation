@@ -73,14 +73,14 @@ NOTES FOR 2020 / Catalina
   * Change main shortcut Ctrl+Opt+Cmd+V, disable other shortcuts (to not conflict with Jetbrains)
 * install homebrew
 * `brew install jq watch wget coreutils yarn pkgconfig libxml2`
-* `brew install openssl` then add to ~/.zshrc: `export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/`
+* `brew install openssl` then add to `~/.zshrc`: `export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/`
   * Needed for various stuff to compile, e.g. ruby mysql2 gem.
-* `brew install rbenv` then add to ~/.zshrc the export RUBY_CONFIGURE_OPTS line from the printout
+* `brew install rbenv` then add to `~/.zshrc` the export RUBY_CONFIGURE_OPTS line from the printout
 * `rbenv init` and set up hook in `~/.zshrc` as instructed: `eval "$(rbenv init -)"`
 * `rbenv install -l`, pick the one you want, e.g. `rbenv install 2.5.5`
-* brew install direnv
+* `brew install direnv`
 * Review following to set appropriate rbenv defaults: https://github.com/rbenv/rbenv#environment-variables
-* Add bash aliases to `~/.bash_profile`:
+* Add bash aliases to `~/.zshrc`:
   * Add `alias gst='git status'` - the only alias I use ;)
 * For multiple users on the same computer
   * [link to slack exchange post](https://apple.stackexchange.com/questions/1393/are-my-permissions-for-usr-local-correct/189404#189404)
