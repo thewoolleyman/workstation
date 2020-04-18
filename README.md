@@ -79,7 +79,7 @@ NOTES FOR 2020 / Catalina
 * `rbenv init` and set up hook in `~/.zshrc` as instructed: `eval "$(rbenv init -)"`
 * `rbenv install -l`, pick the one you want, e.g. `rbenv install 2.5.5`
 * `brew install direnv`
-* Review following to set appropriate rbenv defaults: https://github.com/rbenv/rbenv#environment-variables
+* If needed, review following to set appropriate rbenv defaults: https://github.com/rbenv/rbenv#environment-variables
 * Add bash aliases to `~/.zshrc`:
   * Add `alias gst='git status'` - the only alias I use ;)
 * For multiple users on the same computer
@@ -309,3 +309,7 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
 * 10.0.100.199
 * LPD Line Printer Daemon
 * HP Laserjet 4MP
+
+# Kristin's Printer
+
+* HP ENVY 7643
