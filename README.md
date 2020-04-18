@@ -128,8 +128,8 @@ NOTES FOR 2020 / Catalina
 
 Notes: Many of these are project-level settings, and can be persisted by selectively committing config
 under `.idea`.  Also, some may vary across different IDEs and projects.  So, these are more guidelines
-and reminders to myself of where the settings live.  See also https://github.com/pivotal-legacy/pivotal_ide_prefs
-for IDE-level settings (i.e., not project-level ones that live under `.idea`).
+and reminders to myself of where the settings live.  ~~See also https://github.com/pivotal-legacy/pivotal_ide_prefs
+for IDE-level settings (i.e., not project-level ones that live under `.idea`).~~
 
 * Appearance & Behavior -> Appearance
   * Theme: Darcula, check "Use dark window headers"
