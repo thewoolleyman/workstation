@@ -81,7 +81,11 @@ NOTES FOR 2020 / Catalina
 * `brew install direnv`
 * If needed, review following to set appropriate rbenv defaults: https://github.com/rbenv/rbenv#environment-variables
 * Add bash aliases to `~/.zshrc`:
-  * Add `alias gst='git status'` - the only alias I use ;)
+  * Add `alias gst='git status'`
+* Add git config aliases:
+  * `$ git config --global alias.ci commit`
+  * `$ git config --global alias.co checkout`
+  * `$ git config --global alias.sw switch`  
 * For multiple users on the same computer
   * [link to slack exchange post](https://apple.stackexchange.com/questions/1393/are-my-permissions-for-usr-local-correct/189404#189404)
   * `sudo chgrp -R admin /usr/local /Library/Caches/Homebrew`
@@ -93,6 +97,7 @@ NOTES FOR 2020 / Catalina
 * Install Visual Studio Code and [set it up](#visual-studio-code-setup)
 * Install Textmate 2
   * Preferences -> Projects -> Include Files Matching: `{*,.*}`
+  * Preferences -> Terminal _> Install Shell support
   * Configure autosave: add `saveOnBlur = true` to top of `~/Library/Application\ Support/TextMate/Global.tmProperties`
 * Additional browsers as necessary: Canary, Firefox, Opera
 * Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
