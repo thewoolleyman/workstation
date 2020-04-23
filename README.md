@@ -145,8 +145,8 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).~~
 * Editor -> General -> Limits section: Recent files limit -> 100
 * ~~Editor -> General -> Editor Tabs -> Turn off: Show tab tooltips~~ (this doesn't exist anymore?)
 * Editor -> General -> Auto Import -> TypeScript/JavaScript -> Turn on: Unambiguous imports on the fly
-* Editor -> General -> Smart Keys -> Turn off: Use "CamelHumps" words
-* Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace
+* ~~Editor -> General -> Smart Keys -> Turn off: Use "CamelHumps" words~~ (now the default)
+* ~~Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace~~ (now the default)
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
 * Editor -> Font -> Size -> change to 14
