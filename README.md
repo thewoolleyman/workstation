@@ -117,8 +117,8 @@ NOTES FOR 2020 / Catalina
 # OSX Workstation Optional
 
 * Haskell
-  * Follow instructions on [haskell stack page](https://docs.haskellstack.org/en/stable/install_and_upgrade/#macos) (`brew install haskell-stack`)
-  * Review https://lexi-lambda.github.io/blog/2018/02/10/an-opinionated-guide-to-haskell-in-2018/
+  * Follow instructions in https://gitlab.com/thewoolleyman/haskell-project-template
+    * Make sure to review https://lexi-lambda.github.io/blog/2018/02/10/an-opinionated-guide-to-haskell-in-2018/ and other links in that repo.
 * Elixir/Phoenix
   * Erlang/Elixir: `brew install elixir`
   * Hex package manager: `mix local.hex`
