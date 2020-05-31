@@ -117,7 +117,7 @@ NOTES FOR 2020 / Catalina
 # OSX Workstation Optional
 
 * Haskell
-  * Follow instructions in https://gitlab.com/thewoolleyman/haskell-project-template
+  * Follow instructions in https://gitlab.com/thewoolleyman/haskell-project-setup
     * Make sure to review https://lexi-lambda.github.io/blog/2018/02/10/an-opinionated-guide-to-haskell-in-2018/ and other links in that repo.
 * Elixir/Phoenix
   * Erlang/Elixir: `brew install elixir`
@@ -125,9 +125,19 @@ NOTES FOR 2020 / Catalina
   * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
 
 # Visual Studio Code Setup
+
 ## Packages
+
 * Install Intellij Keybindings: https://github.com/kasecato/vscode-intellij-idea-keybindings
-* Install Purescript IDE: https://github.com/nwolverson/vscode-ide-purescript
+
+## Config
+
+* Text Editor -> Files -> Auto Save: Set to `afterDelay`
+
+## Language Setup
+
+* Purescript: Install Purescript IDE: https://github.com/nwolverson/vscode-ide-purescript
+* Haskell: Follow instructions in https://gitlab.com/thewoolleyman/haskell-project-setup
 
 # Jetbrains overridden settings
 
