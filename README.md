@@ -132,7 +132,7 @@ NOTES FOR 2020 / Catalina
 
 ## Config
 
-* Text Editor -> Files -> Auto Save: Set to `afterDelay`
+* Settings -> Text Editor -> Files -> Auto Save: Set to `afterDelay`
 
 ## Language Setup
 
