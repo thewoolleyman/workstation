@@ -206,7 +206,7 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).~~
     * Unresolved Javascript variable: Uncheck (incorrectly flags some things in Vue)
     * Unused global symbol (incorrectly flags some things, e.g. Nuxt config)
   * Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
-  * Spelling -> Typo -> Options -> Uncheck "Process code"
+  * Proofreading -> Typo -> Options -> Uncheck "Process code"
 * Keymap - Mac OS X 10.5+
   * **NOTE: I've decided to learn default keymaps whenever they exist.  I now only add ones that are useful but unmapped.**
   * **Tip: "Move Caret to Text Start/End" is bound to "home/end" by default.  On a Mac small/laptop keyboard,
