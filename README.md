@@ -72,7 +72,8 @@ NOTES FOR 2020 / Catalina
   * Menu -> inline: 30, inside folder: 30, characters in menu: 200
   * Change main shortcut Ctrl+Opt+Cmd+V, disable other shortcuts (to not conflict with Jetbrains)
 * install homebrew
-* `brew install jq watch wget coreutils yarn pkgconfig libxml2`
+* Follow [instructions here](https://github.com/nijicha/install_nodejs_and_yarn_homebrew) to install NVM, NodeJS, and yarn.  Important part is that node is installed and managed via NVM, not homebrew, so you need to "fool" homebrew into using the NVM-managed version of node as a dependency.
+* `brew install jq watch wget coreutils kgconfig libxml2`
 * `brew install openssl` then add to `~/.zshrc`: `export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/`
   * Needed for various stuff to compile, e.g. ruby mysql2 gem.
 * `brew install rbenv` then add to `~/.zshrc` the export RUBY_CONFIGURE_OPTS line from the printout
