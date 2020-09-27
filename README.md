@@ -215,7 +215,7 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).~~
   * Show F1, F2, etc. keys on the touch bar (checkbox at bottom of Keymap panel - may not be on all/latest IDEs?).
   * Main Menu
     * Code
-      * Inspect Code...: Add Add Ctrl+Option+Cmd+I
+      * Inspect Code...: Add Ctrl+Option+Cmd+I
     * Window
       * Editor Tabs
         * Close All: Add Cmd+Option+w binding
@@ -235,6 +235,8 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).~~
   * Build Tools -> Gradle -> Runner -> Delegate IDE build/run actions to gradle
   * Compiler
     * Build Project Automatically: Turn on
+  * Other
+    * Select in Project View: Add Cmd-Shift-1
 * Languages & Frameworks
   * JavaScript
     * JavaScript language version: React JSX
