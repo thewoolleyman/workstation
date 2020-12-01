@@ -75,7 +75,32 @@ NOTES FOR 2020 / Catalina
   * Menu -> inline: 30, inside folder: 30, characters in menu: 200
   * Change main shortcut Ctrl+Opt+Cmd+V, disable other shortcuts (to not conflict with Jetbrains)
 * install homebrew
-* Follow [instructions here](https://github.com/nijicha/install_nodejs_and_yarn_homebrew) to install NVM, NodeJS, and yarn.  Important part is that node is installed and managed via NVM, not homebrew, so you need to "fool" homebrew into using the NVM-managed version of node as a dependency.
+* Follow [instructions here](https://github.com/nijicha/install_nodejs_and_yarn_homebrew) to install NVM, NodeJS, and yarn.  Important part is that node is installed and managed via ~~NVM~~ asdf, not homebrew, so you need to "fool" homebrew into using the asdf~~NVM~~-managed version of node as a dependency.
+  * Checkout brew doctor there should show message WARNING missing yarn dependencies
+    
+    `$ brew doctor`
+
+  * Create blank folder and create symbol link node folder from nvm for yarn in Homebrew.
+
+    `$ nvm current => v14.15.0` (Latest LTS: Fermium) (This should be Global node version)
+
+    `$ mkdir /usr/local/Cellar/node`
+
+    `$ ln -s ~/.nvm/versions/node/$(nvm current)/ /usr/local/Cellar/node`
+
+  * Overwrite node, npm and npx from linked node in /usr/local/Cellar/node to /usr/local/bin/ homebrew
+
+    `$ brew link --overwrite node`
+
+  * Checkout `ls -la /usr/local/bin` to see overwrited node, npm and npx
+
+  * Checkout brew doctor again. There shouldn't have WARNING message.
+
+    `$ brew doctor`
+
+  * Prevent Homebrew upgrading node version
+
+    `$ brew pin node`
 * `brew install jq watch wget coreutils kgconfig libxml2`
 * `brew install openssl` then add to `~/.zshrc`: `export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/`
   * Needed for various stuff to compile, e.g. ruby mysql2 gem.
