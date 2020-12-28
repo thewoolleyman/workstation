@@ -133,6 +133,7 @@ NOTES FOR 2020 / Catalina
 ## Packages
 
 * Install Intellij Keybindings: https://github.com/kasecato/vscode-intellij-idea-keybindings
+* TODO: Try out https://github.com/zawys/vscode-as-git-mergetool to see if it's as good as Jetbrains `Resolve Conflicts` three-pane view.
 
 ## Config
 
