@@ -185,6 +185,8 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).~~
         * Chop down if long
         * New line after '('
         * Place ')' on new line
+      * Function declaration parameters:
+        * Align when multiline: Uncheck
       * ES6 import/export
         * Do not wrap
     * Punctuation: 
