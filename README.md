@@ -47,7 +47,7 @@ NOTES FOR 2020 / Catalina
   * Finder -> home directory
     * Change to List view
     * In Menu-> View -> Show View Options -> Show Library Folder
-  * Cmd-Shift-. (period) to show hidden files in Finder (TODO: How to make this permanent?)
+  * Show hidden files in Finder: `defaults write com.apple.finder AppleShowAllFiles True; killall Finder` (Cmd-Shift-. (period) to toggle)
 * Install any system updates
 * Install Xcode from App Store
 * Install Command Line Tools: `xcode-select --install`
@@ -113,6 +113,7 @@ NOTES FOR 2020 / Catalina
   * `git config --global git-together.aliases ci`
 * [PyEnv Python installation steps to get the latest tcl/tk version](https://github.com/pyenv/pyenv/issues/1375#issuecomment-524280004)
 * Other apps
+  * Ears: https://clickontyler.com/ears/
   * Kindle app (via App Store)
   * Acrobat Reader
 * For any environment variables which are needed globally from launchd apps (e.g. Jetbrains IDEs), use the approach described here: http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-mac-os-x-launchd-plist/
