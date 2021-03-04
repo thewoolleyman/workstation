@@ -37,7 +37,7 @@ NOTES FOR 2020 / Catalina
     * [1password](https://1password.com/downloads/mac/)
     * ~~Xmarks (RIP)~~ [Syncmarx](https://chrome.google.com/webstore/detail/syncmarx/llcdegcpeheociggfokjkkgciplhfdgg)
     * [Window Namer and Restorer](https://chrome.google.com/webstore/detail/window-namer-and-restorer/elgojbkcijgcpojlfhhmjnclgkofmiha)
-      * Options: Limit window names to 16 chars, Windows must have a minimum of 1 tab for automatching.
+      * Options: Limit window names to 16 chars (although try to use less).
 * System Preferences - Keyboard
   * Max key repeat, shorter delay until repeat.
   * Normal Keyboard: Use function keys as standard function keys
