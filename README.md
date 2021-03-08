@@ -162,6 +162,7 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).~~
   * Use custom font -> change to 14
 * Editor -> Color Scheme -> Darcula
 * ~~Editor -> Color Scheme -> Ruby -> Line Continuation -> Background -> 3B3B3B~~ (it's now a more sane 272727)
+* Editor -> General -> Code Completion -> Insert selected suggestion by pressing space, dot, or other context-dependent keys -> Turn off (As of 2021.1 EAP makes annoying Rubymine doc annotation completion autocomplete when you are trying to type comments in spaces.  Hopefully this is fixed soon)
 * ~~Editor -> General -> Maximum Number of contents to keep in clipboard -> 100~~ (this doesn't exist anymore?)
 * Editor -> General -> Limits section: Recent files limit -> 100
 * ~~Editor -> General -> Editor Tabs -> Turn off: Show tab tooltips~~ (this doesn't exist anymore?)
