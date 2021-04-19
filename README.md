@@ -27,6 +27,8 @@ most of the various little tweaks which I can never remember later.
 
 This helps me, hopefully it helps you!
 
+
+
 # OSX workstation
 
 NOTES FOR 2020 / Catalina
@@ -134,6 +136,8 @@ NOTES FOR 2020 / Catalina
   * Hex package manager: `mix local.hex`
   * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
 
+
+
 # Visual Studio Code Setup
 
 ## Packages
@@ -149,6 +153,8 @@ NOTES FOR 2020 / Catalina
 
 * Purescript: Install Purescript IDE: https://github.com/nwolverson/vscode-ide-purescript
 * Haskell: Follow instructions in https://gitlab.com/thewoolleyman/haskell-project-setup
+
+
 
 # Jetbrains overridden settings
 
@@ -171,7 +177,7 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).~~
 * ~~Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace~~ (now the default)
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
-* Editor -> Font -> Size -> change to 14
+* Editor -> Font -> Size -> change to 15
 * Editor -> Font -> Line spacing -> change to 0.9 (More density on laptop screens)
 * Editor -> Code Style ->
   * General: Hard wrap at 80 columns
@@ -229,6 +235,8 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).~~
   * Main Menu
     * Code
       * Inspect Code...: Add Ctrl+Option+Cmd+I
+    * Debugging Actions
+      * Resume Program: Remove "Cmd+Option+R" shortcut and leave only F9, it's inconsistent with all the others which are Function keys, and I want the F9 function key to show up on the tooltip when hovering over the button.
     * Window
       * Editor Tabs
         * Close All: Add Cmd+Option+w binding
@@ -277,6 +285,8 @@ for IDE-level settings (i.e., not project-level ones that live under `.idea`).~~
     * Editor -> File Types -> RHTML: Add "*.eex" as type
     * Editor -> Inspections -> Ruby -> Unresolved Ruby Reference: Uncheck
     * Editor -> Inspections -> Ruby -> Double Quoted String: Uncheck
+
+
 
 # Ubuntu Workstation
 
@@ -334,6 +344,8 @@ NOTE: Installed packages from command line, manually fixing any dependencies nee
   * Install Gogland
   * Export a copy of "MacOSX 10.5+" Keymap from Idea and import
     to Gogland (until https://youtrack.jetbrains.com/issue/GO-4139 is fixed)
+
+
 
 # Printers
 
