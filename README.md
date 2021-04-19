@@ -160,21 +160,23 @@ NOTES FOR 2020 / Catalina
 
 Notes: Many of these are project-level settings, and can be persisted by selectively committing config
 under `.idea`.  Also, some may vary across different IDEs and projects.  So, these are more guidelines
-and reminders to myself of where the settings live.  ~~See also https://github.com/pivotal-legacy/pivotal_ide_prefs
-for IDE-level settings (i.e., not project-level ones that live under `.idea`).~~
+and reminders to myself of where the settings live.  
+
+Note that there are TWO places settings are persisted - at the IDE-level (in system preferences), and
+at the project-level (in the `.idea` folder in the project).
+
+Jetbrains has a built-in way to manage IDE-level settings, but not project-level settings.
+
+See https://gitlab.com/jetbrains-ide-config/jetbrains-ide-config-gitlab for my process to manage
+both IDE-level and project-level settings via version control.
 
 * Appearance & Behavior -> Appearance
   * Theme: Darcula, check "Use dark window headers"
   * Use custom font -> change to 14
 * Editor -> Color Scheme -> Darcula
-* ~~Editor -> Color Scheme -> Ruby -> Line Continuation -> Background -> 3B3B3B~~ (it's now a more sane 272727)
 * Editor -> General -> Code Completion -> Insert selected suggestion by pressing space, dot, or other context-dependent keys -> Turn off (As of 2021.1 EAP makes annoying Rubymine doc annotation completion autocomplete when you are trying to type comments in spaces.  Hopefully this is fixed soon)
-* ~~Editor -> General -> Maximum Number of contents to keep in clipboard -> 100~~ (this doesn't exist anymore?)
 * Editor -> General -> Limits section: Recent files limit -> 100
-* ~~Editor -> General -> Editor Tabs -> Turn off: Show tab tooltips~~ (this doesn't exist anymore?)
 * Editor -> General -> Auto Import -> TypeScript/JavaScript -> Turn on: Unambiguous imports on the fly
-* ~~Editor -> General -> Smart Keys -> Turn off: Use "CamelHumps" words~~ (now the default)
-* ~~Editor -> General -> Smart Keys -> Turn on: Surround selection on typing quote or brace~~ (now the default)
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
 * Editor -> Font -> Size -> change to 15
