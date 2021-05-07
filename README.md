@@ -215,6 +215,8 @@ both IDE-level and project-level settings via version control.
   * Ruby: Other: Spaces around curly braces in hashes **AND** blocks (**only to match
     default Rails generator formatting, otherwise prefer not to because it takes more space**)
   * HTML, Style Sheets (CSS), Javascript, Typescript, Other File Types: Set Tab size, Indent, and Continuation Indent all to 2 (instead of default 4)
+* Editor -> Code Editing
+  * Error Highlighting -> The 'Next Error' action goes through: All problems
 * Editor -> Inspections
   * CSS -> Unused CSS selector -> Turn off (can't tell if a selector with a var is used in a SCSS library file)
   * HTML -> 
