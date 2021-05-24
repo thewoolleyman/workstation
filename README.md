@@ -106,7 +106,7 @@ NOTES FOR 2020 / Catalina
   * Search with `Ctrl-Space` and `Fn-<characters>`
 * Install Zoom
 * Install Visual Studio Code and [set it up](#visual-studio-code-setup)
-* Install Textmate 2
+* Install Textmate 2 (for quick plain text editing outside the context of an IDE project. Main requirement is that it opens instantly. Alternatives are [Sublime](https://www.sublimetext.com/download) or [CotEditor](https://coteditor.com/))
   * Preferences -> Projects -> Include Files Matching: `{*,.*}`
   * Preferences -> Terminal _> Install Shell support
   * Configure autosave: add `saveOnBlur = true` to top of `~/Library/Application\ Support/TextMate/Global.tmProperties`
