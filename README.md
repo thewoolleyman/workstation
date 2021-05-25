@@ -125,6 +125,7 @@ NOTES FOR 2020 / Catalina
   * Acrobat Reader
 * For any environment variables which are needed globally from launchd apps (e.g. Jetbrains IDEs), use the approach described here: http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-mac-os-x-launchd-plist/
   * For example, `BROWSERSLIST_IGNORE_OLD_DATA=true`, to suppress stylelint warnings for outdated `caniuse-lite`, 
+* If you work with large repos a lot, run `git config --global feature.manyFiles true`
 
 # OSX Workstation Optional
 
