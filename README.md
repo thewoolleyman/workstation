@@ -206,7 +206,7 @@ both IDE-level and project-level settings via version control.
       * ES6 import/export
         * Do not wrap
     * Punctuation: 
-      * Don't Use semicolon to terminate statements always
+      * Don't Use semicolon to terminate statements always (leave on for GitLab)
       * Use single quotes always
       * Trailing comma: Add when multiline
     * Imports:
@@ -290,6 +290,11 @@ both IDE-level and project-level settings via version control.
     * Editor -> File Types -> RHTML: Add "*.eex" as type
     * Editor -> Inspections -> Ruby -> Unresolved Ruby Reference: Uncheck
     * Editor -> Inspections -> Ruby -> Double Quoted String: Uncheck
+* GitLab:
+  * JS GraphQL
+  * Prettier
+  * TOML
+  * Vue.js
 
 
 
