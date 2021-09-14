@@ -271,6 +271,9 @@ both IDE-level and project-level settings via version control.
         * Framework Type -> "Node.js core modules"
         * put anything for name, don't add anything else
         * **close and re-open project** - this will cause IDE to automatically change it to "Node.js Core" `predefined` type.  The entry that was added to `.idea/*.iml` will disappear on restart.
+     * Prettier
+       * Package: put path, e.g.: `~/workspace/gitlab-development-kit/gitlab/node_modules/prettier`
+       * Put extra mask in Run for Files, e.g.: `{**/*,*}.{js,ts,jsx,tsx,vue,graphql,scss}`
 * Misc Plugins
   * [Lines Sorter](https://plugins.jetbrains.com/plugin/5919-lines-sorter/)
   * ~~Bash Support~~ (replaced with built-in Jetbrains "Shell Script" plugin)
