@@ -176,12 +176,11 @@ both IDE-level and project-level settings via version control.
   * Use custom font -> change to 14
 * Editor -> Color Scheme -> Darcula
 * Editor -> General -> Code Completion -> Insert selected suggestion by pressing space, dot, or other context-dependent keys -> Turn off (As of 2021.1 EAP makes annoying Rubymine doc annotation completion autocomplete when you are trying to type comments in spaces.  Hopefully this is fixed soon)
-* Editor -> General -> Limits section: Recent files limit -> 100
 * Editor -> General -> Auto Import -> TypeScript/JavaScript -> Turn on: Unambiguous imports on the fly
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
 * Editor -> Font -> Size -> change to 15
-* Editor -> Font -> Line spacing -> change to 0.9 (More density on laptop screens)
+* Editor -> Font -> Line height -> change to 0.9 (More density on laptop screens)
 * Editor -> Code Style ->
   * General: Hard wrap at 80 columns
   * HTML: 
@@ -194,8 +193,8 @@ both IDE-level and project-level settings via version control.
         https://vuejs.org/v2/style-guide/#Element-attribute-order-recommended, but the
         source of truth is just running eslint with `vue/attributes-order`.  See the `.idea`
         folder checked into one of my recent Vue open source repos for details.
-  * Java: Set Continuation Indent to 2 (instead of default 8)
-  * Javascript, Typescript -> 
+  * Java (if it exists in current IDE): Set Continuation Indent to 2 (instead of default 8)
+  * Javascript AND Typescript -> 
     * Wrapping and Braces: (needed to make "prettier" defaults happy)
       * Function call arguments:
         * Chop down if long
@@ -209,42 +208,39 @@ both IDE-level and project-level settings via version control.
       * Don't Use semicolon to terminate statements always (leave on for GitLab)
       * Use single quotes always
       * Trailing comma: Add when multiline
-    * Imports:
-      * ~~Sort imports by modules: Uncheck (conflicts with default Vue 'import/order')~~ (now the default)
-  * Ruby: Tabs and Indents: Indent methods after access **ALL** modifiers (**only to match
-    default Rails generator formatting, otherwise prefer not to because it takes more space**)
-  * Ruby: Other: Spaces around curly braces in hashes **AND** blocks (**only to match
-    default Rails generator formatting, otherwise prefer not to because it takes more space**)
+  * Ruby: Tabs and Indents: Indent methods after access **ALL** modifiers **ONLY IF YOU WANT to match
+    default Rails generator formatting, otherwise prefer not to because it takes more space**
+  * Ruby: Spaces: Spaces within curly braces in hashes **AND** blocks **ONLY IF YOU WANT to match
+    default Rails generator formatting, otherwise prefer not to because it takes more space**
   * HTML, Style Sheets (CSS), Javascript, Typescript, Other File Types: Set Tab size, Indent, and Continuation Indent all to 2 (instead of default 4)
 * Editor -> Code Editing
   * Error Highlighting -> The 'Next Error' action goes through: All problems
 * Editor -> Inspections
-  * CSS -> Unused CSS selector -> Turn off (can't tell if a selector with a var is used in a SCSS library file)
+  * CSS -> Unused CSS selector -> Turn off (OPTIONAL, only turn off if it can't tell if a selector with a var is used in a SCSS library file)
   * HTML -> 
-    * Deprecated HTML attribute -> Turn off (incorrectly matches React component props)
-    * Empty Tag -> Turn off (matches root React element)
-    * File reference problems -> Turn off (incorrectly shows errors in React HTML variables) (Not in some/latest IDE versions - i.e. latest webstorm?)
-    * Unknown HTML tag -> Options -> Custom HTML Tags:
+    * Empty Tag -> Turn off (ONLY for React, not needed vor Vue - matches root React element) - TODO: Is this still needed even for React? Check in a React app...
+    * Unknown tag -> Options -> Custom HTML Tags:
       * Add 'nuxt' (for Vue apps)
       * Add 'rootDir' (for jest config)
   * Javascript -> General ->
-    * Unresolved Javascript variable: Uncheck (incorrectly flags some things in Vue)
-    * Unused global symbol (incorrectly flags some things, e.g. Nuxt config)
-  * Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
+    * ~~Unresolved Javascript variable: Uncheck (incorrectly flags some things in Vue)~~ Seems like this works better now???
+    * Unused global symbol: Uncheck (incorrectly flags some things, e.g. Nuxt config) TODO: Still needed? Check in a Nuxt app...
+  * (In Idea IDE only) Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
   * Proofreading -> Typo -> Options -> Uncheck "Process code"
 * Keymap - Mac OS X 10.5+
   * **NOTE: I've decided to learn default keymaps whenever they exist.  I now only add ones that are useful but unmapped.**
   * **Tip: "Move Caret to Text Start/End" is bound to "home/end" by default.  On a Mac small/laptop keyboard,
     use is Fn+Cmd+<right|left> for "home/end"**
-  * Show F1, F2, etc. keys on the touch bar (checkbox at bottom of Keymap panel - may not be on all/latest IDEs?).
+  * Show F1, F2, etc. keys on the touch bar (If applicable, there will be checkbox at bottom of Keymap panel)
   * Main Menu
     * Code
       * Inspect Code...: Add Ctrl+Option+Cmd+I
-    * Debugging Actions
-      * Resume Program: Remove "Cmd+Option+R" shortcut and leave only F9, it's inconsistent with all the others which are Function keys, and I want the F9 function key to show up on the tooltip when hovering over the button.
+    * Run
+      * Debugging Actions
+        * Resume Program: Remove "Cmd+Option+R" shortcut and leave only F9, it's inconsistent with all the others which are Function keys, and I want the F9 function key to show up on the tooltip when hovering over the button.
     * Window
       * Editor Tabs
-        * Close All: Add Cmd+Option+w binding
+        * Close All: Add Cmd+Option+w
   * Version Control Systems
     * Git
       * Compare with Branch: Add Ctrl+Option+Cmd+B
@@ -253,27 +249,29 @@ both IDE-level and project-level settings via version control.
       * Compare Before with Local: Add Shift+Option+D (conflicts with Mercurial, but I don't care)
     * Show History (for all): Add Ctrl+Option+Cmd+H
 * Build, Execution, Deployment
-  * Build Tools -> Gradle
+  * (Idea IDE only) Build Tools -> Gradle
     * Use auto-import
     * Using explicit module groups
     * Use gradle 'wrapper' task configuration
     * Everything else unchecked
-  * Build Tools -> Gradle -> Runner -> Delegate IDE build/run actions to gradle
-  * Compiler
+  * (Idea IDE only) Build Tools -> Gradle -> Runner -> Delegate IDE build/run actions to gradle
+  * Compiler (If exists in IDE)
     * Build Project Automatically: Turn on
-  * Other
+  * Other (If exists in IDE)
     * Select in Project View: Add Cmd-Shift-1
 * Languages & Frameworks
   * JavaScript
-    * JavaScript language version: React JSX
+    * JavaScript language version: ECMAScript 6+
     * Libraries -> Add -> (NOTE: most of these require that you **close and re-open project** for them to be picked up.)
-      * Node.js Core (to make 'process.env' not complain that `process` has no import)
+      * Node.js Core (to make 'process.env' not complain that `process` has no import) (TODO: Is this still needed?)
         * Framework Type -> "Node.js core modules"
         * put anything for name, don't add anything else
         * **close and re-open project** - this will cause IDE to automatically change it to "Node.js Core" `predefined` type.  The entry that was added to `.idea/*.iml` will disappear on restart.
      * Prettier
        * Package: put path, e.g.: `~/workspace/gitlab-development-kit/gitlab/node_modules/prettier`
        * Put extra mask in Run for Files, e.g.: `{**/*,*}.{js,ts,jsx,tsx,vue,graphql,scss}`
+       * Check "On 'Reformat Code' action"
+* Advanced Settings -> IDE section: Recent files limit -> 100
 * Misc Plugins
   * [Lines Sorter](https://plugins.jetbrains.com/plugin/5919-lines-sorter/)
   * ~~Bash Support~~ (replaced with built-in Jetbrains "Shell Script" plugin)
