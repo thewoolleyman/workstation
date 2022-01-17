@@ -278,6 +278,9 @@ both IDE-level and project-level settings via version control.
        * Put extra mask in Run for Files, e.g.: `{**/*,*}.{js,ts,jsx,tsx,vue,graphql,scss}`
        * Check "On 'Reformat Code' action"
 * Advanced Settings -> IDE section: Recent files limit -> 100
+* DISABLE bundled Markdown plugin. It has some nice features, but it slows down scrolling and can cause unwanted
+  spacing or edits when attempting to format lists or numbered lists. 
+  * TODO: Revisit later and see if it gets better.
 * Misc Plugins
   * [Lines Sorter](https://plugins.jetbrains.com/plugin/5919-lines-sorter/)
   * ~~Bash Support~~ (replaced with built-in Jetbrains "Shell Script" plugin)
