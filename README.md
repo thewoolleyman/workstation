@@ -189,8 +189,7 @@ both IDE-level and project-level settings via version control.
 * Editor -> Font -> Line height -> change to 0.9 (More density on laptop screens)
 * Editor -> Code Style ->
   * General: 
-    * Hard wrap at 80 columns
-    * Visual Guides at 100 columns
+    * Hard wrap at 100 columns (leave wrap on typing unchecked)
   * HTML: 
     * Other:
       * Spaces:
