@@ -285,9 +285,10 @@ both IDE-level and project-level settings via version control.
 * DISABLE bundled Markdown plugin. It has some nice features, but it slows down scrolling and can cause unwanted
   spacing or edits when attempting to format lists or numbered lists. 
   * TODO: Revisit later and see if it gets better.
-* Misc Plugins
+* Productivity Plugins
   * [Lines Sorter](https://plugins.jetbrains.com/plugin/5919-lines-sorter/)
-  * ~~Bash Support~~ (replaced with built-in Jetbrains "Shell Script" plugin)
+  * Rainbow Brackets - different colored bracket and parenthesis matching (https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
+  * String Manipulation - it, uh, manipulates strings (https://plugins.jetbrains.com/plugin/2162-string-manipulation)
 * Keystroke-Learning Plugins
   * Force Shortcuts (if you are hardcore and want to be forced to use keyboard)
   * Key Promoter X (if you want to be always reminded to use keyboard)
