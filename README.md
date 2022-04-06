@@ -281,6 +281,7 @@ both IDE-level and project-level settings via version control.
        * Package: put path, e.g.: `~/workspace/gitlab-development-kit/gitlab/node_modules/prettier`
        * Put extra mask in Run for Files, e.g.: `{**/*,*}.{js,ts,jsx,tsx,vue,graphql,scss}`
        * Check "On 'Reformat Code' action"
+     * Code Quality Tools -> ESLint: Switch to "Manual ESLint Configuration", and enter a single dot `.` in "Working directories". This is a workaround for this bug: https://youtrack.jetbrains.com/issue/WEB-47385#focus=Comments-27-5119207.0-0
 * Advanced Settings -> IDE section: Recent files limit -> 100
 * DISABLE bundled Markdown plugin. It has some nice features, but it slows down scrolling and can cause unwanted
   spacing or edits when attempting to format lists or numbered lists. 
