@@ -281,7 +281,16 @@ both IDE-level and project-level settings via version control.
        * Package: put path, e.g.: `~/workspace/gitlab-development-kit/gitlab/node_modules/prettier`
        * Put extra mask in Run for Files, e.g.: `{**/*,*}.{js,ts,jsx,tsx,vue,graphql,scss}`
        * Check "On 'Reformat Code' action"
-     * Code Quality Tools -> ESLint: Switch to "Manual ESLint Configuration", and enter a single dot `.` in "Working directories". This is a workaround for this bug: https://youtrack.jetbrains.com/issue/WEB-47385#focus=Comments-27-5119207.0-0
+     * Code Quality Tools -> ESLint:
+       * Switch to "Manual ESLint Configuration"
+       * Eslint Package: Detect package and configuration file from nearest package.json
+       * "Working directories": Enter a single dot `.`
+       * Configuration file: Automatic Search
+       * Additional rules dir: blank
+       * Extra eslint options: blank
+       * RUn for files: `{**/*,*}.{js,ts,jsx,tsx,html,vue}`
+       * These manual settings are a workaround for this bug, which results in a red error for eslint config in JetBrains when viewing JS files: https://youtrack.jetbrains.com/issue/WEB-47385#focus=Comments-27-5119207.0-0
+       * You may have to restart the IDE and/or re-save the settings a few times to make the error go away (???)
 * Advanced Settings -> IDE section: Recent files limit -> 100
 * DISABLE bundled Markdown plugin. It has some nice features, but it slows down scrolling and can cause unwanted
   spacing or edits when attempting to format lists or numbered lists. 
