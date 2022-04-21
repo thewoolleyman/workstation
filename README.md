@@ -188,6 +188,8 @@ both IDE-level and project-level settings via version control.
 * Editor -> General -> Auto Import -> TypeScript/JavaScript -> Turn on: Unambiguous imports on the fly
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
+* Editor -> File Types -> Ignored Files and Folders
+  * Add `*.edit.po` (translation files in GitLab, they are in `.gitignore` and thus automatically excluded in IDE anyway).
 * Editor -> Font -> Size -> change to 15
 * Editor -> Font -> Line height -> change to 0.9 (More density on laptop screens)
 * Editor -> Code Style ->
