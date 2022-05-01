@@ -237,6 +237,8 @@ both IDE-level and project-level settings via version control.
   * Javascript -> General ->
     * ~~Unresolved Javascript variable: Uncheck (incorrectly flags some things in Vue)~~ Seems like this works better now???
     * Unused global symbol: Uncheck (incorrectly flags some things, e.g. Nuxt config) TODO: Still needed? Check in a Nuxt app...
+  * Ruby -> Naming Conventions
+    * Unconventional ... name: Change max length on all from 30 to 40. Terseness is not a virtue; name things appropriately and wrap lines if ya gotta.
   * (In Idea IDE only) Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
   * Proofreading -> Typo -> Options -> Uncheck "Process code"
 * Keymap - Mac OS X 10.5+
