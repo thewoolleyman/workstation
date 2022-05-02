@@ -53,6 +53,8 @@ NOTES FOR 2020 / Catalina
   * Shortcuts -> Services -> Text: Uncheck "Search man Page Index in Terminal" ([steals binding from Jetbrains](https://stackoverflow.com/a/55747595)).
 * System Preferences - Trackpad
   * Point and Click -> Force Click and haptic feedback: Turn Off (always causes me to lose highlighting in my way when I'm drag-highlighing with the trackpad)
+* System Preferences - Mission Control
+  * Hot Corners... -> Disable all 
 * Make everything show in Finder:
   * Finder -> home directory
     * Change to List view
