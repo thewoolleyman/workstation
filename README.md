@@ -297,14 +297,20 @@ both IDE-level and project-level settings via version control.
        * RUn for files: `{**/*,*}.{js,ts,jsx,tsx,html,vue}`
        * These manual settings are a workaround for this bug, which results in a red error for eslint config in JetBrains when viewing JS files: https://youtrack.jetbrains.com/issue/WEB-47385#focus=Comments-27-5119207.0-0
        * You may have to restart the IDE and/or re-save the settings a few times to make the error go away (???)
+  * Markdown
+    * Automatic assistance in the editor: Turn off - it prevents numbering of ordered lists with all `1.`; it forces them to be sequential. See bug: https://youtrack.jetbrains.com/issue/IDEA-292704/Do-not-automatically-number-lists-in-markdown
 * Advanced Settings -> IDE section: Recent files limit -> 100
-* DISABLE bundled Markdown plugin. It has some nice features, but it slows down scrolling and can cause unwanted
-  spacing or edits when attempting to format lists or numbered lists. 
-  * TODO: Revisit later and see if it gets better.
 * Productivity Plugins
-  * [Lines Sorter](https://plugins.jetbrains.com/plugin/5919-lines-sorter/)
+  * [Lines Sorter Plus](https://plugins.jetbrains.com/plugin/18564-lines-sorter-plus)
   * Rainbow Brackets - different colored bracket and parenthesis matching (https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
   * String Manipulation - it, uh, manipulates strings (https://plugins.jetbrains.com/plugin/2162-string-manipulation)
+* AI Coding Assistance Plugins
+  * [GitHub CoPilot](https://plugins.jetbrains.com/plugin/17718-github-copilot)
+  * [Tabnine](https://plugins.jetbrains.com/plugin/12798-tabnine-ai-code-completion-js-java-python-ts-rust-go-php--more)
+* Project/Activity Plugins
+  * [GitLink](https://plugins.jetbrains.com/plugin/8183-gitlink) - easily open repo web links directly from code
+  * [CodeStream (by NewRelic)](https://plugins.jetbrains.com/plugin/12206-new-relic-codestream-github-gitlab-prs-and-code-review) - MRs/PRs and Code Review
+  * [CodeTime](https://plugins.jetbrains.com/plugin/15507-codetime) - static analysis and reports of coding patterns
 * Keystroke-Learning Plugins
   * Force Shortcuts (if you are hardcore and want to be forced to use keyboard)
   * Key Promoter X (if you want to be always reminded to use keyboard)
