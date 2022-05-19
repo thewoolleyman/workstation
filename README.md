@@ -300,39 +300,14 @@ both IDE-level and project-level settings via version control.
   * Markdown
     * Automatic assistance in the editor: Turn off - it prevents numbering of ordered lists with all `1.`; it forces them to be sequential. See bug: https://youtrack.jetbrains.com/issue/IDEA-292704/Do-not-automatically-number-lists-in-markdown
 * Advanced Settings -> IDE section: Recent files limit -> 100
-* Productivity Plugins
-  * [Lines Sorter Plus](https://plugins.jetbrains.com/plugin/18564-lines-sorter-plus)
-  * Rainbow Brackets - different colored bracket and parenthesis matching (https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
-  * String Manipulation - it, uh, manipulates strings (https://plugins.jetbrains.com/plugin/2162-string-manipulation)
-* AI Coding Assistance Plugins
-  * [GitHub CoPilot](https://plugins.jetbrains.com/plugin/17718-github-copilot)
-  * [Tabnine](https://plugins.jetbrains.com/plugin/12798-tabnine-ai-code-completion-js-java-python-ts-rust-go-php--more)
-* Project/Activity Plugins
-  * [GitLink](https://plugins.jetbrains.com/plugin/8183-gitlink) - easily open repo web links directly from code
-  * [CodeStream (by NewRelic)](https://plugins.jetbrains.com/plugin/12206-new-relic-codestream-github-gitlab-prs-and-code-review) - MRs/PRs and Code Review
-  * [CodeTime](https://plugins.jetbrains.com/plugin/15507-codetime) - static analysis and reports of coding patterns
-* Keystroke-Learning Plugins
-  * Force Shortcuts (if you are hardcore and want to be forced to use keyboard)
-  * Key Promoter X (if you want to be always reminded to use keyboard)
-  * Presentation Assistant (if you are pair programming, and want other people to see what keystrokes you are using)
-* Fun Plugins
-  * Nyan Progress Bar
-* Haskell plugin
-  * Use [the one named `intellij-haskell`](https://plugins.jetbrains.com/plugin/8258-intellij-haskell), **NOT**
-    the `haskell` one by jetbrains!  Note this **only works in Intellij**, not Rubymine, Webstorm, etc.
-  * Follow [Getting Started instructions in the readme](https://github.com/rikvdkleij/intellij-haskell/blob/master/README.md#getting-started)  
 * Idea-only settings for Elixir
   * Configure *.eex to display as RHTML (syntax is similar enough to get highlighting right)
     * Install Ruby Plugin
     * Editor -> File Types -> RHTML: Add "*.eex" as type
     * Editor -> Inspections -> Ruby -> Unresolved Ruby Reference: Uncheck
     * Editor -> Inspections -> Ruby -> Double Quoted String: Uncheck
-* GitLab:
-  * JS GraphQL
-  * Prettier
-  * TOML
-  * Vue.js
-
+* PLUGINS: My curated list of Jetbrains plugins I use has moved to
+  [the RubyMine Plugins section of my GitLab Workstation Setup Notes](https://gitlab.com/cwoolley-gitlab/cwoolley-gitlab/-/blob/main/gitlab-workstation-setup-notes.md#rubymine-plugins). Please visit that link for the latest updates.
 
 
 # Ubuntu Workstation
