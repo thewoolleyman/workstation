@@ -222,6 +222,9 @@ both IDE-level and project-level settings via version control.
       * Don't Use semicolon to terminate statements always (leave on for GitLab)
       * Use single quotes always
       * Trailing comma: Add when multiline
+  * Markdown (need to enable markdown plugin first)
+    * Wrapping and Braces
+      * Turn off: Wrap on Typing, Wrap long text, Wrap text inside block quotes (enabling these will cause it to break URLs and other things that should never be wrapped)
   * Ruby: Tabs and Indents: Indent methods after access **ALL** modifiers **ONLY IF YOU WANT to match
     default Rails generator formatting, otherwise prefer not to because it takes more space**
   * Ruby: Spaces: Spaces within curly braces in hashes **AND** blocks **ONLY IF YOU WANT to match
