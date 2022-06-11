@@ -180,12 +180,23 @@ See https://gitlab.com/jetbrains-ide-config/jetbrains-ide-config-gitlab for my p
 both IDE-level and project-level settings via version control.
 
 * Appearance & Behavior -> Appearance
-  * Theme: Darcula, check "Use dark window headers"
+  * Theme: Darcula
   * Use custom font -> change to 14
+  * (OPTIONAL) Use custom font: .SF NS Text
 * Appearance & Behavior -> Menus and Toolbars
   * (OPTIONAL) Delete some things to give more room for file path on laptop screens 
     * Main Toolbar -> Main Toolbar Settings: Delete (minus button) this, things below it, and the separators.
     * Navigation Bar Toolbar (not sure how/why this is different than "Main Toolbar"???) -> Remove VCS options subgroup
+* Appearance & Behavior -> UI Options -> Check the following:
+  * Show tree indent guides
+  * (OPTIONAL) Use smaller indents in trees (really only necessary to get more horizontal real estate when working on laptop screen)
+  * Enable mnemonics in menu
+  * Enable mnemonics in controls
+  * Always show full path in menu header
+* Appearance & Behavior -> Tool Windows -> Check the following:
+  * Show Tool Window numbers 
+* Appearance & Behavior -> System Settings
+  * Enable: Save files if the IDE is idle for 15 seconds
 * Editor -> Color Scheme -> Darcula
 * Editor -> General -> Code Completion -> Insert selected suggestion by pressing space, dot, or other context-dependent keys -> Turn off (As of 2021.1 EAP makes annoying Rubymine doc annotation completion autocomplete when you are trying to type comments in spaces.  Hopefully this is fixed soon)
 * Editor -> General -> Auto Import -> TypeScript/JavaScript -> Turn on: Unambiguous imports on the fly
