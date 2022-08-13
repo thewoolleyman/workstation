@@ -207,9 +207,12 @@ both IDE-level and project-level settings via version control.
   * Add `*.edit.po` (translation files in GitLab, they are in `.gitignore` and thus automatically excluded in IDE anyway).
 * Editor -> Font -> Size -> change to 15
 * Editor -> Font -> Line height -> change to 0.9 (More density on laptop screens)
-* Editor -> Code Style ->
-  * General: 
+* Editor -> Code Style -> General tab:
     * Hard wrap at 100 columns (leave wrap on typing unchecked)
+* Editor -> Code Style -> Formatter tab:
+    * Check "Turn formatter on/off with markers in code comments" - allows disabling autoformatting if it conflicts with
+      prettier/rubycop/linter settings in project, so you can still autoformat the rest of the entire file.
+* Editor -> Code Style ->
   * HTML: 
     * Other:
       * Spaces:
