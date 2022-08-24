@@ -263,6 +263,8 @@ both IDE-level and project-level settings via version control.
   * (In Idea IDE only) Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
   * Proofreading -> Typo -> Options -> Uncheck "Process code"
   * Security -> Link with unencrypted protocol -> "Ignored URLs": Add "http://test.host" (for Rails apps)
+* Editor -> Inlay Hints
+  * Code vision -> Uncheck "Code author" (can open Annotations to see authors)
 * Keymap - Mac OS X 10.5+
   * **NOTE: I've decided to learn default keymaps whenever they exist.  I now only add ones that are useful but unmapped.**
   * **Tip: "Move Caret to Text Start/End" is bound to "home/end" by default.  On a Mac small/laptop keyboard,
