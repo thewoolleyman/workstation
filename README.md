@@ -167,6 +167,8 @@ NOTES FOR 2020 / Catalina
 
 # Jetbrains overridden settings
 
+**_IMPORTANT NOTE: Most of this document is now deprecated! See the latest version here, from when I set up my latest GitLab workstation: https://gitlab.com/cwoolley-gitlab/cwoolley-gitlab/-/blob/main/gitlab-workstation-setup-notes.md. The only part which will be kept up to date is the [Jetbrains overridden settings](#jetbrains-overridden-settings) section (TODO: Move the Jetbrains section to a separate dedicated page)._**
+
 Notes: Many of these are project-level settings, and can be persisted by selectively committing config
 under `.idea`.  Also, some may vary across different IDEs and projects.  So, these are more guidelines
 and reminders to myself of where the settings live.  
