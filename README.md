@@ -277,7 +277,7 @@ both IDE-level and project-level settings via version control.
       * Inspect Code...: Add Ctrl+Option+Cmd+I
     * Edit
       * Copy Path/Reference...
-        * Path From Content Root: Bind to Cmd-Shift-C (replace default keybinding of this to copy absolute path)
+        * Path From Repository Root: Bind to Cmd-Shift-C (replace default keybinding of this to copy absolute path)
     * Run
       * Debugging Actions
         * Resume Program: Remove "Cmd+Option+R" shortcut and leave only F9, it's inconsistent with all the others which are Function keys, and I want the F9 function key to show up on the tooltip when hovering over the button.
