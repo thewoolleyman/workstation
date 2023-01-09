@@ -326,6 +326,7 @@ both IDE-level and project-level settings via version control.
        * You may have to restart the IDE and/or re-save the settings a few times to make the error go away (???)
   * Markdown
     * Automatic assistance in the editor: Turn off - it prevents numbering of ordered lists with all `1.`; it forces them to be sequential. See bug: https://youtrack.jetbrains.com/issue/IDEA-292704/Do-not-automatically-number-lists-in-markdown
+* Tools -> Terminal: Sometimes the RubyMine in-IDE Terminal can get confused and use the wrong interpreter/gems. I’ve found that I need `ASDF_RUBY_VERSION=2.7.7` (or whatever is in your `.tool-version`) in `Tools -> Terminal -> Environment Variables` to make it work, even if I have the right SDK set in `Languages & Frameworks -> Ruby SDK and Gems`
 * Advanced Settings -> IDE section: Recent files limit -> 100
 * Idea-only settings for Elixir
   * Configure *.eex to display as RHTML (syntax is similar enough to get highlighting right)
