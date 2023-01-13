@@ -243,10 +243,12 @@ both IDE-level and project-level settings via version control.
   * Markdown (need to enable markdown plugin first)
     * Wrapping and Braces
       * Turn off: Wrap on Typing, Wrap long text, Wrap text inside block quotes (enabling these will cause it to break URLs and other things that should never be wrapped)
-  * Ruby: Tabs and Indents: Indent methods after access **ALL** modifiers **ONLY IF YOU WANT to match
-    default Rails generator formatting, otherwise prefer not to because it takes more space**
-  * Ruby: Spaces: Spaces within curly braces in hashes **AND** blocks **ONLY IF YOU WANT to match
-    default Rails generator formatting, otherwise prefer not to because it takes more space**
+  * Ruby:
+    * Tabs and Indents: Indent methods after access **ALL** modifiers **ONLY IF YOU WANT to match
+      default Rails generator formatting, otherwise prefer not to because it takes more space**
+    * Spaces: Spaces within curly braces in hashes **AND** blocks **ONLY IF YOU WANT to match
+      default Rails generator formatting, otherwise prefer not to because it takes more space**
+    * Wrapping and Braces: UNCHECK List items -> Align when multiline (to comply with GitLab RuboCop rules)  
   * HTML, Style Sheets (CSS), Javascript, Typescript, Other File Types: Set Tab size, Indent, and Continuation Indent all to 2 (instead of default 4)
 * Editor -> Code Editing
   * Error Highlighting -> The 'Next Error' action goes through: All problems
