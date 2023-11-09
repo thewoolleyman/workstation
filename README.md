@@ -284,12 +284,17 @@ both IDE-level and project-level settings via version control.
         * Path From Repository Root: Bind to Cmd-Shift-C (replace default keybinding of this to copy absolute path)
     * Run
       * Debugging Actions
-        * Resume Program: Remove "Cmd+Option+R" shortcut and leave only F9, it's inconsistent with all the others which are Function keys, and I want the F9 function key to show up on the tooltip when hovering over the button.
+        * Resume Program: Remove "Cmd+Option+R" shortcut and leave only F9, it's inconsistent with all the others which are Function keys,
+          and I want the F9 function key to show up on the tooltip when hovering over the button.
     * Window
       * Editor Tabs
         * Close All: Add Cmd+Option+w
   * Version Control Systems
+    * Commit: Turn on "Use non-modal commit interface". (I find this easier to work with, so I can see all my work in progress in context,
+      and easily hit `F4` to jump between highlighted files.
     * Git
+      * Commit: Turn off "Enable staging area". This enables changeslists, which lets you have "checkboxes" and more functionality in the commit dialog.
+        "Staging area" is more like actual git, but has less functionality.
       * Compare with Branch: Add Ctrl+Option+Cmd+B
     * Diff & Merge
       * Compare with Local: Add Option+D
