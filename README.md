@@ -200,6 +200,11 @@ both IDE-level and project-level settings via version control.
 * Appearance & Behavior -> System Settings
   * Enable: Save files if the IDE is idle for 15 seconds
 * Editor -> Color Scheme -> Darcula
+* Editor -> General (root level) -> On Save section ->
+  * Turn ON: Remove trailing spaces on modified lines
+  * Turn ON: Keep trailing spaces on carat line
+  * Turn ON: Remote trailing blank lines at end of saved files
+  * Turn ON: Ensure every saved file ends with a line break
 * Editor -> General -> Code Completion -> Insert selected suggestion by pressing space, dot, or other context-dependent keys -> Turn off (As of 2021.1 EAP makes annoying Rubymine doc annotation completion autocomplete when you are trying to type comments in spaces.  Hopefully this is fixed soon)
 * Editor -> General -> Auto Import -> TypeScript/JavaScript -> Turn on: Unambiguous imports on the fly
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
