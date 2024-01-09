@@ -265,7 +265,7 @@ both IDE-level and project-level settings via version control.
       * Add 'nuxt' (for Vue apps)
       * Add 'rootDir' (for jest config)
   * Javascript -> General ->
-    * ~~Unresolved Javascript variable: Uncheck (incorrectly flags some things in Vue)~~ Seems like this works better now???
+    * Unresolved reference: Uncheck unless you have everything really locked down with Typescript types for all your code and libraries (uncheck for GitLab project)
     * Unused global symbol: Uncheck (incorrectly flags some things, e.g. Nuxt config) TODO: Still needed? Check in a Nuxt app...
   * Markdown ->
     * Uncheck "Incorrectly numbered list item"
