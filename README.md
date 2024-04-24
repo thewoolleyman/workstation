@@ -345,7 +345,7 @@ both IDE-level and project-level settings via version control.
   * Markdown -> Markdown Extensions" Install PlantUML extension
 * Tools -> Terminal: Sometimes the RubyMine in-IDE Terminal can get confused and use the wrong interpreter/gems. I’ve found that I need `ASDF_RUBY_VERSION=2.7.7` (or whatever is in your `.tool-version`) in `Tools -> Terminal -> Environment Variables` to make it work, even if I have the right SDK set in `Languages & Frameworks -> Ruby SDK and Gems`.
   * **_NOTE: If you do this, you will need to keep it updated with your Ruby version!_**
-* Advanced Settings -> IDE section: Recent files limit -> 100
+* Advanced Settings -> IDE section: Maximum number of recent files: 100
 * Idea-only settings for Elixir
   * Configure *.eex to display as RHTML (syntax is similar enough to get highlighting right)
     * Install Ruby Plugin
