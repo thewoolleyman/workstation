@@ -187,17 +187,17 @@ both IDE-level and project-level settings via version control.
   * (OPTIONAL) Use custom font: .SF NS Text
 * Appearance & Behavior -> Menus and Toolbars
   * (OPTIONAL) Delete some things to give more room for file path on laptop screens 
-    * Main Toolbar -> Main Toolbar Settings: Delete (minus button) this, things below it, and the separators.
+    * TODO: Outdated: ~~Main Toolbar -> Main Toolbar Settings: Delete (minus button) this, things below it, and the separators.~~
     * Navigation Bar Toolbar (not sure how/why this is different than "Main Toolbar"???) -> Remove VCS options subgroup
-* Appearance & Behavior -> UI Options -> Check the following:
+* Appearance & Behavior -> Appearance -> UI Options -> Check the following:
   * Show tree indent guides
   * (OPTIONAL) Use smaller indents in trees (really only necessary to get more horizontal real estate when working on laptop screen)
   * Enable mnemonics in menu
   * Enable mnemonics in controls
   * Always show full path in menu header
-* Appearance & Behavior -> Tool Windows -> Check the following:
-  * Show Tool Window numbers 
-* Appearance & Behavior -> System Settings
+* Appearance & Behavior -> Appearance -> Tool Windows -> Check the following:
+  * TODO: Outdated ~~Show Tool Window numbers~~
+* Appearance & Behavior -> System Settings -> Autosave
   * Enable: Save files if the IDE is idle for 15 seconds
 * Editor -> Color Scheme -> Darcula
 * Editor -> General (root level) -> On Save section ->
@@ -205,7 +205,7 @@ both IDE-level and project-level settings via version control.
   * Turn ON: Keep trailing spaces on carat line
   * Turn ON: Remote trailing blank lines at end of saved files
   * Turn ON: Ensure every saved file ends with a line break
-* Editor -> General -> Code Completion -> Insert selected suggestion by pressing space, dot, or other context-dependent keys -> Turn off (As of 2021.1 EAP makes annoying Rubymine doc annotation completion autocomplete when you are trying to type comments in spaces.  Hopefully this is fixed soon)
+* Editor -> General -> Code Completion -> Insert selected suggestion by pressing space, dot, or other context-dependent keys -> Turn off
 * Editor -> General -> Auto Import -> TypeScript/JavaScript -> Turn on: Unambiguous imports on the fly
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
