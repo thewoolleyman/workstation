@@ -210,6 +210,7 @@ both IDE-level and project-level settings via version control.
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
 * Editor -> General -> Smart Keys -> YAML -> Turn OFF: Auto expand key sequences upon paste (tries to wrap lines when pasting colons in comments)
+* Editor -> General -> Smart Keys -> Markdown -> Turn OFF: Adjust indentation on type
 * Editor -> File Types -> Ignored Files and Folders
   * Add `*.edit.po` (translation files in GitLab, they are in `.gitignore` and thus automatically excluded in IDE anyway).
 * Editor -> Font -> Size -> change to 15
@@ -264,23 +265,22 @@ both IDE-level and project-level settings via version control.
     * Unknown tag -> Options -> Custom HTML Tags:
       * Add 'nuxt' (for Vue apps)
       * Add 'rootDir' (for jest config)
-  * Javascript -> General ->
+  * Javascript and Typescript -> General ->
     * Unresolved reference: Uncheck unless you have everything really locked down with Typescript types for all your code and libraries (uncheck for GitLab project)
+  * Javascript and Typescript -> Unused Symbols ->
     * Unused global symbol: Uncheck (incorrectly flags some things, e.g. Nuxt config) TODO: Still needed? Check in a Nuxt app...
   * Markdown ->
     * Uncheck "Incorrectly numbered list item"
-  * Ruby -> Naming Conventions
-    * Unconventional ... name: Change max length on all from 30 to 40. Terseness is not a virtue; name things appropriately and wrap lines if ya gotta.
   * (In Idea IDE only) Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
   * Proofreading -> Typo -> Options -> Uncheck "Process code"
   * Security -> Link with unencrypted protocol -> "Ignored URLs": Add "http://test.host" (for Rails apps)
 * Editor -> Inlay Hints
   * Code vision -> Uncheck "Code author" (can open Annotations to see authors)
-* Keymap - Mac OS X 10.5+
+* Keymap - Mac OS
   * **NOTE: I've decided to learn default keymaps whenever they exist.  I now only add ones that are useful but unmapped.**
   * **Tip: "Move Caret to Text Start/End" is bound to "home/end" by default.  On a Mac small/laptop keyboard,
     use is Fn+Cmd+<right|left> for "home/end"**
-  * Show F1, F2, etc. keys on the touch bar (If applicable, there will be checkbox at bottom of Keymap panel)
+  * (ONLY if you have a touch bar mac) Show F1, F2, etc. keys on the touch bar (If applicable, there will be checkbox at bottom of Keymap panel)
   * Main Menu
     * Code
       * Inspect Code...: Add Ctrl+Option+Cmd+I
@@ -293,18 +293,21 @@ both IDE-level and project-level settings via version control.
           and I want the F9 function key to show up on the tooltip when hovering over the button.
     * Window
       * Editor Tabs
-        * Close All: Add Cmd+Option+w
-  * Version Control Systems
-    * Commit: Turn on "Use non-modal commit interface". (I find this easier to work with, so I can see all my work in progress in context,
-      and easily hit `F4` to jump between highlighted files.
-    * Git
-      * Commit: Turn off "Enable staging area". This enables changeslists, which lets you have "checkboxes" and more functionality in the commit dialog.
-        "Staging area" is more like actual git, but has less functionality.
-      * Compare with Branch: Add Ctrl+Option+Cmd+B
-    * Diff & Merge
-      * Compare with Local: Add Option+D
-      * Compare Before with Local: Add Shift+Option+D (conflicts with Mercurial, but I don't care)
-    * Show History (for all): Add Ctrl+Option+Cmd+H
+        * Editor Close Actions 
+          * Close All Tabs: Add Cmd+Option+w
+    * Version Control Systems
+      * Git
+        * Compare with Branch: Add Ctrl+Option+Cmd+B
+        * Show History (for all): Add Ctrl+Option+Cmd+H
+      * Diff & Merge
+        * Compare with Local: Add Option+D
+        * Compare Before with Local: Add Shift+Option+D (conflicts with Mercurial, but I don't care)
+* Version Control
+  * Commit: Turn on "Use non-modal commit interface". (I find this easier to work with, so I can see all my work in progress in context,
+    and easily hit `F4` to jump between highlighted files.
+  * Git
+    * Commit: Turn off "Enable staging area". This enables changeslists, which lets you have "checkboxes" and more functionality in the commit dialog.
+      "Staging area" is more like actual git, but has less functionality.
 * Build, Execution, Deployment
   * (Idea IDE only) Build Tools -> Gradle
     * Use auto-import
@@ -325,6 +328,7 @@ both IDE-level and project-level settings via version control.
         * put anything for name, don't add anything else
         * **close and re-open project** - this will cause IDE to automatically change it to "Node.js Core" `predefined` type.  The entry that was added to `.idea/*.iml` will disappear on restart.
      * Prettier
+       * Enable
        * Package: put path, e.g.: `~/workspace/gitlab-development-kit/gitlab/node_modules/prettier`
        * Put extra mask in Run for Files, e.g.: `{**/*,*}.{js,ts,jsx,tsx,vue,graphql,scss}`
        * Check "On 'Reformat Code' action"
@@ -335,12 +339,12 @@ both IDE-level and project-level settings via version control.
        * Configuration file: Automatic Search
        * Additional rules dir: blank
        * Extra eslint options: blank
-       * RUn for files: `{**/*,*}.{js,ts,jsx,tsx,html,vue}`
+       * Run for files: `{**/*,*}.{js,ts,jsx,tsx,html,vue}`
        * These manual settings are a workaround for this bug, which results in a red error for eslint config in JetBrains when viewing JS files: https://youtrack.jetbrains.com/issue/WEB-47385#focus=Comments-27-5119207.0-0
        * You may have to restart the IDE and/or re-save the settings a few times to make the error go away (???)
-  * Markdown
-    * Automatic assistance in the editor: Turn off - it prevents numbering of ordered lists with all `1.`; it forces them to be sequential. See bug: https://youtrack.jetbrains.com/issue/IDEA-292704/Do-not-automatically-number-lists-in-markdown
-* Tools -> Terminal: Sometimes the RubyMine in-IDE Terminal can get confused and use the wrong interpreter/gems. I’ve found that I need `ASDF_RUBY_VERSION=2.7.7` (or whatever is in your `.tool-version`) in `Tools -> Terminal -> Environment Variables` to make it work, even if I have the right SDK set in `Languages & Frameworks -> Ruby SDK and Gems`
+  * Markdown -> Markdown Extensions" Install PlantUML extension
+* Tools -> Terminal: Sometimes the RubyMine in-IDE Terminal can get confused and use the wrong interpreter/gems. I’ve found that I need `ASDF_RUBY_VERSION=2.7.7` (or whatever is in your `.tool-version`) in `Tools -> Terminal -> Environment Variables` to make it work, even if I have the right SDK set in `Languages & Frameworks -> Ruby SDK and Gems`.
+  * **_NOTE: If you do this, you will need to keep it updated with your Ruby version!_**
 * Advanced Settings -> IDE section: Recent files limit -> 100
 * Idea-only settings for Elixir
   * Configure *.eex to display as RHTML (syntax is similar enough to get highlighting right)
