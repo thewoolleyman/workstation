@@ -210,7 +210,14 @@ both IDE-level and project-level settings via version control.
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
 * Editor -> General -> Smart Keys -> YAML -> Turn OFF: Auto expand key sequences upon paste (tries to wrap lines when pasting colons in comments)
-* Editor -> General -> Smart Keys -> Markdown -> Turn OFF: Adjust indentation on type
+* Editor -> General -> Smart Keys -> Markdown
+  * Turn OFF: Adjust indentation on type
+  * Turn OFF: Use smart Enter and Backspace
+  * Turn OFF: Renumber list when typing.
+  * These last two will prevent JetBrains from always attempting to make ordered list consecutive numbers, instead of all `1.`. See also:
+    * https://youtrack.jetbrains.com/issue/IJPL-92197
+    * https://youtrack.jetbrains.com/issue/IJPL-92196
+    * https://youtrack.jetbrains.com/issue/IJPL-92195
 * Editor -> File Types -> Ignored Files and Folders
   * Add `*.edit.po` (translation files in GitLab, they are in `.gitignore` and thus automatically excluded in IDE anyway).
 * Editor -> Font -> Size -> change to 15
