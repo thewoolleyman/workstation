@@ -211,6 +211,7 @@ both IDE-level and project-level settings via version control.
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
 * Editor -> General -> Smart Keys -> YAML -> Turn OFF: Auto expand key sequences upon paste (tries to wrap lines when pasting colons in comments)
 * Editor -> General -> Smart Keys -> Markdown
+  * Turn OFF: Reformat table when typing
   * Turn OFF: Adjust indentation on type
   * Turn OFF: Use smart Enter and Backspace
   * Turn OFF: Renumber list when typing.
