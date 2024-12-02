@@ -50,7 +50,7 @@ NOTES FOR 2020 / Catalina
   * Max key repeat, shorter delay until repeat.
   * Normal Keyboard: Use function keys as standard function keys
   * Macbook Touchbar: Leave to defaults (Touch Bar shows: App Controls with Control Strip; Press Fn key to: F1, F2 keys...;
-  * Shortcuts -> Services -> Text: Uncheck "Search man Page Index in Terminal" ([steals binding from Jetbrains](https://stackoverflow.com/a/55747595)).
+  * Shortcuts -> Services -> Text: Uncheck "Search man Page Index in Terminal" ([steals `Cmd + Shift + A` binding from Jetbrains](https://stackoverflow.com/a/55747595)).
 * System Preferences - Trackpad
   * Point and Click -> Force Click and haptic feedback: Turn Off (always causes me to lose highlighting in my way when I'm drag-highlighing with the trackpad)
 * System Preferences - Mission Control
