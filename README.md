@@ -273,14 +273,18 @@ both IDE-level and project-level settings via version control.
     * Unknown tag -> Options -> Custom HTML Tags:
       * Add 'nuxt' (for Vue apps)
       * Add 'rootDir' (for jest config)
-  * Javascript and Typescript -> General ->
-    * Unresolved reference: Uncheck unless you have everything really locked down with Typescript types for all your code and libraries (uncheck for GitLab project)
-  * Javascript and Typescript -> Unused Symbols ->
-    * Unused global symbol: Uncheck (incorrectly flags some things, e.g. Nuxt config) TODO: Still needed? Check in a Nuxt app...
+  * Javascript and Typescript
+    * Code style issues -> Unterminated Statement: Uncheck "Allow absence of semicolon"
+    * General ->
+      * Unresolved reference: Uncheck unless you have everything really locked down with Typescript types for all your code and libraries (uncheck for GitLab project)
+    * Unused Symbols ->
+      * Unused global symbol: Uncheck (incorrectly flags some things, e.g. Nuxt config) TODO: Still needed? Check in a Nuxt app...
   * Markdown ->
     * Uncheck "Incorrectly numbered list item"
   * (In Idea IDE only) Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
   * Proofreading -> Typo -> Options -> Uncheck "Process code"
+  * RegExp -> Redundant '\d'... class elements: Uncheck
+  * Ruby -> Data Flow -> 'nil' dereference: in "Options" -> "Ignored receivers" add `YAML.safe_load`
   * Security -> Link with unencrypted protocol -> "Ignored URLs": Add "http://test.host" (for Rails apps)
 * Editor -> Inlay Hints
   * Code vision -> Uncheck "Code author" (can open Annotations to see authors)
