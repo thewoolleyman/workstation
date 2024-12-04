@@ -24,7 +24,7 @@ not worth the maintenance overhead, in my experience.
 Instead, for my personal workstations, I try to have the philosophy of
 "just learn to use the defaults, unless they are missing or inconvenient".
 I'll also symlink some config files/dirs into Dropbox, but on a selective
-basis. 
+basis.
 
 So, what follows are some of the things I tend to install and tweak on my personal
 workstations.  I've installed many other things related to the project du jour
@@ -54,7 +54,7 @@ NOTES FOR 2020 / Catalina
 * System Preferences - Trackpad
   * Point and Click -> Force Click and haptic feedback: Turn Off (always causes me to lose highlighting in my way when I'm drag-highlighing with the trackpad)
 * System Preferences - Mission Control
-  * Hot Corners... -> Disable all 
+  * Hot Corners... -> Disable all
 * Make everything show in Finder:
   * Finder -> home directory
     * Change to List view
@@ -70,7 +70,7 @@ NOTES FOR 2020 / Catalina
   * Appearance -> Dimming -> Dim background windows
   * Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `Esc+`
   * Profiles -> Default -> General -> Working Directory: Select "Reuse previous session's directory"
-  * Profiles -> Default -> Terminal -> Scrollback Buffer -> Scrollback lines: Check "Unlimited Scrollback"   
+  * Profiles -> Default -> Terminal -> Scrollback Buffer -> Scrollback lines: Check "Unlimited Scrollback"
 * set nopasswd sudoers - `sudo visudo`, change "`%admin ...`" line to read: `%admin   ALL=(ALL) NOPASSWD:ALL`
 * Install Dropbox and optionally remove large folders from selective sync
 * symlink in home directory configs from dropbox: .ssh, .gitconfig, .gitignore_global
@@ -101,7 +101,7 @@ NOTES FOR 2020 / Catalina
 * Add git config aliases:
   * `$ git config --global alias.ci commit`
   * `$ git config --global alias.co checkout`
-  * `$ git config --global alias.sw switch`  
+  * `$ git config --global alias.sw switch`
 * For multiple users on the same computer
   * [link to slack exchange post](https://apple.stackexchange.com/questions/1393/are-my-permissions-for-usr-local-correct/189404#189404)
   * `sudo chgrp -R admin /usr/local /Library/Caches/Homebrew`
@@ -132,7 +132,7 @@ NOTES FOR 2020 / Catalina
   * Kindle app (via App Store)
   * Acrobat Reader
 * For any environment variables which are needed globally from launchd apps (e.g. Jetbrains IDEs), use the approach described here: http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-mac-os-x-launchd-plist/
-  * For example, `BROWSERSLIST_IGNORE_OLD_DATA=true`, to suppress stylelint warnings for outdated `caniuse-lite`, 
+  * For example, `BROWSERSLIST_IGNORE_OLD_DATA=true`, to suppress stylelint warnings for outdated `caniuse-lite`,
 * If you work with large repos a lot, run `git config --global feature.manyFiles true`
 
 # OSX Workstation Optional
@@ -171,7 +171,7 @@ NOTES FOR 2020 / Catalina
 
 Notes: Many of these are project-level settings, and can be persisted by selectively committing config
 under `.idea`.  Also, some may vary across different IDEs and projects.  So, these are more guidelines
-and reminders to myself of where the settings live.  
+and reminders to myself of where the settings live.
 
 Note that there are TWO places settings are persisted - at the IDE-level (in system preferences), and
 at the project-level (in the `.idea` folder in the project).
@@ -186,7 +186,7 @@ both IDE-level and project-level settings via version control.
   * Use custom font -> change to 14
   * (OPTIONAL) Use custom font: .SF NS Text
 * Appearance & Behavior -> Menus and Toolbars
-  * (OPTIONAL) Delete some things to give more room for file path on laptop screens 
+  * (OPTIONAL) Delete some things to give more room for file path on laptop screens
     * TODO: Outdated: ~~Main Toolbar -> Main Toolbar Settings: Delete (minus button) this, things below it, and the separators.~~
     * Navigation Bar Toolbar (not sure how/why this is different than "Main Toolbar"???) -> Remove VCS options subgroup
 * Appearance & Behavior -> Appearance -> UI Options -> Check the following:
@@ -229,7 +229,7 @@ both IDE-level and project-level settings via version control.
     * Check "Turn formatter on/off with markers in code comments" - allows disabling autoformatting if it conflicts with
       prettier/rubycop/linter settings in project, so you can still autoformat the rest of the entire file.
 * Editor -> Code Style ->
-  * HTML: 
+  * HTML:
     * Other:
       * Spaces:
         * Check "In empty tag" (compatibility with default 'prettier' config)
@@ -240,7 +240,7 @@ both IDE-level and project-level settings via version control.
         source of truth is just running eslint with `vue/attributes-order`.  See the `.idea`
         folder checked into one of my recent Vue open source repos for details.
   * Java (if it exists in current IDE): Set Continuation Indent to 2 (instead of default 8)
-  * Javascript AND Typescript -> 
+  * Javascript AND Typescript ->
     * Wrapping and Braces: (needed to make "prettier" defaults happy)
       * Function call arguments:
         * Chop down if long
@@ -250,7 +250,7 @@ both IDE-level and project-level settings via version control.
         * Align when multiline: Uncheck
       * ES6 import/export
         * Do not wrap
-    * Punctuation: 
+    * Punctuation:
       * Don't Use semicolon to terminate statements always (leave on for GitLab)
       * Use single quotes always
       * Trailing comma: Add when multiline
@@ -262,29 +262,28 @@ both IDE-level and project-level settings via version control.
       default Rails generator formatting, otherwise prefer not to because it takes more space**
     * Spaces: Spaces within curly braces in hashes **AND** blocks **ONLY IF YOU WANT to match
       default Rails generator formatting, otherwise prefer not to because it takes more space**
-    * Wrapping and Braces: UNCHECK List items -> Align when multiline (to comply with GitLab RuboCop rules)  
+    * Wrapping and Braces: UNCHECK List items -> Align when multiline (to comply with GitLab RuboCop rules)
   * HTML, Style Sheets (CSS), Javascript, Typescript, Other File Types: Set Tab size, Indent, and Continuation Indent all to 2 (instead of default 4)
 * Editor -> Code Editing
   * Error Highlighting -> The 'Next Error' action goes through: All problems
 * Editor -> Inspections
   * CSS -> Unused CSS selector -> Turn off (OPTIONAL, only turn off if it can't tell if a selector with a var is used in a SCSS library file)
-  * HTML -> 
-    * Empty Tag -> Turn off (ONLY for React, not needed vor Vue - matches root React element) - TODO: Is this still needed even for React? Check in a React app...
+  * HTML ->
     * Unknown tag -> Options -> Custom HTML Tags:
       * Add 'nuxt' (for Vue apps)
       * Add 'rootDir' (for jest config)
   * Javascript and Typescript
-    * Code style issues -> Unterminated Statement: Uncheck "Allow absence of semicolon"
     * General ->
       * Unresolved reference: Uncheck unless you have everything really locked down with Typescript types for all your code and libraries (uncheck for GitLab project)
-    * Unused Symbols ->
-      * Unused global symbol: Uncheck (incorrectly flags some things, e.g. Nuxt config) TODO: Still needed? Check in a Nuxt app...
   * Markdown ->
     * Uncheck "Incorrectly numbered list item"
   * (In Idea IDE only) Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
   * Proofreading -> Typo -> Options -> Uncheck "Process code"
+  * RBS -> Missing type signature: Uncheck
   * RegExp -> Redundant '\d'... class elements: Uncheck
-  * Ruby -> Data Flow -> 'nil' dereference: in "Options" -> "Ignored receivers" add `YAML.safe_load`
+  * Ruby ->
+    * Control flow issues -> 'case' statement without 'else' block: Uncheck (this is fine if you have previously validated the case is exhaustive)
+    * Data Flow -> 'nil' dereference: in "Options" -> "Ignored receivers" add `YAML.safe_load`
   * Security -> Link with unencrypted protocol -> "Ignored URLs": Add "http://test.host" (for Rails apps)
 * Editor -> Inlay Hints
   * Code vision -> Uncheck "Code author" (can open Annotations to see authors)
@@ -305,7 +304,7 @@ both IDE-level and project-level settings via version control.
           and I want the F9 function key to show up on the tooltip when hovering over the button.
     * Window
       * Editor Tabs
-        * Editor Close Actions 
+        * Editor Close Actions
           * Close All Tabs: Add Cmd+Option+w
     * Version Control Systems
       * Git
