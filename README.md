@@ -353,7 +353,9 @@ both IDE-level and project-level settings via version control.
        * Run for files: `{**/*,*}.{js,ts,jsx,tsx,html,vue}`
        * These manual settings are a workaround for this bug, which results in a red error for eslint config in JetBrains when viewing JS files: https://youtrack.jetbrains.com/issue/WEB-47385#focus=Comments-27-5119207.0-0
        * You may have to restart the IDE and/or re-save the settings a few times to make the error go away (???)
-  * Markdown -> Markdown Extensions" Install PlantUML extension
+  * Markdown -> Markdown Extensions
+    * Disable "Show problems in code fences" (it incorrectly flags valid Mermaid syntax keywords such as 'direction' as errors)
+    * Install PlantUML extension
 * Tools -> Terminal: Sometimes the RubyMine in-IDE Terminal can get confused and use the wrong interpreter/gems. I’ve found that I need `ASDF_RUBY_VERSION=2.7.7` (or whatever is in your `.tool-version`) in `Tools -> Terminal -> Environment Variables` to make it work, even if I have the right SDK set in `Languages & Frameworks -> Ruby SDK and Gems`.
   * **_NOTE: If you do this, you will need to keep it updated with your Ruby version!_**
 * Advanced Settings -> IDE section: Maximum number of recent files: 100
