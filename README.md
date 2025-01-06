@@ -285,8 +285,15 @@ both IDE-level and project-level settings via version control.
     * Control flow issues -> 'case' statement without 'else' block: Uncheck (this is fine if you have previously validated the case is exhaustive)
     * Data Flow -> 'nil' dereference: in "Options" -> "Ignored receivers" add `YAML.safe_load`
   * Security -> Link with unencrypted protocol -> "Ignored URLs": Add "http://test.host" (for Rails apps)
+  * Proofreading
+    * Typo: Uncheck (too many false positives on domain-specific language).
+      Alternately, if you want typo checking, leave it enabled, but curate your own dictionary of excluded terms, to keep inspections clean of typo false positives.
+      TODO: Work on a GitLab-specific team shared dictionary.
 * Editor -> Inlay Hints
   * Code vision -> Uncheck "Code author" (can open Annotations to see authors)
+* Editor -> Natural Languages
+  * Grammar and Style
+    * Scope -> File types: Uncheck everything but Markdown (otherwise too many false positives)
 * Keymap - Mac OS
   * **NOTE: I've decided to learn default keymaps whenever they exist.  I now only add ones that are useful but unmapped.**
   * **Tip: "Move Caret to Text Start/End" is bound to "home/end" by default.  On a Mac small/laptop keyboard,
