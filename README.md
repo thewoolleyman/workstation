@@ -370,8 +370,11 @@ both IDE-level and project-level settings via version control.
   * Markdown -> Markdown Extensions
     * Disable "Show problems in code fences" (it incorrectly flags valid Mermaid syntax keywords such as 'direction' as errors)
     * Install PlantUML extension
-* Tools -> Terminal: Sometimes the RubyMine in-IDE Terminal can get confused and use the wrong interpreter/gems. I’ve found that I need `ASDF_RUBY_VERSION=2.7.7` (or whatever is in your `.tool-version`) in `Tools -> Terminal -> Environment Variables` to make it work, even if I have the right SDK set in `Languages & Frameworks -> Ruby SDK and Gems`.
-  * **_NOTE: If you do this, you will need to keep it updated with your Ruby version!_**
+* Tools -> Terminal
+  * Project settings
+    * Environment Variables: Ruby note (may be outdated, also update for mise if needed): Sometimes the RubyMine in-IDE Terminal can get confused and use the wrong interpreter/gems. I’ve found that I need `ASDF_RUBY_VERSION=2.7.7` (or whatever is in your `.tool-version`) in `Tools -> Terminal -> Environment Variables` to make it work, even if I have the right SDK set in `Languages & Frameworks -> Ruby SDK and Gems`. **_NOTE: If you do this, you will need to keep it updated with your Ruby version!_**
+  * Application Settings
+    * (Optional) Move focus to the editor with Escape.  NOTE: If this interferes with terminal use, turn it off, but I don't know any other keybinding to get back to editor without closing terminal pane. Alt-F12 used to do it, but now that automatically closes the terminal pane.
 * Advanced Settings
   * IDE section: Maximum number of recent files: 100
   * Rails: (optional) Load generators automatically: Uncheck (I never use generators from RubyMine, turning it off speeds IDE startup)
