@@ -222,7 +222,10 @@ both IDE-level and project-level settings via version control.
     * Turn ON: Adjust indentation on type
     * Turn ON: Use smart Enter and Backspace
     * Turn ON: Renumber list when typing.
-    * List numerating: With '1.'
+    * (OPTIONAL) List numerating: With '1.'.
+      * NOTE: Historically, this made sense to number all lists with 1, so they wouldn't have to be renumbered if one was added.
+              But with AI agents which read and process raw markdown, having sequential numbers in source may be preferable to give
+              the AI more context, especially when giving ordered lists of tasks or instructions.
 * Editor -> File Types -> Ignored Files and Folders
   * Add `*.edit.po` (translation files in GitLab, they are in `.gitignore` and thus automatically excluded in IDE anyway).
 * Editor -> Font -> Size -> change to 15
@@ -280,7 +283,7 @@ both IDE-level and project-level settings via version control.
     * General ->
       * Unresolved reference: Uncheck unless you have everything really locked down with Typescript types for all your code and libraries (uncheck for GitLab project)
   * Markdown ->
-    * Uncheck "Incorrectly numbered list item"
+    * (OPTIONAL) Uncheck "Incorrectly numbered list item". Only uncheck this if your codebase has different numberings than your current settings in `Editor -> General -> Smart Keys -> Markdown -> Lists`
   * (In Idea IDE only) Kotlin -> Naming Conventions -> Class naming convention: Change to `[A-Za-z][A-Za-z\d]*` (allow lowercase first letter)
   * Proofreading -> Typo -> Options -> Uncheck "Process code"
   * RBS -> Missing type signature: Uncheck
