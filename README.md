@@ -205,8 +205,9 @@ both IDE-level and project-level settings via version control.
   * Turn ON: Keep trailing spaces on carat line
   * Turn ON: Remote trailing blank lines at end of saved files
   * Turn ON: Ensure every saved file ends with a line break
-* Editor -> General -> Code Completion -> Insert selected suggestion by pressing space, dot, or other context-dependent keys -> Turn off
 * Editor -> General -> Auto Import -> TypeScript/JavaScript -> Turn on: Unambiguous imports on the fly
+* Editor -> General -> Code Completion -> Insert selected suggestion by pressing space, dot, or other context-dependent keys -> Turn off
+* Editor -> General -> Editor Tabs -> Appearance -> Show pinned tabs in a separate row
 * Editor -> General -> Smart Keys -> Ruby -> Turn on: Start ruby interpolation in strings on #
 * Editor -> General -> Smart Keys -> Javascript -> Turn on: Start template string interpolation in strings on typing '$'
 * Editor -> General -> Smart Keys -> YAML -> Turn OFF: Auto expand key sequences upon paste (tries to wrap lines when pasting colons in comments)
@@ -312,7 +313,10 @@ both IDE-level and project-level settings via version control.
     * Window
       * Editor Tabs
         * Editor Close Actions
-          * Close All Tabs: Add Cmd+Option+w
+          * Close All Tabs: Add Cmd+Option+W
+    * Other
+      * Tabs
+        * Pin Active Tab: Add Cmd+Shift+P
     * Version Control Systems
       * Git
         * Compare with Branch: Add Ctrl+Option+Cmd+B
