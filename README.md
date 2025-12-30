@@ -7,9 +7,9 @@ The only part which will be kept up to date is the [Jetbrains overridden setting
 # Table of Contents
 
 * [Overview](#overview)
+* [Jetbrains overridden settings](#jetbrains-overridden-settings)
 * [OSX workstation](#osx-workstation)
 * [Visual Studio Code Setup](#visual-studio-code-setup)
-* [Jetbrains overridden settings](#jetbrains-overridden-settings)
 * [Ubuntu Workstation](#ubuntu-workstation)
 * [Printers](#printers)
 
@@ -35,136 +35,6 @@ This helps me, hopefully it helps you!
 
 
 
-# OSX workstation
-
-NOTES FOR 2020 / Catalina
-
-* download chrome (and/or Firefox) and make default
-  * Chrome Extensions
-    * Chrome JSON Formatter extension https://github.com/callumlocke/json-formatter
-    * [1password](https://1password.com/downloads/mac/)
-    * ~~Xmarks (RIP)~~ [Syncmarx](https://chrome.google.com/webstore/detail/syncmarx/llcdegcpeheociggfokjkkgciplhfdgg)
-    * [Window Namer and Restorer](https://chrome.google.com/webstore/detail/window-namer-and-restorer/elgojbkcijgcpojlfhhmjnclgkofmiha)
-      * Options: Limit window names to 16 chars (although try to use less).
-* System Preferences - Keyboard
-  * Max key repeat, shorter delay until repeat.
-  * Normal Keyboard: Use function keys as standard function keys
-  * Macbook Touchbar: Leave to defaults (Touch Bar shows: App Controls with Control Strip; Press Fn key to: F1, F2 keys...;
-  * Shortcuts -> Services -> Text: Uncheck "Search man Page Index in Terminal" ([steals `Cmd + Shift + A` binding from Jetbrains](https://stackoverflow.com/a/55747595)).
-* System Preferences - Trackpad
-  * Point and Click -> Force Click and haptic feedback: Turn Off (always causes me to lose highlighting in my way when I'm drag-highlighing with the trackpad)
-* System Preferences - Mission Control
-  * Hot Corners... -> Disable all
-* Make everything show in Finder:
-  * Finder -> home directory
-    * Change to List view
-    * In Menu-> View -> Show View Options -> Show Library Folder
-  * Show hidden files in Finder: `defaults write com.apple.finder AppleShowAllFiles True; killall Finder` (Cmd-Shift-. (period) to toggle)
-* Install any system updates
-* Install Xcode from App Store
-* Install Command Line Tools: `xcode-select --install`
-* install iterm, tweak prefs:
-  * (macbooks): In MacOS 'iTerm2' menu under 'Customize Touch Bar', drag off things next to escape key so you don't accidentally hit it.
-  * General -> Selection -> "Characters considered part of word for selection:" -> Remove "`\`"
-  * Appearance -> Tabs: Check "Show tab bar even when there is only one tab"
-  * Appearance -> Dimming -> Dim background windows
-  * Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `Esc+`
-  * Profiles -> Default -> General -> Working Directory: Select "Reuse previous session's directory"
-  * Profiles -> Default -> Terminal -> Scrollback Buffer -> Scrollback lines: Check "Unlimited Scrollback"
-* set nopasswd sudoers - `sudo visudo`, change "`%admin ...`" line to read: `%admin   ALL=(ALL) NOPASSWD:ALL`
-* Install Dropbox and optionally remove large folders from selective sync
-* symlink in home directory configs from dropbox: .ssh, .gitconfig, .gitignore_global
-* install spectacle
-  * Give accessibility permissions, run on login
-  * Remove all default keybindings, add back only (to prevent conflicts with Jetbrains defaults):
-    * ctrl-option-cmd ("smash") arrows for top/bottom/right/left
-    * smash-m for fullscreen
-    * smash-n for next display
-    * smash-shift-up for top right
-    * smash-shift-right for bottom-right
-* Install [Clipy](https://clipy-app.com/), launch on system startup. Change Prefs:
-  * General -> max clipboard history size 2000
-  * Menu -> inline: 30, inside folder: 30, characters in menu: 200
-  * Change main shortcut Ctrl+Opt+Cmd+V, disable other shortcuts (to not conflict with Jetbrains)
-* install homebrew
-* Follow [instructions here](https://github.com/nijicha/install_nodejs_and_yarn_homebrew) to install NVM, NodeJS, and yarn.  Important part is that node is installed and managed via ~~NVM~~ asdf, not homebrew, so you need to "fool" homebrew into using the asdf~~NVM~~-managed version of node as a dependency. **This didn't work right with asdf.**
-* `brew install jq watch wget coreutils kgconfig libxml2`
-* `brew install openssl` then add to `~/.zshrc`: `export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/`
-  * Needed for various stuff to compile, e.g. ruby mysql2 gem.
-* `brew install rbenv` then add to `~/.zshrc` the export RUBY_CONFIGURE_OPTS line from the printout
-* `rbenv init` and set up hook in `~/.zshrc` as instructed: `eval "$(rbenv init -)"`
-* `rbenv install -l`, pick the one you want, e.g. `rbenv install 2.5.5`
-* `brew install direnv`
-* If needed, review following to set appropriate rbenv defaults: https://github.com/rbenv/rbenv#environment-variables
-* Add bash aliases to `~/.zshrc`:
-  * Add `alias gst='git status'`
-* Add git config aliases:
-  * `$ git config --global alias.ci commit`
-  * `$ git config --global alias.co checkout`
-  * `$ git config --global alias.sw switch`
-* For multiple users on the same computer
-  * [link to slack exchange post](https://apple.stackexchange.com/questions/1393/are-my-permissions-for-usr-local-correct/189404#189404)
-  * `sudo chgrp -R admin /usr/local /Library/Caches/Homebrew`
-  * `sudo chmod -R g+w /usr/local /Library/Caches/Homebrew`
-* Install Jetbrains Toolbox and desired IDEs, configure using section below
-* Install Slack
-* Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers or personal use.
-* Install [Context.co](https://contexts.co/)
-  * Sidebar on bottom left
-  * Search with `Ctrl-Space` and `Fn-<characters>`
-* Install Zoom
-* Install Visual Studio Code and [set it up](#visual-studio-code-setup)
-* Install Textmate 2 (for quick plain text editing outside the context of an IDE project. Main requirement is that it opens instantly. Alternatives are [Sublime](https://www.sublimetext.com/download) or [CotEditor](https://coteditor.com/))
-  * Preferences -> Projects -> Include Files Matching: `{*,.*}`
-  * Preferences -> Terminal _> Install Shell support
-  * Configure autosave: add `saveOnBlur = true` to top of `~/Library/Application\ Support/TextMate/Global.tmProperties`
-* Additional browsers as necessary: Canary, Firefox, Opera
-* Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
-* Docker
-* `brew cask install java`
-* [`git-together`](https://github.com/kejadlen/git-together)
-  * `brew install pivotal/tap/git-together`
-  * `echo 'alias git=git-together' >> ~/.bash_profile`
-  * `git config --global git-together.aliases ci`
-* [PyEnv Python installation steps to get the latest tcl/tk version](https://github.com/pyenv/pyenv/issues/1375#issuecomment-524280004)
-* Other apps
-  * Ears: https://clickontyler.com/ears/
-  * Kindle app (via App Store)
-  * Acrobat Reader
-* For any environment variables which are needed globally from launchd apps (e.g. Jetbrains IDEs), use the approach described here: http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-mac-os-x-launchd-plist/
-  * For example, `BROWSERSLIST_IGNORE_OLD_DATA=true`, to suppress stylelint warnings for outdated `caniuse-lite`,
-* If you work with large repos a lot, run `git config --global feature.manyFiles true`
-
-# OSX Workstation Optional
-
-* Haskell
-  * Follow instructions in https://gitlab.com/thewoolleyman/haskell-project-setup
-    * Make sure to review https://lexi-lambda.github.io/blog/2018/02/10/an-opinionated-guide-to-haskell-in-2018/ and other links in that repo.
-* Elixir/Phoenix
-  * Erlang/Elixir: `brew install elixir`
-  * Hex package manager: `mix local.hex`
-  * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
-
-
-
-# Visual Studio Code Setup
-
-## Packages
-
-* Install Intellij Keybindings: https://github.com/kasecato/vscode-intellij-idea-keybindings
-* TODO: Try out https://github.com/zawys/vscode-as-git-mergetool to see if it's as good as Jetbrains `Resolve Conflicts` three-pane view.
-
-## Config
-
-* Settings -> Text Editor -> Files -> Auto Save: Set to `afterDelay`
-
-## Language Setup
-
-* Purescript: Install Purescript IDE: https://github.com/nwolverson/vscode-ide-purescript
-* Haskell: Follow instructions in https://gitlab.com/thewoolleyman/haskell-project-setup
-
-
-
 # Jetbrains overridden settings
 
 **_IMPORTANT NOTE: Most of this document is now deprecated! See the latest version here, from when I set up my latest GitLab workstation: https://gitlab.com/cwoolley-gitlab/cwoolley-gitlab/-/blob/main/gitlab-workstation-setup-notes.md. The only part which will be kept up to date is the [Jetbrains overridden settings](#jetbrains-overridden-settings) section (TODO: Move the Jetbrains section to a separate dedicated page)._**
@@ -180,6 +50,8 @@ Jetbrains has a built-in way to manage IDE-level settings, but not project-level
 
 See https://gitlab.com/jetbrains-ide-config/jetbrains-ide-config-gitlab for my process to manage
 both IDE-level and project-level settings via version control.
+
+SETTINGS:
 
 * Appearance & Behavior -> Appearance
   * Theme: Darcula
@@ -390,6 +262,140 @@ both IDE-level and project-level settings via version control.
     * Editor -> Inspections -> Ruby -> Double Quoted String: Uncheck
 * PLUGINS: My curated list of Jetbrains plugins I use has moved to
   [the RubyMine Plugins section of my GitLab Workstation Setup Notes](https://gitlab.com/cwoolley-gitlab/cwoolley-gitlab/-/blob/main/gitlab-workstation-setup-notes.md#rubymine-plugins). Please visit that link for the latest updates.
+
+MENUS:
+
+* View -> Appearance -> Navigation Bar -> Top (Optional, but I like it at top to be more easily visible on large monitors)
+
+# OSX workstation
+
+NOTES FOR 2020 / Catalina
+
+* download chrome (and/or Firefox) and make default
+  * Chrome Extensions
+    * Chrome JSON Formatter extension https://github.com/callumlocke/json-formatter
+    * [1password](https://1password.com/downloads/mac/)
+    * ~~Xmarks (RIP)~~ [Syncmarx](https://chrome.google.com/webstore/detail/syncmarx/llcdegcpeheociggfokjkkgciplhfdgg)
+    * [Window Namer and Restorer](https://chrome.google.com/webstore/detail/window-namer-and-restorer/elgojbkcijgcpojlfhhmjnclgkofmiha)
+      * Options: Limit window names to 16 chars (although try to use less).
+* System Preferences - Keyboard
+  * Max key repeat, shorter delay until repeat.
+  * Normal Keyboard: Use function keys as standard function keys
+  * Macbook Touchbar: Leave to defaults (Touch Bar shows: App Controls with Control Strip; Press Fn key to: F1, F2 keys...;
+  * Shortcuts -> Services -> Text: Uncheck "Search man Page Index in Terminal" ([steals `Cmd + Shift + A` binding from Jetbrains](https://stackoverflow.com/a/55747595)).
+* System Preferences - Trackpad
+  * Point and Click -> Force Click and haptic feedback: Turn Off (always causes me to lose highlighting in my way when I'm drag-highlighing with the trackpad)
+* System Preferences - Mission Control
+  * Hot Corners... -> Disable all
+* Make everything show in Finder:
+  * Finder -> home directory
+    * Change to List view
+    * In Menu-> View -> Show View Options -> Show Library Folder
+  * Show hidden files in Finder: `defaults write com.apple.finder AppleShowAllFiles True; killall Finder` (Cmd-Shift-. (period) to toggle)
+* Install any system updates
+* Install Xcode from App Store
+* Install Command Line Tools: `xcode-select --install`
+* install iterm, tweak prefs:
+  * (macbooks): In MacOS 'iTerm2' menu under 'Customize Touch Bar', drag off things next to escape key so you don't accidentally hit it.
+  * General -> Selection -> "Characters considered part of word for selection:" -> Remove "`\`"
+  * Appearance -> Tabs: Check "Show tab bar even when there is only one tab"
+  * Appearance -> Dimming -> Dim background windows
+  * Profiles -> Default (starred) Profile -> Keys -> Left Option acts as `Esc+`
+  * Profiles -> Default -> General -> Working Directory: Select "Reuse previous session's directory"
+  * Profiles -> Default -> Terminal -> Scrollback Buffer -> Scrollback lines: Check "Unlimited Scrollback"
+* set nopasswd sudoers - `sudo visudo`, change "`%admin ...`" line to read: `%admin   ALL=(ALL) NOPASSWD:ALL`
+* Install Dropbox and optionally remove large folders from selective sync
+* symlink in home directory configs from dropbox: .ssh, .gitconfig, .gitignore_global
+* install spectacle
+  * Give accessibility permissions, run on login
+  * Remove all default keybindings, add back only (to prevent conflicts with Jetbrains defaults):
+    * ctrl-option-cmd ("smash") arrows for top/bottom/right/left
+    * smash-m for fullscreen
+    * smash-n for next display
+    * smash-shift-up for top right
+    * smash-shift-right for bottom-right
+* Install [Clipy](https://clipy-app.com/), launch on system startup. Change Prefs:
+  * General -> max clipboard history size 2000
+  * Menu -> inline: 30, inside folder: 30, characters in menu: 200
+  * Change main shortcut Ctrl+Opt+Cmd+V, disable other shortcuts (to not conflict with Jetbrains)
+* install homebrew
+* Follow [instructions here](https://github.com/nijicha/install_nodejs_and_yarn_homebrew) to install NVM, NodeJS, and yarn.  Important part is that node is installed and managed via ~~NVM~~ asdf, not homebrew, so you need to "fool" homebrew into using the asdf~~NVM~~-managed version of node as a dependency. **This didn't work right with asdf.**
+* `brew install jq watch wget coreutils kgconfig libxml2`
+* `brew install openssl` then add to `~/.zshrc`: `export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/`
+  * Needed for various stuff to compile, e.g. ruby mysql2 gem.
+* `brew install rbenv` then add to `~/.zshrc` the export RUBY_CONFIGURE_OPTS line from the printout
+* `rbenv init` and set up hook in `~/.zshrc` as instructed: `eval "$(rbenv init -)"`
+* `rbenv install -l`, pick the one you want, e.g. `rbenv install 2.5.5`
+* `brew install direnv`
+* If needed, review following to set appropriate rbenv defaults: https://github.com/rbenv/rbenv#environment-variables
+* Add bash aliases to `~/.zshrc`:
+  * Add `alias gst='git status'`
+* Add git config aliases:
+  * `$ git config --global alias.ci commit`
+  * `$ git config --global alias.co checkout`
+  * `$ git config --global alias.sw switch`
+* For multiple users on the same computer
+  * [link to slack exchange post](https://apple.stackexchange.com/questions/1393/are-my-permissions-for-usr-local-correct/189404#189404)
+  * `sudo chgrp -R admin /usr/local /Library/Caches/Homebrew`
+  * `sudo chmod -R g+w /usr/local /Library/Caches/Homebrew`
+* Install Jetbrains Toolbox and desired IDEs, configure using section below
+* Install Slack
+* Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers or personal use.
+* Install [Context.co](https://contexts.co/)
+  * Sidebar on bottom left
+  * Search with `Ctrl-Space` and `Fn-<characters>`
+* Install Zoom
+* Install Visual Studio Code and [set it up](#visual-studio-code-setup)
+* Install Textmate 2 (for quick plain text editing outside the context of an IDE project. Main requirement is that it opens instantly. Alternatives are [Sublime](https://www.sublimetext.com/download) or [CotEditor](https://coteditor.com/))
+  * Preferences -> Projects -> Include Files Matching: `{*,.*}`
+  * Preferences -> Terminal _> Install Shell support
+  * Configure autosave: add `saveOnBlur = true` to top of `~/Library/Application\ Support/TextMate/Global.tmProperties`
+* Additional browsers as necessary: Canary, Firefox, Opera
+* Turn off system prefs for trackpad swipe between pages because it makes you lose your duolingo lesson >:-(
+* Docker
+* `brew cask install java`
+* [`git-together`](https://github.com/kejadlen/git-together)
+  * `brew install pivotal/tap/git-together`
+  * `echo 'alias git=git-together' >> ~/.bash_profile`
+  * `git config --global git-together.aliases ci`
+* [PyEnv Python installation steps to get the latest tcl/tk version](https://github.com/pyenv/pyenv/issues/1375#issuecomment-524280004)
+* Other apps
+  * Ears: https://clickontyler.com/ears/
+  * Kindle app (via App Store)
+  * Acrobat Reader
+* For any environment variables which are needed globally from launchd apps (e.g. Jetbrains IDEs), use the approach described here: http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-mac-os-x-launchd-plist/
+  * For example, `BROWSERSLIST_IGNORE_OLD_DATA=true`, to suppress stylelint warnings for outdated `caniuse-lite`,
+* If you work with large repos a lot, run `git config --global feature.manyFiles true`
+
+# OSX Workstation Optional
+
+* Haskell
+  * Follow instructions in https://gitlab.com/thewoolleyman/haskell-project-setup
+    * Make sure to review https://lexi-lambda.github.io/blog/2018/02/10/an-opinionated-guide-to-haskell-in-2018/ and other links in that repo.
+* Elixir/Phoenix
+  * Erlang/Elixir: `brew install elixir`
+  * Hex package manager: `mix local.hex`
+  * Phoenix: `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
+
+
+
+# Visual Studio Code Setup
+
+## Packages
+
+* Install Intellij Keybindings: https://github.com/kasecato/vscode-intellij-idea-keybindings
+* TODO: Try out https://github.com/zawys/vscode-as-git-mergetool to see if it's as good as Jetbrains `Resolve Conflicts` three-pane view.
+
+## Config
+
+* Settings -> Text Editor -> Files -> Auto Save: Set to `afterDelay`
+
+## Language Setup
+
+* Purescript: Install Purescript IDE: https://github.com/nwolverson/vscode-ide-purescript
+* Haskell: Follow instructions in https://gitlab.com/thewoolleyman/haskell-project-setup
+
+
 
 
 # Ubuntu Workstation
