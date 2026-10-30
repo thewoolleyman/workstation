@@ -1,43 +1,34 @@
 # IMPORTANT UPDATE!
 
-**Most of this document is now deprecated! See the latest version here, from when I set up my latest GitLab workstation: https://gitlab.com/cwoolley-gitlab/cwoolley-gitlab/-/blob/main/gitlab-workstation-setup-notes.md**
+**For newer workstation setup instructions, use the [GitLab Workstation Setup Notes in `thewoolleyman/cwoolley-gitlab`](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md). This is the public GitHub mirror of my newer GitLab workstation notes.**
 
-The only part which will be kept up to date is the [Jetbrains overridden settings](#jetbrains-overridden-settings) section (TODO: Move the Jetbrains section to a separate dedicated page).
+The [Jetbrains overridden settings](#jetbrains-overridden-settings) section remains maintained here; the newer notes link back to it for detailed manual overrides. Other sections below link to their newer equivalents where available and retain older instructions for historical reference.
 
 # Table of Contents
 
 * [Overview](#overview)
 * [Jetbrains overridden settings](#jetbrains-overridden-settings)
 * [OSX workstation](#osx-workstation)
+* [OSX Workstation Optional](#osx-workstation-optional)
 * [Visual Studio Code Setup](#visual-studio-code-setup)
 * [Ubuntu Workstation](#ubuntu-workstation)
-* [Printers](#printers)
 
 # Overview
 
-These are the steps that I use to set up my development workstations.  I have used
-automated tools and scripts.  I believe those are useful for shared-workstation
-team environments, where you have to set up new workstations weekly or monthly.
-But for personal workstations, which you set up yearly or more, automation is
-not worth the maintenance overhead, in my experience.
+My newer setup process and its background are documented in the
+[Overview](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#overview)
+and [Philosophy and Background](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#philosophy-and-background)
+sections of `cwoolley-gitlab`. Start there when setting up a new workstation.
 
-Instead, for my personal workstations, I try to have the philosophy of
-"just learn to use the defaults, unless they are missing or inconvenient".
-I'll also symlink some config files/dirs into Dropbox, but on a selective
-basis.
-
-So, what follows are some of the things I tend to install and tweak on my personal
-workstations.  I've installed many other things related to the project du jour
-which aren't documented here, but I've tried to remember to keep track of
-most of the various little tweaks which I can never remember later.
-
-This helps me, hopefully it helps you!
+This repository preserves my detailed JetBrains overrides and older platform-specific notes.
+The section links below distinguish the newer instructions from historical material.
 
 
 
 # Jetbrains overridden settings
 
-**_IMPORTANT NOTE: Most of this document is now deprecated! See the latest version here, from when I set up my latest GitLab workstation: https://gitlab.com/cwoolley-gitlab/cwoolley-gitlab/-/blob/main/gitlab-workstation-setup-notes.md. The only part which will be kept up to date is the [Jetbrains overridden settings](#jetbrains-overridden-settings) section (TODO: Move the Jetbrains section to a separate dedicated page)._**
+For IDE installation and general setup, see [JetBrains IDE Setup](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#jetbrains-ide-setup)
+in the newer notes. The detailed manual overrides below remain maintained here and are linked from that document's RubyMine Manual Setup section.
 
 Notes: Many of these are project-level settings, and can be persisted by selectively committing config
 under `.idea`.  Also, some may vary across different IDEs and projects.  So, these are more guidelines
@@ -264,13 +255,35 @@ SETTINGS:
     * Editor -> Inspections -> Ruby -> Unresolved Ruby Reference: Uncheck
     * Editor -> Inspections -> Ruby -> Double Quoted String: Uncheck
 * PLUGINS: My curated list of Jetbrains plugins I use has moved to
-  [the RubyMine Plugins section of my GitLab Workstation Setup Notes](https://gitlab.com/cwoolley-gitlab/cwoolley-gitlab/-/blob/main/gitlab-workstation-setup-notes.md#rubymine-plugins). Please visit that link for the latest updates.
+  [the RubyMine Plugins section of my GitLab Workstation Setup Notes](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#rubymine-plugins). Please visit that link for the latest updates.
 
 MENUS:
 
 * View -> Appearance -> Navigation Bar -> Top (Optional, but I like it at top to be more easily visible on large monitors)
 
 # OSX workstation
+
+Use the corresponding sections in the newer `cwoolley-gitlab` notes:
+
+| Setup area | Newer instructions |
+| --- | --- |
+| Initial setup | [Basic macOS Setup](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#basic-macos-setup) |
+| Keyboard, trackpad, display, Dock, and Finder | [macOS Settings](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#macos-settings) |
+| Terminal configuration | [Set up iTerm2](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#set-up-iterm2) |
+| Copying files and configuration from an old machine | [Migration from previous machine](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#migration-from-previous-machine) and [bulk copies](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#use-a-tool-to-bulk-copy-files-from-old-machine) |
+| Developer tools and Homebrew | [Set up Developer Tools](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#set-up-developer-tools) and [Install Homebrew](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#install-homebrew) |
+| Shell and Git configuration | [Other CLI setup](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#other-cli-setup) |
+| CLI utilities | [CLI tools](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#cli-tools) |
+| Browsers and extensions | [Browsers](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#browsers) |
+| Editors | [Editors](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#editors) |
+| Rectangle window shortcuts, Clipy, and other applications | [Applications](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#applications) |
+| Containers | [Containers](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#containers) |
+| Virtual machines | [Virtual Machine Setup](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#virtual-machine-setup) |
+
+In particular, use the **Rectangle** settings in Applications for window management; they supersede the Spectacle bindings below.
+
+<details>
+<summary>Historical macOS Catalina (2020) setup notes</summary>
 
 NOTES FOR 2020 / Catalina
 
@@ -341,7 +354,7 @@ NOTES FOR 2020 / Catalina
   * [link to slack exchange post](https://apple.stackexchange.com/questions/1393/are-my-permissions-for-usr-local-correct/189404#189404)
   * `sudo chgrp -R admin /usr/local /Library/Caches/Homebrew`
   * `sudo chmod -R g+w /usr/local /Library/Caches/Homebrew`
-* Install Jetbrains Toolbox and desired IDEs, configure using section below
+* Install Jetbrains Toolbox and desired IDEs, configure using [Jetbrains overridden settings](#jetbrains-overridden-settings)
 * Install Slack
 * Install [Choosy](https://www.choosyosx.com/), if using different browsers dedicated for different employers or personal use.
 * Install [Context.co](https://contexts.co/)
@@ -370,7 +383,13 @@ NOTES FOR 2020 / Catalina
   * For example, `BROWSERSLIST_IGNORE_OLD_DATA=true`, to suppress stylelint warnings for outdated `caniuse-lite`,
 * If you work with large repos a lot, run `git config --global feature.manyFiles true`
 
+</details>
+
 # OSX Workstation Optional
+
+These language-specific notes are historical and have no direct replacement in the newer document.
+For general CLI setup, see [Other CLI setup](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#other-cli-setup)
+and [CLI tools](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#cli-tools).
 
 * Haskell
   * Follow instructions in https://gitlab.com/thewoolleyman/haskell-project-setup
@@ -383,6 +402,9 @@ NOTES FOR 2020 / Catalina
 
 
 # Visual Studio Code Setup
+
+For newer editor choices, see [Editors](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#editors).
+That section does not replace the VS Code-specific configuration below, which is retained as historical reference.
 
 ## Packages
 
@@ -402,6 +424,9 @@ NOTES FOR 2020 / Catalina
 
 
 # Ubuntu Workstation
+
+For newer notes on running Linux virtual machines on macOS, see [Virtual Machine Setup](https://github.com/thewoolleyman/cwoolley-gitlab/blob/main/gitlab-workstation-setup-notes.md#virtual-machine-setup).
+Those instructions do not replace this historical setup for a standalone Ubuntu workstation.
 
 **NOTE: This Ubuntu section is way outdated, but I kept it here for reference.
 It dates back to my last attempt at going back to a Linux workstation, which I gave
